@@ -1,0 +1,311 @@
+<!-- AUTOMATICALLY GENERATED FILE - DO NOT EDIT -->
+
+<def tag="form" for="CodeGen">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, description, src_format" param/>
+    <div param="actions">
+      <submit label="#{ht 'code_gens.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="GraphmlCodeGen">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, description, src_format" param/>
+    <div param="actions">
+      <submit label="#{ht 'graphml_code_gens.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="GraphmlviewerCodeGen">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, description, src_format" param/>
+    <div param="actions">
+      <submit label="#{ht 'graphmlviewer_code_gens.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Group">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, rangemin, rangemax, default_float, default_string, date_min, date_max, default_date, default_mode, default_value, destinations, libraries, modes, node_type, parent, project, root, sources, sub_systems, super_systems, values" param/>
+    <div param="actions">
+      <submit label="#{ht 'groups.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Label">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, group, library, mode, node, scope_kind, sub_system, value, value_date_range, value_double_range, value_string" param/>
+    <div param="actions">
+      <submit label="#{ht 'labels.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Library">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, rangemin, rangemax, default_float, default_string, date_min, date_max, default_date, default_mode, default_value, destinations, node_type, parent, project, root, sources, sub_libs, super_libs, systems" param/>
+    <div param="actions">
+      <submit label="#{ht 'libraries.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Mode">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, rangemin, rangemax, default_float, default_string, date_min, date_max, default_date, default_mode, default_value, destinations, sources, sub_modes, sub_systems_as_default_mode, super_modes, super_modes_as_default_mode, systems, values" param/>
+    <div param="actions">
+      <submit label="#{ht 'modes.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="NodeAttribute">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, content, visibility, group, library, mode, node, sub_system, value, value_date_range, value_double_range, value_string" param/>
+    <div param="actions">
+      <submit label="#{ht 'node_attributes.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="NodeType">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="totype, name, img_link" param/>
+    <div param="actions">
+      <submit label="#{ht 'node_types.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Node">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, rangemin, rangemax, default_float, default_string, date_min, date_max, default_date, default_mode, default_value, destinations, node_type, parent, project, root, sources" param/>
+    <div param="actions">
+      <submit label="#{ht 'nodes.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="OpmsCodeGen">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, description, src_format" param/>
+    <div param="actions">
+      <submit label="#{ht 'opms_code_gens.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="ProjectMembership">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="contributor, project, role, user" param/>
+    <div param="actions">
+      <submit label="#{ht 'project_memberships.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Project">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, abbrev, owner" param/>
+    <div param="actions">
+      <submit label="#{ht 'projects.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Role">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, abbrev, description" param/>
+    <div param="actions">
+      <submit label="#{ht 'roles.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="ScopeKind">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, description, src_format" param/>
+    <div param="actions">
+      <submit label="#{ht 'scope_kinds.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="SubSystem">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, rangemin, rangemax, default_float, default_string, date_min, date_max, default_date, default_mode, default_value, destinations, libraries, modes, node_type, parent, project, root, sources, sub_systems, super_systems, values" param/>
+    <div param="actions">
+      <submit label="#{ht 'sub_systems.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="TreeCodeGen">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, description, src_format" param/>
+    <div param="actions">
+      <submit label="#{ht 'tree_code_gens.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="User">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, abbrev, email_address, administrator, state" param/>
+    <div param="actions">
+      <submit label="#{ht 'users.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+<def tag="signup-form" polymorphic/>
+<def tag="signup-form" for="User">
+  <form lifecycle="signup" merge param="default">
+    <error-messages param/>
+    <field-list fields="name, email_address, abbrev, password, password_confirmation" param/>
+    <div param="actions">
+      <submit label="#{ht 'users.actions.signup', :default=>['Signup']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+<def tag="reset-password-form" polymorphic/>
+<def tag="reset-password-form" for="User">
+  <form lifecycle="reset_password" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="" param/>
+    <div param="actions">
+      <submit label="#{ht 'users.actions.reset_password', :default=>['Reset Password']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+<def tag="form" for="ValueDateRange">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, rangemin, rangemax, default_float, default_string, date_min, date_max, default_date, default_value, destinations, modes, modes_as_default_value, project, sources, systems, value_formatter" param/>
+    <div param="actions">
+      <submit label="#{ht 'value_date_ranges.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="ValueDoubleRange">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, rangemin, rangemax, default_float, default_string, date_min, date_max, default_date, default_value, destinations, modes, modes_as_default_value, project, sources, systems, value_formatter" param/>
+    <div param="actions">
+      <submit label="#{ht 'value_double_ranges.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="ValueFormatter">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name" param/>
+    <div param="actions">
+      <submit label="#{ht 'value_formatters.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="ValueString">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, rangemin, rangemax, default_float, default_string, date_min, date_max, default_date, default_value, destinations, modes, modes_as_default_value, sources, systems, value_formatter" param/>
+    <div param="actions">
+      <submit label="#{ht 'value_strings.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Value">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, rangemin, rangemax, default_float, default_string, date_min, date_max, default_date, default_value, destinations, modes, modes_as_default_value, sources, systems, value_formatter" param/>
+    <div param="actions">
+      <submit label="#{ht 'values.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="WebTreeCodeGen">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, description, src_format" param/>
+    <div param="actions">
+      <submit label="#{ht 'web_tree_code_gens.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+

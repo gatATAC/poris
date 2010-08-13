@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/SubSystemsV4.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE sub-systems-v4 SYSTEM "SubSystemsV4.dtd">
+
+    <sub-systems-v4>
+    ...
+    </sub-systems-v4>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT sub-systems-v4 (group|value-data|value|sub-system|mode|value-double-range)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT value-double-range (labels|destinations|version|type|rangemin|rangemax|node-type-id|name|defaultFloat)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT defaultFloat (#PCDATA)>
+<!ATTLIST defaultFloat
+    type CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT name (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT node-type-id (#PCDATA)>
+<!ATTLIST node-type-id
+    type CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT rangemax (#PCDATA)>
+<!ATTLIST rangemax
+    type CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT rangemin (#PCDATA)>
+<!ATTLIST rangemin
+    type CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT type (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT version (#PCDATA)>
+<!ATTLIST version
+    type CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT destinations (destination)*>
+<!ATTLIST destinations
+    type CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT labels (label)*>
+<!ATTLIST labels
+    type CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT mode (labels|destinations|version|type|node-type-id|name)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT destination (id)*>
+<!ATTLIST destination
+    type CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT id (#PCDATA)>
+<!ATTLIST id
+    type CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT sub-system (labels|destinations|version|type|node-type-id|name)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT value (labels|destinations|version|type|node-type-id|name)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT label (scope-kind|name)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT scope-kind (name)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT value-data (labels|destinations|version|type|node-type-id|name|defaultString)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT defaultString (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT group (labels|destinations|version|type|node-type-id|name)*>

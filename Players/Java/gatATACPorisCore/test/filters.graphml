@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+      <graphml xmlns="http://graphml.graphdrawing.org/xmlns/graphml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/graphml http://www.yworks.com/xml/schema/graphml/1.0/ygraphml.xsd">
+      <key attr.name="url" attr.type="string" for="node" id="d0"/>
+      <key attr.name="description" attr.type="string" for="node" id="d1"/>
+      <key for="node" id="d2" yfiles.type="nodegraphics"/>
+      <key attr.name="url" attr.type="string" for="edge" id="d3"/>
+      <key attr.name="description" attr.type="string" for="edge" id="d4"/>
+      <key for="edge" id="d5" yfiles.type="edgegraphics"/>
+      <key for="graphml" id="d6" yfiles.type="resources"/><graph edgedefault="directed" id="G" parse.edges="0" parse.nodes="1" parse.order="free"><node id="n468" yfiles.foldertype="group">
+      <graph edgedefault="directed" id="n468:"><node id="n477">
+              <data key="d0">http://feudo.ll.iac.es:3000/nodes/477</data>
+              <data key="d1"/>
+              <data key="d2">
+                <y:ShapeNode>
+                  <y:Geometry height="30.0" width="92.0" x="200" y="100"/>
+                  <y:Fill color="#99CCFF" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="34.69140625" x="0.0" y="0.0">Red</y:NodeLabel>
+                  <y:Shape type="parallelogram"/>
+                </y:ShapeNode>
+              </data>
+            </node><node id="n478">
+              <data key="d0">http://feudo.ll.iac.es:3000/nodes/478</data>
+              <data key="d1"/>
+              <data key="d2">
+                <y:ShapeNode>
+                  <y:Geometry height="30.0" width="92.0" x="200" y="200"/>
+                  <y:Fill color="#99CCFF" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="34.69140625" x="0.0" y="0.0">Blue</y:NodeLabel>
+                  <y:Shape type="parallelogram"/>
+                </y:ShapeNode>
+              </data>
+            </node><edge id="ve477ve478" source="n477" target="n478">
+      <data key="d3"/>
+      <data key="d4"/>
+      <data key="d5">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge><node id="n488">
+              <data key="d0">http://feudo.ll.iac.es:3000/nodes/488</data>
+              <data key="d1"/>
+              <data key="d2">
+                <y:ShapeNode>
+                  <y:Geometry height="30.0" width="92.0" x="0" y="100"/>
+                <y:Fill color="#FFCC00" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="34.69140625" x="0.0" y="0.0">TxintoFiltersAll</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+              </data>
+            </node><edge id="e488e477" source="n488" target="n477">
+            <data key="d3"/>
+            <data key="d4"/>
+              <data key="d5">
+                <y:PolyLineEdge>
+                  <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                  <y:LineStyle color="#FF9900" type="dotted" width="1.0"/><y:Arrows source="none" target="plain"/><y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#FF9900" visible="true" width="10.673828125" x="-31.1668701171875" y="39.68543118744894">1</y:EdgeLabel>
+                  <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+              </data>
+            </edge><edge id="e488e478" source="n488" target="n478">
+            <data key="d3"/>
+            <data key="d4"/>
+              <data key="d5">
+                <y:PolyLineEdge>
+                  <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                  <y:LineStyle color="#FF9900" type="dotted" width="1.0"/><y:Arrows source="none" target="plain"/><y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#FF9900" visible="true" width="10.673828125" x="-31.1668701171875" y="39.68543118744894">2</y:EdgeLabel>
+                  <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+              </data>
+            </edge><node id="n489">
+              <data key="d0">http://feudo.ll.iac.es:3000/nodes/489</data>
+              <data key="d1"/>
+              <data key="d2">
+                <y:ShapeNode>
+                  <y:Geometry height="30.0" width="92.0" x="0" y="200"/>
+                <y:Fill color="#FFCC00" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="34.69140625" x="0.0" y="0.0">TxintoFiltersNone</y:NodeLabel>
+                  <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+              </data>
+            </node></graph>
+      <data key="d0">http://feudo.ll.iac.es:3000/nodes/468</data>
+      <data key="d1">groupNode0</data>
+      <data key="d2">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Geometry height="300" width="400" x="0" y="0"/>
+              <y:Fill color="#F5F5F5" transparent="false"/>
+              <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="135.0" x="0.0" y="0.0">TxintoFilters</y:NodeLabel>
+              <y:Shape type="roundrectangle"/>
+              <y:State closed="false" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="15" left="15" right="15" top="15"/>
+              <y:BorderInsets bottom="0" left="0" right="0" top="0"/>
+            </y:GroupNode>
+            <y:GroupNode>
+              <y:Geometry height="300" width="400" x="0" y="0"/>
+              <y:Fill color="#CAECFF84" transparent="false"/>
+              <y:BorderStyle color="#666699" type="dotted" width="1.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#99CCFF" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="100.0" x="0.0" y="0.0">TxintoFilters</y:NodeLabel>
+              <y:Shape type="roundrectangle"/>
+              <y:State closed="true" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="15" left="15" right="15" top="15"/>
+              <y:BorderInsets bottom="0" left="0" right="0" top="0"/>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+    </node></graph><data key="d4">
+        <y:Resources/>
+      </data>
+      </graphml>

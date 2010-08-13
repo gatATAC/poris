@@ -1,0 +1,2 @@
+module NodeAttributesHelper
+end
