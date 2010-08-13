@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+      <sub-systems-v4><value>
+  <id type="integer">477</id>
+  <name>Red</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">11</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">478</id>
+  <name>Blue</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">11</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">488</id>
+  <name>TxintoFiltersAll</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">11</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">477</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">478</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">489</id>
+  <name>TxintoFiltersNone</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">11</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">468</id>
+  <name>TxintoFilters</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">11</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">477</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">478</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">488</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">489</id>
+    </destination>
+  </destinations>
+</sub-system>
+</sub-systems-v4>
