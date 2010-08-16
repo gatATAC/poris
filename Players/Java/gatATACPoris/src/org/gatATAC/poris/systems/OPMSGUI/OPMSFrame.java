@@ -11,6 +11,7 @@
 
 package org.gatATAC.poris.systems.OPMSGUI;
 
+import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import org.gatATAC.poris.systems.Cfg;
@@ -247,6 +248,28 @@ public class OPMSFrame extends javax.swing.JFrame {
                 xmlConfigFrame.setMinimumSize(new java.awt.Dimension(400, 400));
                 xmlConfigFrame.setTitle("XML de " + config + " Cfg");
     }
+
+    @Override
+    public void hide() {
+        if (this.delegate!=null){
+            this.delegate.frameWillHide();
+        }
+        super.hide();
+    }
+
+    public OPMSFrame(PorisGUIAppDelegate delegate, boolean showXMLButtons, JPanel changePanel, JButton commitButton, JButton discardButton, JPanel filePanel, JPanel mainPanel, JPanel resultPanel, JButton viewCfgXMLButton, JButton viewModelXMLButton) {
+        this.delegate = delegate;
+        this.showXMLButtons = showXMLButtons;
+        this.changePanel = changePanel;
+        this.commitButton = commitButton;
+        this.discardButton = discardButton;
+        this.filePanel = filePanel;
+        this.mainPanel = mainPanel;
+        this.resultPanel = resultPanel;
+        this.viewCfgXMLButton = viewCfgXMLButton;
+        this.viewModelXMLButton = viewModelXMLButton;
+    }
+
 
     public void loadCfgIntoGUI(Cfg cfgToLoad, String title, JPanel mainPanel, JPanel resultPanel) {
         CfgGUI paramCfgGUI = new CfgGUI(cfgToLoad, true, true);
