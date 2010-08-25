@@ -10,3 +10,8 @@ mechatronics2.tiff
 *.jar
 build
 dist
+\.orig\..*$
+\.orig$
+\.chg\..*$
+\.rej$
+\.conflict\~$
