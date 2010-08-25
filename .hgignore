@@ -1,0 +1,12 @@
+# use glob syntax
+syntax: glob
+.DS_Store
+.git
+*.log
+*/auto/rapid/*
+example1.graphml
+example2.graphml
+mechatronics2.tiff
+*.jar
+build
+dist

@@ -1,0 +1,4933 @@
+<?xml version="1.0" encoding="UTF-8"?>
+      <sub-systems-v4><value>
+  <id type="integer">62</id>
+  <name>Sloan_g'</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>475.80</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>143.40</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">106</id>
+  <name>Sloan_i'</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>770.60</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>156.40</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">105</id>
+  <name>Sloan_r'</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>623.10</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>142.60</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">61</id>
+  <name>Sloan_u'</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>305.05</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>62.30</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">107</id>
+  <name>Sloan_z'</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>966.20</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>267.60</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">132</id>
+  <name>BroadFilter_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">62</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">106</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">105</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">61</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">107</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer">132</default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">184</id>
+  <name>FilterX_Broad</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Broad</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">132</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">183</id>
+  <name>FilterX_NoFilter</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>No Filter</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array"/>
+</mode>
+<value>
+  <id type="integer">47</id>
+  <name>f643/27</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>643.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>27</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">48</id>
+  <name>f648/28</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>648.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>28</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">108</id>
+  <name>f657/35</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>657.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>35</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">109</id>
+  <name>f680/43</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>680.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>43</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">110</id>
+  <name>f694/44</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>694.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>44</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">111</id>
+  <name>f709/45</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>709.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>45</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">112</id>
+  <name>f723/45</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>723.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>45</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">113</id>
+  <name>f738/46</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>738.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>46</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">114</id>
+  <name>f754/50</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>754.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>50</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">115</id>
+  <name>f770/50</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>770.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>50</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">116</id>
+  <name>f785/48</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>785.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>48</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">117</id>
+  <name>f802/51</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>802.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>51</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">118</id>
+  <name>f819/52</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>819.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>52</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">119</id>
+  <name>f838/58</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>838.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>58</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">120</id>
+  <name>f858/58</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>858.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>58</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">121</id>
+  <name>f878/59</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>878.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>59</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">122</id>
+  <name>f893/50</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>893.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>50</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">123</id>
+  <name>f902/40</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>902.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>40</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">124</id>
+  <name>f910/40</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>910.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>40</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">125</id>
+  <name>f919/41</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>919.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>41</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">126</id>
+  <name>f923/34</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>923.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>34</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">127</id>
+  <name>f927/34</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>927.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>34</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">128</id>
+  <name>f932/34</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>932.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>34</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">129</id>
+  <name>f936/35</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>936.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>35</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">130</id>
+  <name>f940/35</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>940.0</content>
+      <name>lambda(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>35</content>
+      <name>fwhm(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">47</default-value-id>
+  <id type="integer">50</id>
+  <name>OSFilter_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">47</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">48</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">108</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">109</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">110</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">111</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">112</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">113</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">114</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">115</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">116</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">117</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">118</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">119</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">120</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">121</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">122</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">123</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">124</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">125</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">126</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">127</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">128</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">129</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">130</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">185</id>
+  <name>FilterX_OS</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Order</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">50</id>
+    </destination>
+  </destinations>
+</mode>
+<value-string>
+  <default-string>ID#0000</default-string>
+  <id type="integer">60</id>
+  <name>UserFilterIdentifier</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>ValueString</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-string>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">351</id>
+  <name>UserFilterIdentifier_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueString">
+      <id type="integer">60</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">63</id>
+  <name>UserFilter_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">351</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">186</id>
+  <name>FilterX_User</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>User</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">63</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer">183</default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">17</id>
+  <name>Filters_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">184</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">183</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">185</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">186</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer">185</default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">53</id>
+  <name>Filters_TF</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">185</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">57</id>
+  <name>BroadFilter</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">61</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">62</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">105</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">106</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">107</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">132</id>
+    </destination>
+  </destinations>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">46</id>
+  <name>OSFilter</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">47</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">48</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">50</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">108</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">109</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">110</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">111</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">112</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">113</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">114</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">115</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">116</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">117</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">118</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">119</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">120</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">121</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">122</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">123</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">124</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">125</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">126</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">127</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">128</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">129</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">130</id>
+    </destination>
+  </destinations>
+</sub-system>
+<value-double-range>
+  <default-float type="float">6563.0</default-float>
+  <id type="integer">340</id>
+  <name>UserFilterLambdaRange</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <rangemax type="float">10000.0</rangemax>
+  <rangemin type="float">3500.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">349</id>
+  <name>UserFilterLambda_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">340</id>
+    </destination>
+  </destinations>
+</mode>
+<value-double-range>
+  <default-float type="float">100.0</default-float>
+  <id type="integer">342</id>
+  <name>UserFilterFWHMRange</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <rangemax type="float">10000.0</rangemax>
+  <rangemin type="float">1.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">348</id>
+  <name>UserFilterFWHM_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">342</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">341</id>
+  <name>UserFilter_MD</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">349</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">348</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">346</id>
+  <name>UserFilterLambda</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>lambda(&#197;)</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">340</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">349</id>
+    </destination>
+  </destinations>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">347</id>
+  <name>UserFilterFWHM</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>fwhm(&#197;)</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">342</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">348</id>
+    </destination>
+  </destinations>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">350</id>
+  <name>UserFilterIdentifier</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueString">
+      <id type="integer">60</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">351</id>
+    </destination>
+  </destinations>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">63</default-mode-id>
+  <id type="integer">58</id>
+  <name>UserFilter</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">63</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">341</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">346</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">347</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">350</id>
+    </destination>
+  </destinations>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">344</id>
+  <name>FilterX_UserMD</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>User</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">341</id>
+    </destination>
+  </destinations>
+</mode>
+<group>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">182</id>
+  <name>Filter</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Group</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">57</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">46</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">58</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">183</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">184</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">185</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">186</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">344</id>
+    </destination>
+  </destinations>
+</group>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">343</id>
+  <name>Filters_MD</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">183</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">184</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">185</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">344</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">17</default-mode-id>
+  <id type="integer">15</id>
+  <name>Filters</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">17</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">53</id>
+    </destination>
+    <destination type="Group">
+      <id type="integer">182</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">343</id>
+    </destination>
+  </destinations>
+</sub-system>
+<value>
+  <id type="integer">31</id>
+  <name>R300B</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>370.0</content>
+      <name>rangeMin(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>935</content>
+      <name>rangeMax(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>325.0</content>
+      <name>resolution</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>500.0</content>
+      <name>rangeZero(&#197;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>34</content>
+      <name>angle(&#186;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>0.6</content>
+      <name>lines</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1875.4875</content>
+      <name>refractiveIndex</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-847.560</content>
+      <name>aDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>6.474</content>
+      <name>bDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-9.511E-4</content>
+      <name>cDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">32</id>
+  <name>R300R</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>370.0</content>
+      <name>rangeMin(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1000.0</content>
+      <name>rangeMax(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>327.0</content>
+      <name>resolution</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>500.0</content>
+      <name>rangeZero(&#197;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>34.0</content>
+      <name>angle(&#186;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>0.6</content>
+      <name>lines</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1875.4875</content>
+      <name>refractiveIndex</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-847.560</content>
+      <name>aDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>6.474</content>
+      <name>bDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-9.511E-4</content>
+      <name>cDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">96</id>
+  <name>R500B</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>370.0</content>
+      <name>rangeMin(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>830.0</content>
+      <name>rangeMax(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>501.0</content>
+      <name>resolution</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>500.0</content>
+      <name>rangeZero(&#197;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>34.0</content>
+      <name>angle(&#186;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>0.6</content>
+      <name>lines</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1875.4875</content>
+      <name>refractiveIndex</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-847.560</content>
+      <name>aDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>6.474</content>
+      <name>bDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-9.511E-4</content>
+      <name>cDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">97</id>
+  <name>R500R</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>370.0</content>
+      <name>rangeMin(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1195.0</content>
+      <name>rangeMax(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>582.0</content>
+      <name>resolution</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>500.0</content>
+      <name>rangeZero(&#197;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>34.0</content>
+      <name>angle(&#186;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>0.6</content>
+      <name>lines</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1875.4875</content>
+      <name>refractiveIndex</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-1294.120</content>
+      <name>aDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>5.124</content>
+      <name>bDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-7.22E-4</content>
+      <name>cDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">98</id>
+  <name>R1000B</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>370.0</content>
+      <name>rangeMin(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>758.0</content>
+      <name>rangeMax(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>989.0</content>
+      <name>resolution</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>500.0</content>
+      <name>rangeZero(&#197;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>34.0</content>
+      <name>angle(&#186;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>0.6</content>
+      <name>lines</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1875.4875</content>
+      <name>refractiveIndex</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-4426.034</content>
+      <name>aDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>13.981</content>
+      <name>bDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-4.016E-3</content>
+      <name>cDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">99</id>
+  <name>R1000R</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>525.0</content>
+      <name>rangeMin(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1005.0</content>
+      <name>rangeMax(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1118.0</content>
+      <name>resolution</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>500.0</content>
+      <name>rangeZero(&#197;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>34.0</content>
+      <name>angle(&#186;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>0.6</content>
+      <name>lines</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1875.4875</content>
+      <name>refractiveIndex</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-5378.769</content>
+      <name>aDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>12.278</content>
+      <name>bDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-3.124E-3</content>
+      <name>cDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">100</id>
+  <name>R2000B</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>375.0</content>
+      <name>rangeMin(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>600.0</content>
+      <name>rangeMax(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>2000.0</content>
+      <name>resolution</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>500.0</content>
+      <name>rangeZero(&#197;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>34.0</content>
+      <name>angle(&#186;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>0.6</content>
+      <name>lines</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1875.4875</content>
+      <name>refractiveIndex</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-847.560</content>
+      <name>aDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>6.474</content>
+      <name>bDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-9.511E-4</content>
+      <name>cDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">101</id>
+  <name>R2500U</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>350.0</content>
+      <name>rangeMin(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>456.0</content>
+      <name>rangeMax(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>2525.0</content>
+      <name>resolution</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>500.0</content>
+      <name>rangeZero(&#197;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>34.0</content>
+      <name>angle(&#186;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>0.6</content>
+      <name>lines</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1875.4875</content>
+      <name>refractiveIndex</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-847.560</content>
+      <name>aDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>6.474</content>
+      <name>bDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-9.511E-4</content>
+      <name>cDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">102</id>
+  <name>R2500V</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>448.0</content>
+      <name>rangeMin(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>596.0</content>
+      <name>rangeMax(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>2515.0</content>
+      <name>resolution</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>500.0</content>
+      <name>rangeZero(&#197;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>34.0</content>
+      <name>angle(&#186;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>0.6</content>
+      <name>lines</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1875.4875</content>
+      <name>refractiveIndex</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-847.560</content>
+      <name>aDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>6.474</content>
+      <name>bDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-9.511E-4</content>
+      <name>cDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">103</id>
+  <name>R2500R</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>564.0</content>
+      <name>rangeMin(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>755.0</content>
+      <name>rangeMax(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>2485.0</content>
+      <name>resolution</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>500.0</content>
+      <name>rangeZero(&#197;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>34.0</content>
+      <name>angle(&#186;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>0.6</content>
+      <name>lines</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1875.4875</content>
+      <name>refractiveIndex</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-847.560</content>
+      <name>aDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>6.474</content>
+      <name>bDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-9.511E-4</content>
+      <name>cDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">104</id>
+  <name>R2500I</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>742.0</content>
+      <name>rangeMin(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>998.0</content>
+      <name>rangeMax(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>2500.0</content>
+      <name>resolution</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>500.0</content>
+      <name>rangeZero(&#197;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>34.0</content>
+      <name>angle(&#186;)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>0.6</content>
+      <name>lines</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1875.4875</content>
+      <name>refractiveIndex</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-847.560</content>
+      <name>aDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>6.474</content>
+      <name>bDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>-9.511E-4</content>
+      <name>cDispersionFactor(&#197;/px)</name>
+      <visibility type="boolean">false</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">33</id>
+  <name>Grism_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">31</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">32</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">96</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">97</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">98</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">99</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">100</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">101</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">102</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">103</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">104</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">29</id>
+  <name>Grism</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">31</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">32</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">33</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">96</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">97</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">98</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">99</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">100</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">101</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">102</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">103</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">104</id>
+    </destination>
+  </destinations>
+</sub-system>
+<value>
+  <id type="integer">370</id>
+  <name>NotRotated</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Don't rotate (0&#186;)</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">369</id>
+  <name>Rotated</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Yes (90&#186;)</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">371</id>
+  <name>GrismRotated_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">370</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">369</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">34</id>
+  <name>Dispersion_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">33</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">371</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">368</id>
+  <name>Grism_Rotated</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Rotate Grism?</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">369</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">370</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">371</id>
+    </destination>
+  </destinations>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">34</default-mode-id>
+  <id type="integer">28</id>
+  <name>Dispersion</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">29</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">34</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">368</id>
+    </destination>
+  </destinations>
+</sub-system>
+<value-double-range>
+  <default-float type="float">0.01</default-float>
+  <id type="integer">5</id>
+  <name>expTimeRange</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <rangemax type="float">3600.0</rangemax>
+  <rangemin type="float">0.001</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">5</value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">18</id>
+  <name>expTime_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">5</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">18</default-mode-id>
+  <id type="integer">4</id>
+  <name>expTime</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">5</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">18</id>
+    </destination>
+  </destinations>
+</sub-system>
+<value>
+  <id type="integer">9</id>
+  <name>1x1</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>1.0</content>
+      <name>horizontal</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1.0</content>
+      <name>vertical</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">10</id>
+  <name>2x1</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>2.0</content>
+      <name>horizontal</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>1.0</content>
+      <name>vertical</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array">
+    <label>
+      <name>2x1 (horiz x vert)</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">11</id>
+  <name>1x2</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>1.0</content>
+      <name>horizontal</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>2.0</content>
+      <name>vertical</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array">
+    <label>
+      <name>1x2 (horiz x vert)</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">12</id>
+  <name>2x2</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>2.0</content>
+      <name>horizontal</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+    <node-attribute>
+      <content>2.0</content>
+      <name>vertical</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">19</id>
+  <name>Binning_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">9</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">11</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">10</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">12</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">73</id>
+  <name>Binning_NoBinning</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">9</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">168</id>
+  <name>Binning_Rectangular</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">9</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">12</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">19</default-mode-id>
+  <id type="integer">6</id>
+  <name>Binning</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">9</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">10</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">11</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">12</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">19</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">73</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">168</id>
+    </destination>
+  </destinations>
+</sub-system>
+<value>
+  <id type="integer">85</id>
+  <name>SLOW</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>SLOW (50KHz)</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">86</id>
+  <name>NORMAL</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>NORMAL (200KHz)</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">87</id>
+  <name>FAST</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>FAST (500KHz)</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">174</id>
+  <name>ReadOut_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">86</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">85</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">87</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">7</id>
+  <name>ReadOut</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">85</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">86</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">87</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">174</id>
+    </destination>
+  </destinations>
+</sub-system>
+<value>
+  <id type="integer">88</id>
+  <name>CCD1+2-A</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">89</id>
+  <name>CCD1+2-A+B</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">90</id>
+  <name>CCD1-A</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">91</id>
+  <name>CCD1-B</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">92</id>
+  <name>CCD1-A+B</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">93</id>
+  <name>CCD2-A</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">94</id>
+  <name>CCD2-B</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">95</id>
+  <name>CCD2-A+B</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">175</id>
+  <name>ReadMode_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">88</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">89</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">90</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">92</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">91</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">93</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">95</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">94</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">8</id>
+  <name>ReadMode</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">88</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">89</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">90</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">91</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">92</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">93</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">94</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">95</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">175</id>
+    </destination>
+  </destinations>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">16</id>
+  <name>DAS_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Normal</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">19</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">18</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">174</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">175</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">375</id>
+  <name>DAS_MD</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">19</id>
+    </destination>
+  </destinations>
+</mode>
+<value-double-range>
+  <default-float type="float">100.0</default-float>
+  <id type="integer">408</id>
+  <name>DAS_Shuffle_Lines_Range</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <rangemax type="float">1000.0</rangemax>
+  <rangemin type="float">1.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">7</value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">409</id>
+  <name>DAS_Shuffle_Lines_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">408</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">406</id>
+  <name>DAS_MD_MicroShuffle</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">409</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">407</id>
+  <name>DAS_Shuffle_Lines</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Shuffle Lines</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">408</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">409</id>
+    </destination>
+  </destinations>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">16</default-mode-id>
+  <id type="integer">3</id>
+  <name>DAS</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">4</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">6</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">7</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">8</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">16</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">375</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">406</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">407</id>
+    </destination>
+  </destinations>
+</sub-system>
+<value-date-range>
+  <date-max type="datetime">2050-01-01T00:00:00Z</date-max>
+  <date-min type="datetime">2000-01-01T00:00:00Z</date-min>
+  <default-date type="datetime">2010-04-09T15:07:00Z</default-date>
+  <id type="integer">394</id>
+  <name>Date</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>ValueDateRange</type>
+  <value-formatter-id type="integer">6</value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-date-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">364</id>
+  <name>Date_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueDateRange">
+      <id type="integer">394</id>
+    </destination>
+  </destinations>
+</mode>
+<value-double-range>
+  <default-float type="float">0.0</default-float>
+  <id type="integer">381</id>
+  <name>HourAngleRange</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <rangemax type="float">360.0</rangemax>
+  <rangemin type="float">0.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">2</value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">382</id>
+  <name>HourAngle_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">381</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">374</id>
+  <name>DateSystem_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Use Date</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">364</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">382</id>
+    </destination>
+  </destinations>
+</mode>
+<value-double-range>
+  <default-float type="float">0.0</default-float>
+  <id type="integer">334</id>
+  <name>raRange</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <rangemax type="float">360.0</rangemax>
+  <rangemin type="float">0.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">2</value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">335</id>
+  <name>RA_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">334</id>
+    </destination>
+  </destinations>
+</mode>
+<value-double-range>
+  <default-float type="float">0.0</default-float>
+  <id type="integer">337</id>
+  <name>decRange</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <rangemax type="float">90.0</rangemax>
+  <rangemin type="float">-90.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">3</value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">338</id>
+  <name>DEC_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">337</id>
+    </destination>
+  </destinations>
+</mode>
+<value-double-range>
+  <default-float type="float">0.0</default-float>
+  <id type="integer">236</id>
+  <name>IPA_UserValue</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <rangemax type="float">360.0</rangemax>
+  <rangemin type="float">0.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">4</value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">236</default-value-id>
+  <id type="integer">242</id>
+  <name>IPA_User_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">236</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer">242</default-mode-id>
+  <default-value-id type="integer">236</default-value-id>
+  <id type="integer">237</id>
+  <name>IPA_UserAngle</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Use Custom Angle</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">242</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">395</id>
+  <name>Pointing_IPAUserOnly</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">335</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">338</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">237</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">389</id>
+  <name>UsePreImaging_Dont</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Don't use it (catalog)</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">395</id>
+    </destination>
+  </destinations>
+</mode>
+<value-string>
+  <default-string>mypreimagingfile.fits</default-string>
+  <id type="integer">391</id>
+  <name>PreImagingFile</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>ValueString</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-string>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">390</id>
+  <name>PreImagingFile_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueString">
+      <id type="integer">391</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">393</id>
+  <name>UsePreImaging_Use</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Use a pre-imaging file</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">390</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer">389</default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">361</id>
+  <name>OsiMDObservation_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">374</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">389</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">393</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">345</id>
+  <name>Osiris_SMOS_MD</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>false</content>
+      <name>hasShufflingLines</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array">
+    <label>
+      <name>Standard</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">343</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">34</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">361</id>
+    </destination>
+  </destinations>
+</mode>
+<value-string>
+  <default-string>First Name</default-string>
+  <id type="integer">355</id>
+  <name>FirstName</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>ValueString</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-string>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">359</id>
+  <name>FirstName_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueString">
+      <id type="integer">355</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">354</id>
+  <name>FirstName</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>First Name</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueString">
+      <id type="integer">355</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">359</id>
+    </destination>
+  </destinations>
+</sub-system>
+<value-string>
+  <default-string>Surname</default-string>
+  <id type="integer">357</id>
+  <name>SurName</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>ValueString</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-string>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">358</id>
+  <name>SurName_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueString">
+      <id type="integer">357</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">356</id>
+  <name>SurName</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Surname</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueString">
+      <id type="integer">357</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">358</id>
+    </destination>
+  </destinations>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">360</id>
+  <name>IP_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">359</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">358</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">353</id>
+  <name>IP</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Principal Investigator</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">354</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">356</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">360</id>
+    </destination>
+  </destinations>
+</sub-system>
+<value-double-range>
+  <default-float type="float">3.0</default-float>
+  <id type="integer">366</id>
+  <name>MinFiducialCountRange</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <rangemax type="float">10.0</rangemax>
+  <rangemin type="float">0.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">7</value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">367</id>
+  <name>MinFiducialCount_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">366</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">365</id>
+  <name>MinFiducialCount</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Minimum Fiducial Slits</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">366</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">367</id>
+    </destination>
+  </destinations>
+</sub-system>
+<value-string>
+  <default-string>10.05.2004 02:30:00 UTC</default-string>
+  <id type="integer">363</id>
+  <name>OldDate</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>ValueString</type>
+  <value-formatter-id type="integer">6</value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-string>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">362</id>
+  <name>Date</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueString">
+      <id type="integer">363</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">364</id>
+    </destination>
+    <destination type="ValueDateRange">
+      <id type="integer">394</id>
+    </destination>
+  </destinations>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">380</id>
+  <name>HourAngle</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Hour Angle</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">381</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">382</id>
+    </destination>
+  </destinations>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">372</id>
+  <name>DateSystem</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Date System</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">362</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">374</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">380</id>
+    </destination>
+  </destinations>
+</sub-system>
+<value>
+  <id type="integer">377</id>
+  <name>DontCheckSpectraOverlap</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Don't check</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array"/>
+</value>
+<value>
+  <id type="integer">378</id>
+  <name>CheckSpectraOverlap</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Check</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">378</default-value-id>
+  <id type="integer">379</id>
+  <name>CheckSpectraOverlap_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">378</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">377</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">376</id>
+  <name>CheckSpectraOverlap</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Check spectra overlap?</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">377</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">378</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">379</id>
+    </destination>
+  </destinations>
+</sub-system>
+<value-double-range>
+  <default-float type="float">3.0</default-float>
+  <id type="integer">384</id>
+  <name>MaxMasksRange</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <rangemax type="float">15.0</rangemax>
+  <rangemin type="float">1.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">7</value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">385</id>
+  <name>MaxMasks_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">384</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">383</id>
+  <name>MaxMasks</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Maximum masks</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">384</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">385</id>
+    </destination>
+  </destinations>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">392</id>
+  <name>PreImagingFile</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Pre-imaging FITS File</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueString">
+      <id type="integer">391</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">390</id>
+    </destination>
+  </destinations>
+</sub-system>
+<mode>
+  <default-mode-id type="integer">238</default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">243</id>
+  <name>IPA_Paralactic</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Use Parallactic Angle</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer">243</default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">239</id>
+  <name>IPA_Both</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">237</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">243</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">240</id>
+  <name>IPA_UserOnly</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">237</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer">237</default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">339</id>
+  <name>Pointing_IPABoth</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">335</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">338</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">243</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">237</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">333</id>
+  <name>RA</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">334</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">335</id>
+    </destination>
+  </destinations>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">336</id>
+  <name>DEC</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">337</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">338</id>
+    </destination>
+  </destinations>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">234</id>
+  <name>IPA_User</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">236</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">242</id>
+    </destination>
+  </destinations>
+</sub-system>
+<group>
+  <default-mode-id type="integer">237</default-mode-id>
+  <id type="integer">233</id>
+  <name>IPA</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Group</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Orientation</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">234</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">237</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">243</id>
+    </destination>
+  </destinations>
+</group>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">405</id>
+  <name>Pointing_Nod_RADEC</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">237</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">335</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">338</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">241</id>
+  <name>Pointing</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">239</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">240</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">339</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">333</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">336</id>
+    </destination>
+    <destination type="Group">
+      <id type="integer">233</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">395</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">405</id>
+    </destination>
+  </destinations>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">455</id>
+  <name>UsePreImaging_Dont_RADEC</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Don't use it (catalog)</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">405</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">386</id>
+  <name>UsePreImaging</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Use Pre-imaging?</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">389</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">392</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">393</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">241</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">455</id>
+    </destination>
+  </destinations>
+</sub-system>
+<value-string>
+  <default-string>000000000000</default-string>
+  <id type="integer">417</id>
+  <name>ObsIDString</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>ValueString</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-string>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">418</id>
+  <name>ObsID_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="ValueString">
+      <id type="integer">417</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">396</id>
+  <name>OsiMDObservation_Preferences</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">360</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">367</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">379</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">385</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">418</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">416</id>
+  <name>ObsID</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Observation ID</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueString">
+      <id type="integer">417</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">418</id>
+    </destination>
+  </destinations>
+</sub-system>
+<value-double-range>
+  <default-float type="float">0.0</default-float>
+  <id type="integer">464</id>
+  <name>offsetRARangeArcsecs</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <rangemax type="float">1296000.0</rangemax>
+  <rangemin type="float">-1296000.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">9</value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">466</id>
+  <name>Pointing_Offset_RA_Arcsecs</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Arcsec</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">464</id>
+    </destination>
+  </destinations>
+</mode>
+<value-double-range>
+  <default-float type="float">0.0</default-float>
+  <id type="integer">465</id>
+  <name>offsetRARangeArcmins</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <rangemax type="float">21600.0</rangemax>
+  <rangemin type="float">-21600.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">8</value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">467</id>
+  <name>Pointing_Offset_RA_Arcmins</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Arcmin</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">465</id>
+    </destination>
+  </destinations>
+</mode>
+<value-double-range>
+  <default-float type="float">0.0</default-float>
+  <id type="integer">460</id>
+  <name>offsetDecRangeArcsecs</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <rangemax type="float">1296000.0</rangemax>
+  <rangemin type="float">-1296000.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">9</value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">462</id>
+  <name>Pointing_Offset_Dec_Arcsecs</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Arcsec</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">460</id>
+    </destination>
+  </destinations>
+</mode>
+<value-double-range>
+  <default-float type="float">0.0</default-float>
+  <id type="integer">461</id>
+  <name>offsetDecRangeArcmins</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <rangemax type="float">21600.0</rangemax>
+  <rangemin type="float">-21600.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">8</value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">463</id>
+  <name>Pointing_Offset_Dec_Arcmins</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Arcmin</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">461</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">458</id>
+  <name>Pointing_Offset_Normal_Units</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">466</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">467</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">462</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">463</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer">455</default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">454</id>
+  <name>OsiMDObservation_PointingRADEC</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">374</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">393</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">455</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">458</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">402</id>
+  <name>Pointing_Offset_RA</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>RA</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">334</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">335</id>
+    </destination>
+  </destinations>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">403</id>
+  <name>Pointing_Offset_DEC</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>DEC</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">337</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">338</id>
+    </destination>
+  </destinations>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">404</id>
+  <name>Pointing_Offset_Normal</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">335</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">338</id>
+    </destination>
+  </destinations>
+</mode>
+<value-double-range>
+  <default-float type="float">0.0</default-float>
+  <id type="integer">411</id>
+  <name>offsetIPARangeArcsecs</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <rangemax type="float">3600.0</rangemax>
+  <rangemin type="float">-3600.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">9</value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">412</id>
+  <name>Pointing_Offset_IPA_Arcsecs</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Arcsec</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">411</id>
+    </destination>
+  </destinations>
+</mode>
+<value-double-range>
+  <default-float type="float">0.0</default-float>
+  <id type="integer">414</id>
+  <name>offsetIPARangeArcmins</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">1</project-id>
+  <rangemax type="float">60.0</rangemax>
+  <rangemin type="float">-60.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">8</value-formatter-id>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">415</id>
+  <name>Pointing_Offset_IPA_Arcmins</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Arcmin</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">414</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">410</id>
+  <name>Pointing_Offset_IPA</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Along Instrument Orientation</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">411</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">412</id>
+    </destination>
+    <destination type="ValueDoubleRange">
+      <id type="integer">414</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">415</id>
+    </destination>
+  </destinations>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">413</id>
+  <name>Pointing_Offset_IPA_Mode</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">412</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">415</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">457</id>
+  <name>Pointing_Offset_RA_Units</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>RA</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">464</id>
+    </destination>
+    <destination type="ValueDoubleRange">
+      <id type="integer">465</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">466</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">467</id>
+    </destination>
+  </destinations>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">459</id>
+  <name>Pointing_Offset_Dec_Units</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Dec</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">460</id>
+    </destination>
+    <destination type="ValueDoubleRange">
+      <id type="integer">461</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">462</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">463</id>
+    </destination>
+  </destinations>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">401</id>
+  <name>Pointing_Offset</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Telescope Offset</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">402</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">403</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">404</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">410</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">413</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">457</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">458</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">459</id>
+    </destination>
+  </destinations>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">352</id>
+  <name>OsiMDObservation</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Observation Details</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">353</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">361</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">365</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">372</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">376</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">383</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">386</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">396</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">416</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">454</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">401</id>
+    </destination>
+  </destinations>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">399</id>
+  <name>Osiris_SMNS_MD</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>true</content>
+      <name>hasShufflingLines</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array">
+    <label>
+      <name>Nod &amp; Shuffle</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">34</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">343</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">454</id>
+    </destination>
+  </destinations>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">400</id>
+  <name>Osiris_SMSH_MD</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>Mode</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>true</content>
+      <name>hasShufflingLines</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <labels type="array">
+    <label>
+      <name>Micro Shuffling</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">34</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">343</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">406</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">454</id>
+    </destination>
+  </destinations>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">345</default-mode-id>
+  <id type="integer">331</id>
+  <name>OsirisMD</name>
+  <node-type-id type="integer">2</node-type-id>
+  <project-id type="integer">1</project-id>
+  <type>SubSystem</type>
+  <version type="float">1.0</version>
+  <node-attributes type="array"/>
+  <labels type="array">
+    <label>
+      <name>Mask Designer</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">15</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">28</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">3</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">345</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">352</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">399</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">400</id>
+    </destination>
+  </destinations>
+</sub-system>
+</sub-systems-v4>
