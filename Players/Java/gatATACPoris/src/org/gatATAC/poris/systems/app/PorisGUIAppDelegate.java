@@ -56,9 +56,15 @@ public class PorisGUIAppDelegate extends PorisAppDelegate {
         this.xmlSystemFrameVisible = xmlSystemFrameVisible;
     }
 
+    public void setTitle(String title){
+        if (panelFrame!=null){
+            panelFrame.setTitle(title);
+        }
+    }
+
     protected boolean initialization() {
         panelFrame.loadCfgIntoGUI((Cfg) this.getConfig(), ((Cfg) this.getConfig()).getModel().toString(), panelFrame.mainPanel, panelFrame.resultPanel);
-        panelFrame.setTitle("Configuración de " + this.getConfig());
+        panelFrame.setTitle(""+this.getConfig()+ " configuration");
         panelFrame.loadSystemIntoResult(this.getSystemLib(), this.getSystem());
         panelFrame.loadConfigIntoResult(this.getConfigLib(), this.getConfig());
         return true;
