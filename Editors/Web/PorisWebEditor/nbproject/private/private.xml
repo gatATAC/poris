@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/E:/dev/Poris/Editors/Web/PorisWebEditor/db/data.yml</file>
+        <file>file:/E:/dev/Poris/Editors/Web/PorisWebEditor/public/tmp/instrument.xml</file>
+        <file>file:/E:/dev/Poris/Editors/Web/PorisWebEditor/app/models/tree_code_gen.rb</file>
+        <file>file:/E:/dev/Poris/Editors/Web/PorisWebEditor/config/environment.rb</file>
+        <file>file:/E:/dev/Poris/Editors/Web/PorisWebEditor/app/views/nodes/_show.html.erb</file>
+        <file>file:/E:/dev/Poris/Editors/Web/PorisWebEditor/app/views/nodes/_item.html.erb</file>
+        <file>file:/E:/dev/Poris/Editors/Web/PorisWebEditor/app/views/nodes/_ajax_tree.html.erb</file>
+        <file>file:/E:/dev/Poris/Editors/Web/PorisWebEditor/app/views/tree_code_gens/show_code.xml.erb</file>
+        <file>file:/E:/dev/Poris/Editors/Web/PorisWebEditor/app/controllers/tree_code_gens_controller.rb</file>
+        <file>file:/E:/dev/Poris/Editors/Web/PorisWebEditor/app/controllers/code_gens_controller.rb</file>
+        <file>file:/E:/dev/Poris/Editors/Web/PorisWebEditor/app/models/code_gen.rb</file>
+    </open-files>
 </project-private>
