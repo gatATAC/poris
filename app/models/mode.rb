@@ -3,7 +3,7 @@ class Mode < Node
   has_many :edges_as_source, :class_name => 'NodesEdges', :foreign_key => 'source_id', :dependent => :destroy, :order => :position
   has_many :edges_as_destination, :class_name => 'NodesEdges', :foreign_key => 'destination_id'
   has_many :sources, :through => :edges_as_destination , :accessible => true
-  has_many :destinations, :through => :edges_as_source , :accessible => true
+  has_many :destinations, :through => :edges_as_source , :order => 'nodes_edges.position', :accessible => true
 
   has_many :values, :through => :edges_as_source, :accessible => true, :source => :destination, :class_name => 'Value'
   has_many :systems, :through => :edges_as_destination, :accessible => true, :source => :source, :class_name => 'SubSystem'

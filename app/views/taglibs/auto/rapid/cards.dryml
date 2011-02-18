@@ -18,8 +18,8 @@
     </header:>
     <body: param>
       <a:project param="creator-link"/>
-      <ht key="labels.collection.count" count="&this.labels.size">
-         <count:labels param/>
+      <ht key="edges_as_sources.collection.count" count="&this.edges_as_source.size">
+         <count:edges_as_source param/>
       </ht>
     </body:>
   </card>
@@ -46,6 +46,9 @@
 
 <def tag="card" for="NodesEdges">
   <card class="nodes-edges" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
     <body: param>
       <a:source param="creator-link"/>
     </body:>

@@ -275,6 +275,9 @@
     </p>
   <% end %>
 
+  <h4 param="collection-heading">Destinations (for sorting reasons)</h4>
+  <sortable-collection:edges_as_source param/>
+
   <!--h3 param="collection-heading">Tree View</h3-->
   <!--%= link_to "Open Tree View for #{@sub_system.name}", :controller => :web_tree_code_gens, :action => :show_code, :id => WebTreeCodeGen.find(:first).id, :node => @sub_system %-->
 </collection-section:>
@@ -282,6 +285,7 @@
   <iframe name="treeifrm" id="treeifrm" frameborder="1px"
  src="<%= "/web_tree_code_gens/show_node/"+WebTreeCodeGen.find(:first).id.to_s+".xml?node="+@this.id.to_s %> " ></iframe>
   <!--%= WebTreeCodeGen.find(:first).to_code_embedded(@sub_system) %-->
+
 </aside:>
 </old-show-page>
 </extend>
@@ -685,6 +689,15 @@
 </old-card>
 </extend>
 
+<extend tag="card" for="NodesEdges">
+<old-card merge>
+<append-body:>
+<div class="position">
+  Position: <view:position/> Node: <view:destination/>
+</div>
+</append-body:>
+</old-card>
+</extend>
 
 <!--extend tag="page">
   <old-page merge>
