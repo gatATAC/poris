@@ -25,7 +25,7 @@ class TreeCodeGen < CodeGen
       onlyarray=s.class.my_attributes + [:id]
       ret+=s.to_xml(:skip_instruct => true, :only => onlyarray,
         :include =>{
-          :destinations => {:only => :id},
+          :destinations => {:only => [:id]},
           :labels=>{:only => [:name],:include=>[:scope_kind]},
           :node_attributes=>{:only => [:name,:content,:visibility]},
         })

@@ -623,7 +623,6 @@
 
     <content: param>
           <header param="content-header">
-            <a:node param="parent-link">&laquo; <ht key="labels.actions.back" to="node"><name/></ht></a:node>
             <h2 param="heading">
               <ht key="labels.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
                 <name/>
@@ -675,9 +674,9 @@
 
 
 
-<def tag="new-for-value-double-range-page" polymorphic/>
-<def tag="new-for-value-double-range-page" for="Label">
-  <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @value_double_range}">
+<def tag="new-for-value-string-page" polymorphic/>
+<def tag="new-for-value-string-page" for="Label">
+  <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @value_string}">
     <body: class="new-for-owner-page  label" param/>
 
     <content: param>
@@ -691,45 +690,13 @@
           <ht key="labels.new_for_owner.subheading">
             For:
           </ht>
-          <a with="&@value_double_range"/>
+          <a with="&@value_string"/>
         </h3>
       </header>
 
       <section param="content-body">
-        <form owner="value_double_range" method="post" param>
-          <field-list: skip="value_double_range"/>
-          <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
-        </form>
-      </section>
-    </content:>
-  </page>
-</def>
-
-
-
-<def tag="new-for-value-date-range-page" polymorphic/>
-<def tag="new-for-value-date-range-page" for="Label">
-  <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @value_date_range}">
-    <body: class="new-for-owner-page  label" param/>
-
-    <content: param>
-      <header param="content-header">
-        <h2 param="heading">
-          <ht key="labels.new_for_owner.heading">
-            New Label
-          </ht>
-        </h2>
-        <h3 param="subheading">
-          <ht key="labels.new_for_owner.subheading">
-            For:
-          </ht>
-          <a with="&@value_date_range"/>
-        </h3>
-      </header>
-
-      <section param="content-body">
-        <form owner="value_date_range" method="post" param>
-          <field-list: skip="value_date_range"/>
+        <form owner="value_string" method="post" param>
+          <field-list: skip="value_string"/>
           <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
         </form>
       </section>
@@ -803,9 +770,9 @@
 
 
 
-<def tag="new-for-value-string-page" polymorphic/>
-<def tag="new-for-value-string-page" for="Label">
-  <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @value_string}">
+<def tag="new-for-library-page" polymorphic/>
+<def tag="new-for-library-page" for="Label">
+  <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @library}">
     <body: class="new-for-owner-page  label" param/>
 
     <content: param>
@@ -819,13 +786,13 @@
           <ht key="labels.new_for_owner.subheading">
             For:
           </ht>
-          <a with="&@value_string"/>
+          <a with="&@library"/>
         </h3>
       </header>
 
       <section param="content-body">
-        <form owner="value_string" method="post" param>
-          <field-list: skip="value_string"/>
+        <form owner="library" method="post" param>
+          <field-list: skip="library"/>
           <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
         </form>
       </section>
@@ -867,38 +834,6 @@
 
 
 
-<def tag="new-for-library-page" polymorphic/>
-<def tag="new-for-library-page" for="Label">
-  <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @library}">
-    <body: class="new-for-owner-page  label" param/>
-
-    <content: param>
-      <header param="content-header">
-        <h2 param="heading">
-          <ht key="labels.new_for_owner.heading">
-            New Label
-          </ht>
-        </h2>
-        <h3 param="subheading">
-          <ht key="labels.new_for_owner.subheading">
-            For:
-          </ht>
-          <a with="&@library"/>
-        </h3>
-      </header>
-
-      <section param="content-body">
-        <form owner="library" method="post" param>
-          <field-list: skip="library"/>
-          <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
-        </form>
-      </section>
-    </content:>
-  </page>
-</def>
-
-
-
 <def tag="new-for-sub-system-page" polymorphic/>
 <def tag="new-for-sub-system-page" for="Label">
   <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @sub_system}">
@@ -922,6 +857,70 @@
       <section param="content-body">
         <form owner="sub_system" method="post" param>
           <field-list: skip="sub_system"/>
+          <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+
+<def tag="new-for-value-double-range-page" polymorphic/>
+<def tag="new-for-value-double-range-page" for="Label">
+  <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @value_double_range}">
+    <body: class="new-for-owner-page  label" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="labels.new_for_owner.heading">
+            New Label
+          </ht>
+        </h2>
+        <h3 param="subheading">
+          <ht key="labels.new_for_owner.subheading">
+            For:
+          </ht>
+          <a with="&@value_double_range"/>
+        </h3>
+      </header>
+
+      <section param="content-body">
+        <form owner="value_double_range" method="post" param>
+          <field-list: skip="value_double_range"/>
+          <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+
+<def tag="new-for-value-date-range-page" polymorphic/>
+<def tag="new-for-value-date-range-page" for="Label">
+  <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @value_date_range}">
+    <body: class="new-for-owner-page  label" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="labels.new_for_owner.heading">
+            New Label
+          </ht>
+        </h2>
+        <h3 param="subheading">
+          <ht key="labels.new_for_owner.subheading">
+            For:
+          </ht>
+          <a with="&@value_date_range"/>
+        </h3>
+      </header>
+
+      <section param="content-body">
+        <form owner="value_date_range" method="post" param>
+          <field-list: skip="value_date_range"/>
           <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
         </form>
       </section>
@@ -1116,7 +1115,7 @@
       <header param="content-header">
         <h2 param="heading">
           <ht key="libraries.new_for_owner.heading">
-            New Node
+            New Library
           </ht>
         </h2>
         <h3 param="subheading">
@@ -1398,6 +1397,102 @@
 
 
 
+<def tag="new-for-value-string-page" polymorphic/>
+<def tag="new-for-value-string-page" for="NodeAttribute">
+  <page merge title="#{ht 'node_attributes.new_for_owner.title', :default=>['New Node Attribute for']} #{name :with => @value_string}">
+    <body: class="new-for-owner-page  node-attribute" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="node_attributes.new_for_owner.heading">
+            New Node Attribute
+          </ht>
+        </h2>
+        <h3 param="subheading">
+          <ht key="node_attributes.new_for_owner.subheading">
+            For:
+          </ht>
+          <a with="&@value_string"/>
+        </h3>
+      </header>
+
+      <section param="content-body">
+        <form owner="value_string" method="post" param>
+          <field-list: skip="value_string"/>
+          <submit: label="#{ht 'node_attributes.actions.create', :default=>['Create Node Attribute']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+
+<def tag="new-for-value-page" polymorphic/>
+<def tag="new-for-value-page" for="NodeAttribute">
+  <page merge title="#{ht 'node_attributes.new_for_owner.title', :default=>['New Node Attribute for']} #{name :with => @value}">
+    <body: class="new-for-owner-page  node-attribute" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="node_attributes.new_for_owner.heading">
+            New Node Attribute
+          </ht>
+        </h2>
+        <h3 param="subheading">
+          <ht key="node_attributes.new_for_owner.subheading">
+            For:
+          </ht>
+          <a with="&@value"/>
+        </h3>
+      </header>
+
+      <section param="content-body">
+        <form owner="value" method="post" param>
+          <field-list: skip="value"/>
+          <submit: label="#{ht 'node_attributes.actions.create', :default=>['Create Node Attribute']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+
+<def tag="new-for-sub-system-page" polymorphic/>
+<def tag="new-for-sub-system-page" for="NodeAttribute">
+  <page merge title="#{ht 'node_attributes.new_for_owner.title', :default=>['New Node Attribute for']} #{name :with => @sub_system}">
+    <body: class="new-for-owner-page  node-attribute" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="node_attributes.new_for_owner.heading">
+            New Node Attribute
+          </ht>
+        </h2>
+        <h3 param="subheading">
+          <ht key="node_attributes.new_for_owner.subheading">
+            For:
+          </ht>
+          <a with="&@sub_system"/>
+        </h3>
+      </header>
+
+      <section param="content-body">
+        <form owner="sub_system" method="post" param>
+          <field-list: skip="sub_system"/>
+          <submit: label="#{ht 'node_attributes.actions.create', :default=>['Create Node Attribute']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+
 <def tag="new-for-value-double-range-page" polymorphic/>
 <def tag="new-for-value-double-range-page" for="NodeAttribute">
   <page merge title="#{ht 'node_attributes.new_for_owner.title', :default=>['New Node Attribute for']} #{name :with => @value_double_range}">
@@ -1453,102 +1548,6 @@
       <section param="content-body">
         <form owner="value_date_range" method="post" param>
           <field-list: skip="value_date_range"/>
-          <submit: label="#{ht 'node_attributes.actions.create', :default=>['Create Node Attribute']}"/>
-        </form>
-      </section>
-    </content:>
-  </page>
-</def>
-
-
-
-<def tag="new-for-value-page" polymorphic/>
-<def tag="new-for-value-page" for="NodeAttribute">
-  <page merge title="#{ht 'node_attributes.new_for_owner.title', :default=>['New Node Attribute for']} #{name :with => @value}">
-    <body: class="new-for-owner-page  node-attribute" param/>
-
-    <content: param>
-      <header param="content-header">
-        <h2 param="heading">
-          <ht key="node_attributes.new_for_owner.heading">
-            New Node Attribute
-          </ht>
-        </h2>
-        <h3 param="subheading">
-          <ht key="node_attributes.new_for_owner.subheading">
-            For:
-          </ht>
-          <a with="&@value"/>
-        </h3>
-      </header>
-
-      <section param="content-body">
-        <form owner="value" method="post" param>
-          <field-list: skip="value"/>
-          <submit: label="#{ht 'node_attributes.actions.create', :default=>['Create Node Attribute']}"/>
-        </form>
-      </section>
-    </content:>
-  </page>
-</def>
-
-
-
-<def tag="new-for-value-string-page" polymorphic/>
-<def tag="new-for-value-string-page" for="NodeAttribute">
-  <page merge title="#{ht 'node_attributes.new_for_owner.title', :default=>['New Node Attribute for']} #{name :with => @value_string}">
-    <body: class="new-for-owner-page  node-attribute" param/>
-
-    <content: param>
-      <header param="content-header">
-        <h2 param="heading">
-          <ht key="node_attributes.new_for_owner.heading">
-            New Node Attribute
-          </ht>
-        </h2>
-        <h3 param="subheading">
-          <ht key="node_attributes.new_for_owner.subheading">
-            For:
-          </ht>
-          <a with="&@value_string"/>
-        </h3>
-      </header>
-
-      <section param="content-body">
-        <form owner="value_string" method="post" param>
-          <field-list: skip="value_string"/>
-          <submit: label="#{ht 'node_attributes.actions.create', :default=>['Create Node Attribute']}"/>
-        </form>
-      </section>
-    </content:>
-  </page>
-</def>
-
-
-
-<def tag="new-for-sub-system-page" polymorphic/>
-<def tag="new-for-sub-system-page" for="NodeAttribute">
-  <page merge title="#{ht 'node_attributes.new_for_owner.title', :default=>['New Node Attribute for']} #{name :with => @sub_system}">
-    <body: class="new-for-owner-page  node-attribute" param/>
-
-    <content: param>
-      <header param="content-header">
-        <h2 param="heading">
-          <ht key="node_attributes.new_for_owner.heading">
-            New Node Attribute
-          </ht>
-        </h2>
-        <h3 param="subheading">
-          <ht key="node_attributes.new_for_owner.subheading">
-            For:
-          </ht>
-          <a with="&@sub_system"/>
-        </h3>
-      </header>
-
-      <section param="content-body">
-        <form owner="sub_system" method="post" param>
-          <field-list: skip="sub_system"/>
           <submit: label="#{ht 'node_attributes.actions.create', :default=>['Create Node Attribute']}"/>
         </form>
       </section>
@@ -1802,17 +1801,17 @@
             <section param="collection-section">
               <h3 param="collection-heading">
                 <ht key="nodes.collection.heading.other" >
-                  Labels
+                  Edges As Source
                 </ht>
               </h3>
 
-              <collection:labels param/>
+              <sortable-collection:edges_as_source param="collection"/>
 
-              <a:labels action="new" if="&can_create?(@node.labels)" param="new-link">
-                <ht key="labels.actions.new">
-                  New Label
+              <a:edges_as_source action="new" if="&can_create?(@node.edges_as_source)" param="new-link">
+                <ht key="edges_as_sources.actions.new">
+                  New Edges As Source
                 </ht>
-              </a:labels>
+              </a:edges_as_source>
             </section>
           </section>
         </section>
@@ -1883,6 +1882,161 @@
         <form owner="project" method="post" param>
           <field-list: skip="project"/>
           <submit: label="#{ht 'nodes.actions.create', :default=>['Create Node']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== NodesEdges Pages ====== -->
+
+<def tag="index-page" for="NodesEdges">
+  <page merge title="#{ht 'nodes_edges.index.title', :default=>['Nodes Edges'] }">
+    <body: class="index-page nodes-edges" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="nodes_edges.index.heading">
+            Nodes Edges
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="nodes_edges.collection.count" count="&this.size">
+            There <count prefix="are"/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="nodes_edges.actions.new">New Nodes Edges</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="NodesEdges">
+  <page merge title="#{ht 'nodes_edges.new.title', :default=>[' New Nodes Edges'] }">
+    <body: class="new-page nodes-edges" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="nodes_edges.new.heading">
+            New Nodes Edges
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'nodes_edges.actions.create', :default=>['Create Nodes Edges']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="NodesEdges">
+  <page merge title="#{ht 'nodes_edges.show.title', :default=>['Nodes Edges'] }">
+
+    <body: class="show-page nodes-edges" param/>
+
+    <content: param>
+          <header param="content-header">
+            <a:source param="parent-link">&laquo; <ht key="nodes_edges.actions.back" to="source"><name/></ht></a:source>
+            <h2 param="heading">
+              <ht key="nodes_edges.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
+                <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a:source param="creator-link"/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="nodes_edges.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
+                Edit Nodes Edges
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="position, destination" param/>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="NodesEdges">
+  <page merge title="#{ht 'nodes_edges.edit.title', :default=>['Edit Nodes Edges'] }">
+
+    <body: class="edit-page nodes-edges" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="nodes_edges.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
+            Edit <type-name/>
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'nodes_edges.actions.delete', :default=>['Remove This Nodes Edges']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+
+
+<def tag="new-for-source-page" polymorphic/>
+<def tag="new-for-source-page" for="NodesEdges">
+  <page merge title="#{ht 'nodes_edges.new_for_owner.title', :default=>['New Nodes Edges for']} #{name :with => @source}">
+    <body: class="new-for-owner-page  nodes-edges" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="nodes_edges.new_for_owner.heading">
+            New Edges As Source
+          </ht>
+        </h2>
+        <h3 param="subheading">
+          <ht key="nodes_edges.new_for_owner.subheading">
+            For:
+          </ht>
+          <a with="&@source"/>
+        </h3>
+      </header>
+
+      <section param="content-body">
+        <form owner="source" method="post" param>
+          <field-list: skip="source"/>
+          <submit: label="#{ht 'nodes_edges.actions.create', :default=>['Create Nodes Edges']}"/>
         </form>
       </section>
     </content:>

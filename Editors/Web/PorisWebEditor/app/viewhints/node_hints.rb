@@ -1,5 +1,5 @@
 class NodeHints < Hobo::ViewHints
 
-  children  :labels, :destinations
+  children  :edges_as_source, :destinations
 
 end
