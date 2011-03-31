@@ -127,7 +127,7 @@ public class PorisAppDelegate {
     }
 
     public boolean commitChanges() {
-        int ret = JOptionPane.showConfirmDialog(null, "¿Está seguro de que quiere cambiar los parámetros de la observación?", "Cambio de observación", JOptionPane.YES_NO_OPTION);
+        int ret = JOptionPane.showConfirmDialog(null, "¿Are you sure to commit the changes?", "Committing changes", JOptionPane.YES_NO_OPTION);
         if (ret == JOptionPane.YES_OPTION) {
             return true;
         }
