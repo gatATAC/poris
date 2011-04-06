@@ -127,6 +127,7 @@ public class PorisAppDelegate {
     }
 
     public boolean commitChanges() {
+        // Issue PORIS-1 #1
         int ret = JOptionPane.showConfirmDialog(null, "¿Are you sure to commit the changes?", "Committing changes", JOptionPane.YES_NO_OPTION);
         if (ret == JOptionPane.YES_OPTION) {
             return true;
