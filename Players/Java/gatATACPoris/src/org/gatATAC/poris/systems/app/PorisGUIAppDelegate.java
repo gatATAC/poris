@@ -40,6 +40,10 @@ public class PorisGUIAppDelegate extends PorisAppDelegate {
         }
     }
 
+    public OPMSFrame getPanelFrame() {
+        return panelFrame;
+    }
+
     public boolean isXmlConfigFrameVisible() {
         return xmlConfigFrameVisible;
     }
