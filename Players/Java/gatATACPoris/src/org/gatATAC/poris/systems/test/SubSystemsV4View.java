@@ -350,7 +350,7 @@ public class SubSystemsV4View extends FrameView {
     }
 
     private void loadCfgIntoGUI(Cfg cfgToLoad, String title, JPanel mainPanel, JPanel resultPanel) {
-        CfgGUI paramCfgGUI = new CfgGUI(cfgToLoad, true, true);
+        CfgGUI paramCfgGUI = new CfgGUI(cfgToLoad, true, true,true);
         if (resultPanel != null) {
             mainPanel.remove(resultPanel);
         }

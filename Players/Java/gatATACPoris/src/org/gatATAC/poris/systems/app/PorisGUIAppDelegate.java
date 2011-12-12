@@ -19,9 +19,9 @@ public class PorisGUIAppDelegate extends PorisAppDelegate {
     private boolean xmlConfigFrameVisible = true;
     private int defaultCloseOperation = JFrame.HIDE_ON_CLOSE;
 
-    public PorisGUIAppDelegate(String instrumentFileName, boolean showXMLButtons) {
+    public PorisGUIAppDelegate(String instrumentFileName, boolean showXMLButtons, boolean showInvisible) {
         super(instrumentFileName);
-        this.panelFrame = new OPMSFrame(this, showXMLButtons);
+        this.panelFrame = new OPMSFrame(this, showXMLButtons,showInvisible);
         this.initialization();
     }
 
@@ -87,10 +87,10 @@ public class PorisGUIAppDelegate extends PorisAppDelegate {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        PorisGUIAppDelegate myPanel = new PorisGUIAppDelegate("instrument.xml", true);
+        PorisGUIAppDelegate myPanel = new PorisGUIAppDelegate("instrument.xml", true,true);
         myPanel.showPanel();
         myPanel.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        PorisGUIAppDelegate myPanel2 = new PorisGUIAppDelegate("config.xml", true);
+        PorisGUIAppDelegate myPanel2 = new PorisGUIAppDelegate("config.xml", true,true);
         myPanel2.showPanel();
         myPanel2.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         //System.exit(0);

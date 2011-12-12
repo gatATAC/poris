@@ -30,17 +30,20 @@ public class OPMSFrame extends javax.swing.JFrame {
     private OPMSXMLFrame xmlConfigFrame = new OPMSXMLFrame();
     private final PorisGUIAppDelegate delegate;
     private final boolean showXMLButtons;
+    private final boolean showInvisible;
 
     /** Creates new form OPMSFrame */
     public OPMSFrame() {
         this.showXMLButtons=false;
+        this.showInvisible=false;
         initComponents();
         delegate=null;
     }
 
-    public OPMSFrame(PorisGUIAppDelegate delegate, boolean showXMLButtons) {
+    public OPMSFrame(PorisGUIAppDelegate delegate, boolean showXMLButtons, boolean showInvisible) {
         this.showXMLButtons=showXMLButtons;
         this.delegate = delegate;
+        this.showInvisible=showInvisible;
         initComponents();
     }
 
@@ -257,8 +260,9 @@ public class OPMSFrame extends javax.swing.JFrame {
         super.hide();
     }
 
-    public OPMSFrame(PorisGUIAppDelegate delegate, boolean showXMLButtons, JPanel changePanel, JButton commitButton, JButton discardButton, JPanel filePanel, JPanel mainPanel, JPanel resultPanel, JButton viewCfgXMLButton, JButton viewModelXMLButton) {
+    public OPMSFrame(PorisGUIAppDelegate delegate, boolean showXMLButtons, JPanel changePanel, JButton commitButton, JButton discardButton, JPanel filePanel, JPanel mainPanel, JPanel resultPanel, JButton viewCfgXMLButton, JButton viewModelXMLButton, boolean showInvisible) {
         this.delegate = delegate;
+        this.showInvisible = showInvisible;
         this.showXMLButtons = showXMLButtons;
         this.changePanel = changePanel;
         this.commitButton = commitButton;
@@ -272,7 +276,7 @@ public class OPMSFrame extends javax.swing.JFrame {
 
 
     public void loadCfgIntoGUI(Cfg cfgToLoad, String title, JPanel mainPanel, JPanel resultPanel) {
-        CfgGUI paramCfgGUI = new CfgGUI(cfgToLoad, true, true);
+        CfgGUI paramCfgGUI = new CfgGUI(cfgToLoad, true, true, this.showInvisible);
         if (resultPanel != null) {
             mainPanel.remove(resultPanel);
         }

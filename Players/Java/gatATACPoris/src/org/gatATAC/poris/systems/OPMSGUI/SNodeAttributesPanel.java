@@ -8,7 +8,6 @@
  *
  * Created on 19-feb-2010, 16:37:23
  */
-
 package org.gatATAC.poris.systems.OPMSGUI;
 
 import org.gatATAC.poris.systems.SNode;
@@ -23,53 +22,77 @@ import java.util.Observer;
 public class SNodeAttributesPanel extends javax.swing.JFrame implements Observer {
 
     private final SNode node;
+    private final boolean showInvisible;
+
     /** Creates new form SNodeAttributesPanel */
-    public SNodeAttributesPanel(SNode node) {
-        this.node=node;
+    public SNodeAttributesPanel(SNode node, boolean showInvisible) {
+        this.node = node;
+        this.showInvisible = showInvisible;
         initComponents();
         initRows(node);
     }
+
     public SNodeAttributesPanel() {
-        node=new SNode("testNode");
-        node.addAttribute(new SNodeAttribute("1","uno",true));
-        node.addAttribute(new SNodeAttribute("2","dos",false));
-        node.addAttribute(new SNodeAttribute("3","tres",true));
-        node.addAttribute(new SNodeAttribute("4","cuatro",false));
-        node.addAttribute(new SNodeAttribute("5","cinco",true));
+        this.showInvisible = false;
+        node = new SNode("testNode");
+        node.addAttribute(new SNodeAttribute("1", "uno", true));
+        node.addAttribute(new SNodeAttribute("2", "dos", false));
+        node.addAttribute(new SNodeAttribute("3", "tres", true));
+        node.addAttribute(new SNodeAttribute("4", "cuatro", false));
+        node.addAttribute(new SNodeAttribute("5", "cinco", true));
         initComponents();
         initRows(node);
     }
-    public void initRows(SNode node){
-        int rowCount=node.getAttributes().size();
-        Object[][] cells=new Object [rowCount][2];
-        for (int i=0;i<rowCount;i++){
-            SNodeAttribute thisAttr=node.getAttributes().get(i);
-            if (thisAttr.isVisible()){
-                cells[i][0]=thisAttr.getName();
-            } else {
-                cells[i][0]="[h]"+thisAttr.getName();
+
+    public void initRows(SNode node) {
+        int rowCount = node.getAttributes().size();
+        int visibleRows = 0;
+        if (!this.showInvisible) {
+            for (int i = 0; i < rowCount; i++) {
+                SNodeAttribute thisAttr = node.getAttributes().get(i);
+                if (thisAttr.isVisible()) {
+                    visibleRows++;
+                }
             }
-            cells[i][1]=thisAttr.getContent();
+        } else {
+            visibleRows=rowCount;
         }
-        table.setModel(new javax.swing.table.DefaultTableModel(
-                cells
-            ,
-            new String [] {
-                "Name", "Content"
+        
+        Object[][] cells = new Object[visibleRows][2];
+        int currentCell=0;
+        for (int i = 0; i < visibleRows; i++) {
+            SNodeAttribute thisAttr = node.getAttributes().get(i);
+            if (thisAttr.isVisible()) {
+                cells[currentCell][0] = thisAttr.getName();
+                cells[currentCell][1] = thisAttr.getContent();
+                currentCell++;
+            } else {
+                if (this.showInvisible) {
+                    cells[currentCell][0] = "[h]" + thisAttr.getName();
+                    cells[currentCell][1] = thisAttr.getContent();
+                    currentCell++;
+                }
             }
-        ) {
-            Class[] types = new Class [] {
+            }
+        table.setModel(new javax.swing.table.DefaultTableModel(
+                cells,
+                new String[]{
+                    "Name", "Content"
+                }) {
+
+            Class[] types = new Class[]{
                 java.lang.String.class, java.lang.String.class
             };
 
             @Override
             public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
+                return types[columnIndex];
             }
         });
 
 
     }
+
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -129,10 +152,11 @@ public class SNodeAttributesPanel extends javax.swing.JFrame implements Observer
     }// </editor-fold>//GEN-END:initComponents
 
     /**
-    * @param args the command line arguments
-    */
+     * @param args the command line arguments
+     */
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
+
             public void run() {
                 new SNodeAttributesPanel().setVisible(true);
             }
@@ -142,10 +166,8 @@ public class SNodeAttributesPanel extends javax.swing.JFrame implements Observer
     public void update(Observable o, Object arg) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable table;
     // End of variables declaration//GEN-END:variables
-
 }

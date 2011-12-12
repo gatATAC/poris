@@ -20,9 +20,11 @@ public class CfgGUI extends ViewController {
     private final ArrayList<CfgGUI> childrenCfgGUIs;
     private final ArrayList<Cfg> childrenCfgs;
     private final boolean isGroup;
+    private final boolean showInvisible;
 
-    public CfgGUI(Cfg cfg, boolean showLabel, boolean showFrame) {
+    public CfgGUI(Cfg cfg, boolean showLabel, boolean showFrame, boolean showInvisible) {
         super(cfg);
+        this.showInvisible=showInvisible;
         boolean isGroupAux;
         isGroupAux = this.getCfg().getModel().isDescendantOf(Group.class);
         isGroup = isGroupAux;
@@ -44,7 +46,7 @@ public class CfgGUI extends ViewController {
             mayHaveFrame = mayHaveFrame && !isGroup;
         }
         boolean mayHaveLabel = showLabel || isGroup;
-        this.panel = new CfgGUIPanel(this, mayHaveFrame && showFrame, this.getCfg().isHasValue(), mayHaveLabel, isGroup);
+        this.panel = new CfgGUIPanel(this, mayHaveFrame && showFrame, this.getCfg().isHasValue(), mayHaveLabel, isGroup,this.showInvisible);
         String aux = "";
         Value v = this.getCfg().getValue();
         if (v != null) {
@@ -75,7 +77,7 @@ public class CfgGUI extends ViewController {
                     isSelectedInGroup = (thisCfg.getMode() == this.getCfg().getSubMode());
                     //System.out.println("En el cfg de "+this.getCfg()+" con modo "+this.getCfg().getMode()+" y mirando el hijo "+thisCfg+" concluimos que está seleccionado? "+isSelectedInGroup);
                 }
-                childCfgGUI = new CfgGUI(thisCfg, !isGroup, mayHaveFrame);
+                childCfgGUI = new CfgGUI(thisCfg, !isGroup, mayHaveFrame,this.showInvisible);
                 childrenCfgGUIs.add(childCfgGUI);
 
                 boolean isWrapper = true;
@@ -91,7 +93,7 @@ public class CfgGUI extends ViewController {
                 //panel.addPanel(childCfgGUI.getPanel(), isGroup || isWrapper);
                 panel.addPanel(childCfgGUI.getPanel(), isGroup, isSelectedInGroup);
             } else {
-                childCfgGUI = new CfgGUI(thisCfg, true, mayHaveFrame);
+                childCfgGUI = new CfgGUI(thisCfg, true, mayHaveFrame,this.showInvisible);
                 childrenCfgGUIs.add(childCfgGUI);
                 panel.addPanel(childCfgGUI.getPanel(), false, false);
             }

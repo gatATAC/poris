@@ -20,10 +20,12 @@ public class CfgGUIPanel extends javax.swing.JPanel {
     private int numPanelsAdded = 0;
     private ArrayList<CfgGUIPanel> panels;
     private final boolean showLabel;
-
+    private final boolean showInvisible;
+    
     /** Creates new form CfgGUIPanel */
-    public CfgGUIPanel(CfgGUI gui, boolean showFrame, boolean showValue, boolean showLabel, boolean isGroup) {
+    public CfgGUIPanel(CfgGUI gui, boolean showFrame, boolean showValue, boolean showLabel, boolean isGroup, boolean showInvisible) {
         this.gui = gui;
+        this.showInvisible=showInvisible;
         initComponents(showFrame, showValue, isGroup);
         this.showLabel = showLabel;
         panels = new ArrayList();
@@ -110,7 +112,7 @@ public class CfgGUIPanel extends javax.swing.JPanel {
         thisPanel = new javax.swing.JPanel();
         labelMode = new javax.swing.JLabel();
         mode = new javax.swing.JComboBox();
-        value = new ValueGUICell(this.gui);
+        value = new ValueGUICell(this.gui,this.showInvisible);
 
         if (showFrame) {
             setBorder(javax.swing.BorderFactory.createTitledBorder(this.gui.getCfg().getModel().toString())); // NOI18N
