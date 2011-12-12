@@ -26,10 +26,12 @@ public class ValueGUICell extends javax.swing.JPanel {
     private Component valueCell;
     private javax.swing.JButton attrButton;
     private SNodeAttributesPanel attrPanel;
+    private final boolean showInvisible;
 
     /** Creates new form ValueGUICell */
-    public ValueGUICell(CfgGUI gui) {
+    public ValueGUICell(CfgGUI gui, boolean showInvisible) {
         this.gui = gui;
+        this.showInvisible=showInvisible;
         initComponents();
     }
 
@@ -154,7 +156,8 @@ public class ValueGUICell extends javax.swing.JPanel {
 
     private void attrButtonActionPerformed(java.awt.event.ActionEvent evt) {
         if (this.attrPanel == null) {
-            this.attrPanel = new SNodeAttributesPanel(this.value);
+            this.attrPanel = new SNodeAttributesPanel(this.value,
+                    this.showInvisible);
         }
         this.attrPanel.setVisible(true);
     }
