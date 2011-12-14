@@ -64,13 +64,13 @@ public class ValueGUICell extends javax.swing.JPanel {
     private void processCellTextChange() {
         String strToProcess = ((JTextField) valueCell).getText();
         if ((prevCellTextContent == null) || (!prevCellTextContent.equals(strToProcess))) {
-            prevCellTextContent = strToProcess;
             // The new value must match the previous one
             if (this.value.isValidFromStr(strToProcess)) {
                 // Valid value
                 this.gui.getCfg().setDataValueFromStr(strToProcess);
                 this.gui.handleEvent();
-            } else {
+                prevCellTextContent = strToProcess;
+           } else {
                 // Not valid value
                 ((JTextField) valueCell).setText(this.gui.getCfg().getData().toString());
                 this.updateUI();
@@ -87,6 +87,7 @@ public class ValueGUICell extends javax.swing.JPanel {
     }
 
     private void addCell() {
+        try {
         java.awt.GridBagConstraints gridBagConstraints;
 
         if (valueCell != null) {
@@ -151,6 +152,9 @@ public class ValueGUICell extends javax.swing.JPanel {
                 });
                 add(attrButton, gridBagConstraints);
             }
+        }
+        } catch(Exception e){
+            System.err.println("ValueGUICell-->AddCell: "+this.gui.getCfg().getModel().getName()+" : "+e.getLocalizedMessage());
         }
     }
 

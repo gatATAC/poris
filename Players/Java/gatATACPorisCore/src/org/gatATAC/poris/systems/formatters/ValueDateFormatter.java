@@ -17,36 +17,37 @@ public class ValueDateFormatter extends ValueFormatter {
 
     public String dateFormatString = "dd.MM.yyyy HH:mm:ss z";
     public static String defaultDateFormatString = "dd.MM.yyyy HH:mm:ss z";
-    public static String noTreatmentFormatString = "yyyy-MM-dd'T'HH:mm:ss'Z'";
+    public static String oldNoTreatmentFormatString = "yyyy-MM-dd'T'HH:mm:ss'Z'";
+    public static String newNoTreatmentFormatString = "yyyy-MM-dd HH:mm:ss z";
     public SimpleDateFormat normalFormat = new SimpleDateFormat(dateFormatString);
     public static SimpleDateFormat defaultNormalFormat = new SimpleDateFormat(defaultDateFormatString);
-    public static SimpleDateFormat noTreatmentFormat = new SimpleDateFormat(noTreatmentFormatString);
-    //public static SimpleDateFormat noTreatmentFormat = new SimpleDateFormat(defaultDateFormatString);
+    public static SimpleDateFormat newNoTreatmentFormat = new SimpleDateFormat(newNoTreatmentFormatString);
+    public static SimpleDateFormat oldNoTreatmentFormat = new SimpleDateFormat(oldNoTreatmentFormatString);
+    //public static SimpleDateFormat newNoTreatmentFormat = new SimpleDateFormat(defaultDateFormatString);
 
     public ValueDateFormatter(String name, String label, int id) {
         super(name, label, id);
-        this.dateFormatString=label;
-        this.normalFormat=new SimpleDateFormat (this.dateFormatString);
+        this.dateFormatString = label;
+        this.normalFormat = new SimpleDateFormat(this.dateFormatString);
     }
 
     public ValueDateFormatter(String name, int id) {
-        super(name, defaultDateFormatString ,id);
-        this.dateFormatString=defaultDateFormatString;
-        this.normalFormat=defaultNormalFormat;
+        super(name, defaultDateFormatString, id);
+        this.dateFormatString = defaultDateFormatString;
+        this.normalFormat = defaultNormalFormat;
     }
 
-    public Date getValueForFormat(String strValue, SimpleDateFormat format) {
-        // precess the WC to the equinox of the observation
-        Date date = null;
+    public Date getValueForFormat(String strValue, SimpleDateFormat format, SimpleDateFormat alternativeFormat) {
         try {
-            date = (Date) format.parse(strValue);
-        } catch (ParseException nfe) {
-            // quietly ignore parse errors...
-            // the alternative would be to return the unparsed source string
-            // but that would break any checks for null on the returned Object
-            System.err.println("ValueDateFormatter.getValueForFormat ["+nfe.getLocalizedMessage()+"]");
+            return (Date) format.parse(strValue);
+        } catch (Exception e) {
+            try {
+                return (Date) alternativeFormat.parse(strValue);
+            }catch (Exception e2){
+                System.err.println("getValueForFormat: "+e2.getLocalizedMessage()+". Assuming now as time");
+                return new Date();
+            }
         }
-        return date;
     }
 
     public String getValueForFormat(Date value, SimpleDateFormat format) {
@@ -54,7 +55,7 @@ public class ValueDateFormatter extends ValueFormatter {
     }
 
     public Date getValue(String strValue) {
-        return this.getValueForFormat(strValue, normalFormat);
+        return this.getValueForFormat(strValue, normalFormat,normalFormat);
     }
 
     public String getValue(Date value) {
@@ -63,7 +64,7 @@ public class ValueDateFormatter extends ValueFormatter {
 
     public Date getValue(String strValue, boolean noSpecificTreatment) {
         if (noSpecificTreatment) {
-            return this.getValueForFormat(strValue, noTreatmentFormat);
+            return this.getValueForFormat(strValue, newNoTreatmentFormat, oldNoTreatmentFormat);
         } else {
             return getValue(strValue);
         }
@@ -71,14 +72,14 @@ public class ValueDateFormatter extends ValueFormatter {
 
     public String getValue(Date value, boolean noSpecificTreatment) {
         if (noSpecificTreatment) {
-            return this.getValueForFormat(value, noTreatmentFormat);
+            return this.getValueForFormat(value, newNoTreatmentFormat);
         } else {
             return getValue(value);
         }
     }
 
-        public static void main(String args[]) {
-        ValueDateRange expTime = new ValueDateRange("dateObs", new Date(),new Date(),new Date());
+    public static void main(String args[]) {
+        ValueDateRange expTime = new ValueDateRange("dateObs", new Date(), new Date(), new Date());
         System.out.println(expTime.toString());
     }
 }
