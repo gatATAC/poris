@@ -47,8 +47,5 @@ public class AstroPanelsDelegate extends PorisGUIAppDelegate{
         AstroPanelsDelegate loader=new AstroPanelsDelegate();
         loader.showPanel();
         loader.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        AstroPanelsDelegate loader2=new AstroPanelsDelegate("config.xml",true,true);
-        loader2.showPanel();
-        loader2.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
     }
 }
