@@ -464,7 +464,7 @@
             </a>
           </header>
 
-          <section param="content-body" with-flash-messages>
+          <section param="content-body">
             <field-list fields="rangemin, rangemax, default_float, default_string, date_min, date_max, default_date, default_mode, default_value, node_type, parent, project, root" param/>
             <section param="collection-section">
               <h3 param="collection-heading">
@@ -674,38 +674,6 @@
 
 
 
-<def tag="new-for-value-string-page" polymorphic/>
-<def tag="new-for-value-string-page" for="Label">
-  <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @value_string}">
-    <body: class="new-for-owner-page  label" param/>
-
-    <content: param>
-      <header param="content-header">
-        <h2 param="heading">
-          <ht key="labels.new_for_owner.heading">
-            New Label
-          </ht>
-        </h2>
-        <h3 param="subheading">
-          <ht key="labels.new_for_owner.subheading">
-            For:
-          </ht>
-          <a with="&@value_string"/>
-        </h3>
-      </header>
-
-      <section param="content-body">
-        <form owner="value_string" method="post" param>
-          <field-list: skip="value_string"/>
-          <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
-        </form>
-      </section>
-    </content:>
-  </page>
-</def>
-
-
-
 <def tag="new-for-value-page" polymorphic/>
 <def tag="new-for-value-page" for="Label">
   <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @value}">
@@ -729,102 +697,6 @@
       <section param="content-body">
         <form owner="value" method="post" param>
           <field-list: skip="value"/>
-          <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
-        </form>
-      </section>
-    </content:>
-  </page>
-</def>
-
-
-
-<def tag="new-for-group-page" polymorphic/>
-<def tag="new-for-group-page" for="Label">
-  <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @group}">
-    <body: class="new-for-owner-page  label" param/>
-
-    <content: param>
-      <header param="content-header">
-        <h2 param="heading">
-          <ht key="labels.new_for_owner.heading">
-            New Label
-          </ht>
-        </h2>
-        <h3 param="subheading">
-          <ht key="labels.new_for_owner.subheading">
-            For:
-          </ht>
-          <a with="&@group"/>
-        </h3>
-      </header>
-
-      <section param="content-body">
-        <form owner="group" method="post" param>
-          <field-list: skip="group"/>
-          <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
-        </form>
-      </section>
-    </content:>
-  </page>
-</def>
-
-
-
-<def tag="new-for-library-page" polymorphic/>
-<def tag="new-for-library-page" for="Label">
-  <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @library}">
-    <body: class="new-for-owner-page  label" param/>
-
-    <content: param>
-      <header param="content-header">
-        <h2 param="heading">
-          <ht key="labels.new_for_owner.heading">
-            New Label
-          </ht>
-        </h2>
-        <h3 param="subheading">
-          <ht key="labels.new_for_owner.subheading">
-            For:
-          </ht>
-          <a with="&@library"/>
-        </h3>
-      </header>
-
-      <section param="content-body">
-        <form owner="library" method="post" param>
-          <field-list: skip="library"/>
-          <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
-        </form>
-      </section>
-    </content:>
-  </page>
-</def>
-
-
-
-<def tag="new-for-node-page" polymorphic/>
-<def tag="new-for-node-page" for="Label">
-  <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @node}">
-    <body: class="new-for-owner-page  label" param/>
-
-    <content: param>
-      <header param="content-header">
-        <h2 param="heading">
-          <ht key="labels.new_for_owner.heading">
-            New Label
-          </ht>
-        </h2>
-        <h3 param="subheading">
-          <ht key="labels.new_for_owner.subheading">
-            For:
-          </ht>
-          <a with="&@node"/>
-        </h3>
-      </header>
-
-      <section param="content-body">
-        <form owner="node" method="post" param>
-          <field-list: skip="node"/>
           <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
         </form>
       </section>
@@ -866,6 +738,38 @@
 
 
 
+<def tag="new-for-group-page" polymorphic/>
+<def tag="new-for-group-page" for="Label">
+  <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @group}">
+    <body: class="new-for-owner-page  label" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="labels.new_for_owner.heading">
+            New Label
+          </ht>
+        </h2>
+        <h3 param="subheading">
+          <ht key="labels.new_for_owner.subheading">
+            For:
+          </ht>
+          <a with="&@group"/>
+        </h3>
+      </header>
+
+      <section param="content-body">
+        <form owner="group" method="post" param>
+          <field-list: skip="group"/>
+          <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+
 <def tag="new-for-value-double-range-page" polymorphic/>
 <def tag="new-for-value-double-range-page" for="Label">
   <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @value_double_range}">
@@ -898,6 +802,38 @@
 
 
 
+<def tag="new-for-library-page" polymorphic/>
+<def tag="new-for-library-page" for="Label">
+  <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @library}">
+    <body: class="new-for-owner-page  label" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="labels.new_for_owner.heading">
+            New Label
+          </ht>
+        </h2>
+        <h3 param="subheading">
+          <ht key="labels.new_for_owner.subheading">
+            For:
+          </ht>
+          <a with="&@library"/>
+        </h3>
+      </header>
+
+      <section param="content-body">
+        <form owner="library" method="post" param>
+          <field-list: skip="library"/>
+          <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+
 <def tag="new-for-value-date-range-page" polymorphic/>
 <def tag="new-for-value-date-range-page" for="Label">
   <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @value_date_range}">
@@ -921,6 +857,70 @@
       <section param="content-body">
         <form owner="value_date_range" method="post" param>
           <field-list: skip="value_date_range"/>
+          <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+
+<def tag="new-for-node-page" polymorphic/>
+<def tag="new-for-node-page" for="Label">
+  <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @node}">
+    <body: class="new-for-owner-page  label" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="labels.new_for_owner.heading">
+            New Label
+          </ht>
+        </h2>
+        <h3 param="subheading">
+          <ht key="labels.new_for_owner.subheading">
+            For:
+          </ht>
+          <a with="&@node"/>
+        </h3>
+      </header>
+
+      <section param="content-body">
+        <form owner="node" method="post" param>
+          <field-list: skip="node"/>
+          <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+
+<def tag="new-for-value-string-page" polymorphic/>
+<def tag="new-for-value-string-page" for="Label">
+  <page merge title="#{ht 'labels.new_for_owner.title', :default=>['New Label for']} #{name :with => @value_string}">
+    <body: class="new-for-owner-page  label" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="labels.new_for_owner.heading">
+            New Label
+          </ht>
+        </h2>
+        <h3 param="subheading">
+          <ht key="labels.new_for_owner.subheading">
+            For:
+          </ht>
+          <a with="&@value_string"/>
+        </h3>
+      </header>
+
+      <section param="content-body">
+        <form owner="value_string" method="post" param>
+          <field-list: skip="value_string"/>
           <submit: label="#{ht 'labels.actions.create', :default=>['Create Label']}"/>
         </form>
       </section>
@@ -1050,7 +1050,7 @@
             </a>
           </header>
 
-          <section param="content-body" with-flash-messages>
+          <section param="content-body">
             <field-list fields="rangemin, rangemax, default_float, default_string, date_min, date_max, default_date, default_mode, default_value, node_type, parent, project, root" param/>
             <section param="collection-section">
               <h3 param="collection-heading">
@@ -1226,7 +1226,7 @@
             </a>
           </header>
 
-          <section param="content-body" with-flash-messages>
+          <section param="content-body">
             <field-list fields="rangemin, rangemax, default_float, default_string, date_min, date_max, default_date, default_mode, default_value" param/>
             <section param="collection-section">
               <h3 param="collection-heading">
@@ -1397,9 +1397,9 @@
 
 
 
-<def tag="new-for-value-string-page" polymorphic/>
-<def tag="new-for-value-string-page" for="NodeAttribute">
-  <page merge title="#{ht 'node_attributes.new_for_owner.title', :default=>['New Node Attribute for']} #{name :with => @value_string}">
+<def tag="new-for-sub-system-page" polymorphic/>
+<def tag="new-for-sub-system-page" for="NodeAttribute">
+  <page merge title="#{ht 'node_attributes.new_for_owner.title', :default=>['New Node Attribute for']} #{name :with => @sub_system}">
     <body: class="new-for-owner-page  node-attribute" param/>
 
     <content: param>
@@ -1413,13 +1413,13 @@
           <ht key="node_attributes.new_for_owner.subheading">
             For:
           </ht>
-          <a with="&@value_string"/>
+          <a with="&@sub_system"/>
         </h3>
       </header>
 
       <section param="content-body">
-        <form owner="value_string" method="post" param>
-          <field-list: skip="value_string"/>
+        <form owner="sub_system" method="post" param>
+          <field-list: skip="sub_system"/>
           <submit: label="#{ht 'node_attributes.actions.create', :default=>['Create Node Attribute']}"/>
         </form>
       </section>
@@ -1452,38 +1452,6 @@
       <section param="content-body">
         <form owner="value" method="post" param>
           <field-list: skip="value"/>
-          <submit: label="#{ht 'node_attributes.actions.create', :default=>['Create Node Attribute']}"/>
-        </form>
-      </section>
-    </content:>
-  </page>
-</def>
-
-
-
-<def tag="new-for-sub-system-page" polymorphic/>
-<def tag="new-for-sub-system-page" for="NodeAttribute">
-  <page merge title="#{ht 'node_attributes.new_for_owner.title', :default=>['New Node Attribute for']} #{name :with => @sub_system}">
-    <body: class="new-for-owner-page  node-attribute" param/>
-
-    <content: param>
-      <header param="content-header">
-        <h2 param="heading">
-          <ht key="node_attributes.new_for_owner.heading">
-            New Node Attribute
-          </ht>
-        </h2>
-        <h3 param="subheading">
-          <ht key="node_attributes.new_for_owner.subheading">
-            For:
-          </ht>
-          <a with="&@sub_system"/>
-        </h3>
-      </header>
-
-      <section param="content-body">
-        <form owner="sub_system" method="post" param>
-          <field-list: skip="sub_system"/>
           <submit: label="#{ht 'node_attributes.actions.create', :default=>['Create Node Attribute']}"/>
         </form>
       </section>
@@ -1548,6 +1516,38 @@
       <section param="content-body">
         <form owner="value_date_range" method="post" param>
           <field-list: skip="value_date_range"/>
+          <submit: label="#{ht 'node_attributes.actions.create', :default=>['Create Node Attribute']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+
+<def tag="new-for-value-string-page" polymorphic/>
+<def tag="new-for-value-string-page" for="NodeAttribute">
+  <page merge title="#{ht 'node_attributes.new_for_owner.title', :default=>['New Node Attribute for']} #{name :with => @value_string}">
+    <body: class="new-for-owner-page  node-attribute" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="node_attributes.new_for_owner.heading">
+            New Node Attribute
+          </ht>
+        </h2>
+        <h3 param="subheading">
+          <ht key="node_attributes.new_for_owner.subheading">
+            For:
+          </ht>
+          <a with="&@value_string"/>
+        </h3>
+      </header>
+
+      <section param="content-body">
+        <form owner="value_string" method="post" param>
+          <field-list: skip="value_string"/>
           <submit: label="#{ht 'node_attributes.actions.create', :default=>['Create Node Attribute']}"/>
         </form>
       </section>
@@ -1796,7 +1796,7 @@
             </a>
           </header>
 
-          <section param="content-body" with-flash-messages>
+          <section param="content-body">
             <field-list fields="rangemin, rangemax, default_float, default_string, date_min, date_max, default_date, default_mode, default_value, node_type, parent, root" param/>
             <section param="collection-section">
               <h3 param="collection-heading">
@@ -2817,7 +2817,7 @@
             </a>
           </header>
 
-          <section param="content-body" with-flash-messages>
+          <section param="content-body">
             <field-list fields="rangemin, rangemax, default_float, default_string, date_min, date_max, default_date, default_mode, default_value, node_type, parent, project, root" param/>
             <section param="collection-section">
               <h3 param="collection-heading">

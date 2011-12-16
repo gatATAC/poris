@@ -15,3 +15,5 @@ dist
 \.chg\..*$
 \.rej$
 \.conflict\~$
+Players/Java/AstroSystems/test/configRight.xml
+Players/Java/AstroSystems/test/configLeft.xml
