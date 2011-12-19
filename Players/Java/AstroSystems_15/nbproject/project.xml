@@ -7,7 +7,7 @@
             <minimum-ant-version>1.6.5</minimum-ant-version>
             <explicit-platform explicit-source-supported="true"/>
             <source-roots>
-                <root id="src.src.dir" name="..\AstroSystems\src"/>
+                <root id="src.src.dir" name="src"/>
             </source-roots>
             <test-roots>
                 <root id="test.src.dir" name="test"/>
