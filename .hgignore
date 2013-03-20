@@ -17,3 +17,6 @@ dist
 \.conflict\~$
 Players/Java/AstroSystems/test/configRight.xml
 Players/Java/AstroSystems/test/configLeft.xml
+Editors/Web/PorisWebEditor/script/server~
+Editors/Web/PorisWebEditor/Gemfile~
+Editors/Web/PorisWebEditor/Gemfile.lock
