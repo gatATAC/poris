@@ -63,7 +63,7 @@ class GraphmlCodeGen < CodeGen
 
   def get_tree_data_xml_lb(shownode)
     if (shownode.has_children?)
-      ret="<folder title=\""+shownode.name+"\" code=\""+shownode.id.to_s+"\""+" img=\""+shownode.node_type.img_link+"\" action=\""+self.id.to_s+"\" >"
+      ret="<folder title=\""+shownode.to_s_scope_kind(self)+"\" code=\""+shownode.id.to_s+"\""+" img=\""+shownode.node_type.img_link+"\" action=\""+self.id.to_s+"\" >"
       shownode.sub_libs.each {|n|
         ret+=get_tree_data_xml_lb(n)
       }
@@ -72,7 +72,7 @@ class GraphmlCodeGen < CodeGen
       }
       ret+="</folder>"
     else
-      ret="<leaf title=\""+shownode.name+"\" code=\""+shownode.id.to_s+"\""+" img=\""+shownode.node_type.img_link+"\" action=\""+self.id.to_s+"\" />"
+      ret="<leaf title=\""+shownode.to_s_scope_kind(self)+"\" code=\""+shownode.id.to_s+"\""+" img=\""+shownode.node_type.img_link+"\" action=\""+self.id.to_s+"\" />"
     end
     return ret
   end
@@ -149,20 +149,20 @@ class GraphmlCodeGen < CodeGen
         <y:ProxyAutoBoundsNode>
           <y:Realizers active=\"0\">
             <y:GroupNode>
-              <y:Geometry height=\""+(row_size*100).to_s+"\" width=\""+(column_size*100).to_s+"\" x=\""+(column*100).to_s+"\" y=\""+(row*100).to_s+"\"/>
+              <y:Geometry height=\""+(row_size*60).to_s+"\" width=\""+(column_size*80).to_s+"\" x=\""+(column*80).to_s+"\" y=\""+(row*60).to_s+"\"/>
               <y:Fill color=\"#F5F5F5\" transparent=\"false\"/>
               <y:BorderStyle color=\"#000000\" type=\"dashed\" width=\"1.0\"/>
-              <y:NodeLabel alignment=\"right\" autoSizePolicy=\"node_width\" backgroundColor=\"#EBEBEB\" fontFamily=\"Dialog\" fontSize=\"15\" fontStyle=\"plain\" hasLineColor=\"false\" height=\"22.37646484375\" modelName=\"internal\" modelPosition=\"t\" textColor=\"#000000\" visible=\"true\" width=\"135.0\" x=\"0.0\" y=\"0.0\">"+shownode.name+"</y:NodeLabel>
+              <y:NodeLabel alignment=\"right\" autoSizePolicy=\"node_width\" backgroundColor=\"#EBEBEB\" fontFamily=\"Dialog\" fontSize=\"15\" fontStyle=\"plain\" hasLineColor=\"false\" height=\"22.37646484375\" modelName=\"internal\" modelPosition=\"t\" textColor=\"#000000\" visible=\"true\" width=\"135.0\" x=\"0.0\" y=\"0.0\">"+shownode.to_s_scope_kind(self)+"</y:NodeLabel>
               <y:Shape type=\"roundrectangle\"/>
               <y:State closed=\"false\" innerGraphDisplayEnabled=\"false\"/>
               <y:Insets bottom=\"15\" left=\"15\" right=\"15\" top=\"15\"/>
               <y:BorderInsets bottom=\"0\" left=\"0\" right=\"0\" top=\"0\"/>
             </y:GroupNode>
             <y:GroupNode>
-              <y:Geometry height=\""+(row_size*100).to_s+"\" width=\""+(column_size*100).to_s+"\" x=\""+(column*100).to_s+"\" y=\""+(row*100).to_s+"\"/>
+              <y:Geometry height=\""+(row_size*60).to_s+"\" width=\""+(column_size*80).to_s+"\" x=\""+(column*80).to_s+"\" y=\""+(row*60).to_s+"\"/>
               <y:Fill color=\"#CAECFF84\" transparent=\"false\"/>
               <y:BorderStyle color=\"#666699\" type=\"dotted\" width=\"1.0\"/>
-              <y:NodeLabel alignment=\"right\" autoSizePolicy=\"node_width\" backgroundColor=\"#99CCFF\" fontFamily=\"Dialog\" fontSize=\"15\" fontStyle=\"plain\" hasLineColor=\"false\" height=\"22.37646484375\" modelName=\"internal\" modelPosition=\"t\" textColor=\"#000000\" visible=\"true\" width=\"100.0\" x=\"0.0\" y=\"0.0\">"+shownode.name+"</y:NodeLabel>
+              <y:NodeLabel alignment=\"right\" autoSizePolicy=\"node_width\" backgroundColor=\"#99CCFF\" fontFamily=\"Dialog\" fontSize=\"15\" fontStyle=\"plain\" hasLineColor=\"false\" height=\"22.37646484375\" modelName=\"internal\" modelPosition=\"t\" textColor=\"#000000\" visible=\"true\" width=\"100.0\" x=\"0.0\" y=\"0.0\">"+shownode.to_s_scope_kind(self)+"</y:NodeLabel>
               <y:Shape type=\"roundrectangle\"/>
               <y:State closed=\"true\" innerGraphDisplayEnabled=\"false\"/>
               <y:Insets bottom=\"15\" left=\"15\" right=\"15\" top=\"15\"/>
@@ -181,10 +181,10 @@ class GraphmlCodeGen < CodeGen
               <data key=\"d1\"/>
               <data key=\"d2\">
                 <y:ShapeNode>
-                  <y:Geometry height=\"30.0\" width=\"92.0\" x=\""+(column*100).to_s+"\" y=\""+(row*100).to_s+"\"/>
+                  <y:Geometry height=\"30.0\" width=\"92.0\" x=\""+(column*80).to_s+"\" y=\""+(row*60).to_s+"\"/>
                 <y:Fill color=\"#FFCC00\" transparent=\"false\"/>
                   <y:BorderStyle color=\"#000000\" type=\"line\" width=\"1.0\"/>
-                  <y:NodeLabel alignment=\"center\" autoSizePolicy=\"content\" fontFamily=\"Dialog\" fontSize=\"12\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"18.701171875\" modelName=\"internal\" modelPosition=\"c\" textColor=\"#000000\" visible=\"true\" width=\"34.69140625\" x=\"0.0\" y=\"0.0\">"+shownode.name+"</y:NodeLabel>
+                  <y:NodeLabel alignment=\"center\" autoSizePolicy=\"content\" fontFamily=\"Dialog\" fontSize=\"12\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"18.701171875\" modelName=\"internal\" modelPosition=\"c\" textColor=\"#000000\" visible=\"true\" width=\"34.69140625\" x=\"0.0\" y=\"0.0\">"+shownode.to_s_scope_kind(self)+"</y:NodeLabel>
                   <y:Shape type=\"roundrectangle\"/>
                 </y:ShapeNode>
               </data>
@@ -197,7 +197,7 @@ class GraphmlCodeGen < CodeGen
               <data key=\"d5\">
                 <y:PolyLineEdge>
                   <y:Path sx=\"0.0\" sy=\"0.0\" tx=\"0.0\" ty=\"0.0\"/>
-                  <y:LineStyle color=\"#FF9900\" type=\"dotted\" width=\"1.0\"/>"
+                  <y:LineStyle color=\"#FF6600\" type=\"line\" width=\"1.0\"/>"
       if (shownode.default_value==n || (!shownode.default_value && order==0) )
         ret+="<y:Arrows source=\"diamond\" target=\"plain\"/>"
       else
@@ -218,7 +218,7 @@ class GraphmlCodeGen < CodeGen
               <data key=\"d5\">
                 <y:PolyLineEdge>
                   <y:Path sx=\"0.0\" sy=\"0.0\" tx=\"0.0\" ty=\"0.0\"/>
-                  <y:LineStyle color=\"#FF9900\" type=\"dotted\" width=\"1.0\"/>"
+                  <y:LineStyle color=\"#FF6600\" type=\"line\" width=\"1.0\"/>"
       if (shownode.default_mode==n || (!shownode.default_mode && order==0) )
         ret+="<y:Arrows source=\"diamond\" target=\"plain\"/>"
       else
@@ -238,7 +238,7 @@ class GraphmlCodeGen < CodeGen
 
   def get_tree_data_xml_md_ant(shownode)
     if (shownode.has_children?)
-      ret="<folder title=\""+shownode.name+"\" code=\""+shownode.id.to_s+"\""+" img=\""+shownode.node_type.img_link+"\" >"
+      ret="<folder title=\""+shownode.to_s_scope_kind(self)+"\" code=\""+shownode.id.to_s+"\""+" img=\""+shownode.node_type.img_link+"\" >"
       shownode.values.each {|n|
         ret+=get_tree_data_xml_vl(n)
       }
@@ -247,7 +247,7 @@ class GraphmlCodeGen < CodeGen
       }
       ret+="</folder>"
     else
-      ret="<leaf title=\""+shownode.name+"\" code=\""+shownode.id.to_s+"\""+" img=\""+shownode.node_type.img_link+"\" />"
+      ret="<leaf title=\""+shownode.to_s_scope_kind(self)+"\" code=\""+shownode.id.to_s+"\""+" img=\""+shownode.node_type.img_link+"\" />"
     end
     return ret
   end
@@ -267,10 +267,10 @@ class GraphmlCodeGen < CodeGen
               <data key=\"d1\"/>
               <data key=\"d2\">
                 <y:ShapeNode>
-                  <y:Geometry height=\"30.0\" width=\"92.0\" x=\""+(column*100).to_s+"\" y=\""+(row*100).to_s+"\"/>
+                  <y:Geometry height=\"30.0\" width=\"92.0\" x=\""+(column*80).to_s+"\" y=\""+(row*60).to_s+"\"/>
                   <y:Fill color=\"#99CCFF\" transparent=\"false\"/>
                   <y:BorderStyle color=\"#000000\" type=\"line\" width=\"1.0\"/>
-                  <y:NodeLabel alignment=\"center\" autoSizePolicy=\"content\" fontFamily=\"Dialog\" fontSize=\"12\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"18.701171875\" modelName=\"internal\" modelPosition=\"c\" textColor=\"#000000\" visible=\"true\" width=\"34.69140625\" x=\"0.0\" y=\"0.0\">"+shownode.name+"</y:NodeLabel>
+                  <y:NodeLabel alignment=\"center\" autoSizePolicy=\"content\" fontFamily=\"Dialog\" fontSize=\"12\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"18.701171875\" modelName=\"internal\" modelPosition=\"c\" textColor=\"#000000\" visible=\"true\" width=\"34.69140625\" x=\"0.0\" y=\"0.0\">"+shownode.to_s_scope_kind(self)+"</y:NodeLabel>
                   <y:Shape type=\"parallelogram\"/>
                 </y:ShapeNode>
               </data>
@@ -287,10 +287,10 @@ class GraphmlCodeGen < CodeGen
               <data key=\"d1\"/>
               <data key=\"d2\">
                 <y:ShapeNode>
-                  <y:Geometry height=\"30.0\" width=\"92.0\" x=\""+(column*100).to_s+"\" y=\""+(row*100).to_s+"\"/>
+                  <y:Geometry height=\"30.0\" width=\"92.0\" x=\""+(column*80).to_s+"\" y=\""+(row*60).to_s+"\"/>
                   <y:Fill color=\"#CCFFCC\" transparent=\"false\"/>
                   <y:BorderStyle color=\"#000000\" type=\"line\" width=\"1.0\"/>
-                  <y:NodeLabel alignment=\"center\" autoSizePolicy=\"content\" fontFamily=\"Dialog\" fontSize=\"12\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"18.701171875\" modelName=\"internal\" modelPosition=\"c\" textColor=\"#000000\" visible=\"true\" width=\"34.69140625\" x=\"0.0\" y=\"0.0\">"+shownode.name+"</y:NodeLabel>
+                  <y:NodeLabel alignment=\"center\" autoSizePolicy=\"content\" fontFamily=\"Dialog\" fontSize=\"12\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"18.701171875\" modelName=\"internal\" modelPosition=\"c\" textColor=\"#000000\" visible=\"true\" width=\"34.69140625\" x=\"0.0\" y=\"0.0\">"+shownode.to_s_scope_kind(self)+"</y:NodeLabel>
                   <y:Shape type=\"parallelogram\"/>
                 </y:ShapeNode>
               </data>
@@ -308,7 +308,7 @@ class GraphmlCodeGen < CodeGen
           <data key=\"d1\"/>
           <data key=\"d2\">
             <y:ShapeNode>
-              <y:Geometry height=\"30.0\" width=\"30.0\" x=\""+(column*100).to_s+"\" y=\""+(row*100).to_s+"\"/>
+              <y:Geometry height=\"30.0\" width=\"30.0\" x=\""+(column*80).to_s+"\" y=\""+(row*60).to_s+"\"/>
               <y:Fill color=\"#FFFF00\" transparent=\"false\"/>
               <y:BorderStyle hasColor=\"false\" type=\"line\" width=\"1.0\"/>
               <y:NodeLabel alignment=\"center\" autoSizePolicy=\"content\" fontFamily=\"Dialog\" fontSize=\"12\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"18.701171875\" modelName=\"internal\" modelPosition=\"c\" textColor=\"#000000\" visible=\"true\" width=\"20.681640625\" x=\"4.6591796875\" y=\"5.6494140625\">"+shownode.rangemin.to_s+"</y:NodeLabel>
@@ -321,7 +321,7 @@ class GraphmlCodeGen < CodeGen
           <data key=\"d1\"/>
           <data key=\"d2\">
             <y:ShapeNode>
-              <y:Geometry height=\"30.0\" width=\"30.0\" x=\""+((column+1)*100).to_s+"\" y=\""+(row*100).to_s+"\"/>
+              <y:Geometry height=\"30.0\" width=\"30.0\" x=\""+((column+1)*80).to_s+"\" y=\""+(row*60).to_s+"\"/>
               <y:Fill color=\"#FFFF00\" transparent=\"false\"/>
               <y:BorderStyle hasColor=\"false\" type=\"line\" width=\"1.0\"/>
               <y:NodeLabel alignment=\"center\" autoSizePolicy=\"content\" fontFamily=\"Dialog\" fontSize=\"12\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"18.701171875\" modelName=\"internal\" modelPosition=\"c\" textColor=\"#000000\" visible=\"true\" width=\"30.6953125\" x=\"-0.34765625\" y=\"5.6494140625\">"+shownode.rangemax.to_s+"</y:NodeLabel>
@@ -334,7 +334,7 @@ class GraphmlCodeGen < CodeGen
           <data key=\"d1\"/>
           <data key=\"d2\">
             <y:ShapeNode>
-              <y:Geometry height=\"30.0\" width=\"30.0\" x=\""+((column+0.5)*100).to_s+"\" y=\""+(row*100).to_s+"\"/>
+              <y:Geometry height=\"30.0\" width=\"30.0\" x=\""+((column+0.5)*80).to_s+"\" y=\""+(row*60).to_s+"\"/>
               <y:Fill color=\"#FFFF00\" transparent=\"false\"/>
               <y:BorderStyle hasColor=\"false\" type=\"line\" width=\"1.0\"/>
               <y:NodeLabel alignment=\"center\" autoSizePolicy=\"content\" fontFamily=\"Dialog\" fontSize=\"12\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"18.701171875\" modelName=\"internal\" modelPosition=\"c\" textColor=\"#000000\" visible=\"true\" width=\"34.029296875\" x=\"-2.0146484375\" y=\"5.6494140625\">"+shownode.default_float.to_s+"</y:NodeLabel>
@@ -349,20 +349,20 @@ class GraphmlCodeGen < CodeGen
         <y:ProxyAutoBoundsNode>
           <y:Realizers active=\"0\">
             <y:GroupNode>
-              <y:Geometry height=\"30.0\" width=\"92.0\" x=\""+(column*100).to_s+"\" y=\""+(row*100).to_s+"\"/>
+              <y:Geometry height=\"30.0\" width=\"92.0\" x=\""+(column*80).to_s+"\" y=\""+(row*60).to_s+"\"/>
               <y:Fill color=\"#CCFFCC\" transparent=\"false\"/>
               <y:BorderStyle color=\"#666699\" type=\"dotted\" width=\"1.0\"/>
-              <y:NodeLabel alignment=\"right\" autoSizePolicy=\"node_width\" fontFamily=\"Dialog\" fontSize=\"15\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"22.37646484375\" modelName=\"internal\" modelPosition=\"t\" textColor=\"#000000\" visible=\"true\" width=\"164.34765625\" x=\"0.0\" y=\"0.0\">"+shownode.name+"</y:NodeLabel>
+              <y:NodeLabel alignment=\"right\" autoSizePolicy=\"node_width\" fontFamily=\"Dialog\" fontSize=\"15\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"22.37646484375\" modelName=\"internal\" modelPosition=\"t\" textColor=\"#000000\" visible=\"true\" width=\"164.34765625\" x=\"0.0\" y=\"0.0\">"+shownode.to_s_scope_kind(self)+"</y:NodeLabel>
               <y:Shape type=\"parallelogram\"/>
               <y:State closed=\"false\" innerGraphDisplayEnabled=\"false\"/>
               <y:Insets bottom=\"15\" left=\"15\" right=\"15\" top=\"15\"/>
               <y:BorderInsets bottom=\"0\" left=\"0\" right=\"0\" top=\"0\"/>
             </y:GroupNode>
             <y:GroupNode>
-              <y:Geometry height=\"30.0\" width=\"92.0\" x=\""+(column*100).to_s+"\" y=\""+(row*100).to_s+"\"/>
+              <y:Geometry height=\"30.0\" width=\"92.0\" x=\""+(column*80).to_s+"\" y=\""+(row*60).to_s+"\"/>
               <y:Fill color=\"#CAECFF84\" transparent=\"false\"/>
               <y:BorderStyle color=\"#666699\" type=\"dotted\" width=\"1.0\"/>
-              <y:NodeLabel alignment=\"right\" autoSizePolicy=\"node_width\" backgroundColor=\"#99CCFF\" fontFamily=\"Dialog\" fontSize=\"15\" fontStyle=\"plain\" hasLineColor=\"false\" height=\"22.37646484375\" modelName=\"internal\" modelPosition=\"t\" textColor=\"#000000\" visible=\"true\" width=\"129.859375\" x=\"-14.9296875\" y=\"0.0\">"+shownode.name+"</y:NodeLabel>
+              <y:NodeLabel alignment=\"right\" autoSizePolicy=\"node_width\" backgroundColor=\"#99CCFF\" fontFamily=\"Dialog\" fontSize=\"15\" fontStyle=\"plain\" hasLineColor=\"false\" height=\"22.37646484375\" modelName=\"internal\" modelPosition=\"t\" textColor=\"#000000\" visible=\"true\" width=\"129.859375\" x=\"-14.9296875\" y=\"0.0\">"+shownode.to_s_scope_kind(self)+"</y:NodeLabel>
               <y:Shape type=\"parallelogram\"/>
               <y:State closed=\"true\" innerGraphDisplayEnabled=\"false\"/>
               <y:Insets bottom=\"15\" left=\"15\" right=\"15\" top=\"15\"/>
@@ -408,7 +408,7 @@ class GraphmlCodeGen < CodeGen
           <data key=\"d1\"/>
           <data key=\"d2\">
             <y:ShapeNode>
-              <y:Geometry height=\"30.0\" width=\"30.0\" x=\""+(column*100).to_s+"\" y=\""+(row*100).to_s+"\"/>
+              <y:Geometry height=\"30.0\" width=\"30.0\" x=\""+(column*80).to_s+"\" y=\""+(row*60).to_s+"\"/>
               <y:Fill color=\"#FFFF00\" transparent=\"false\"/>
               <y:BorderStyle hasColor=\"false\" type=\"line\" width=\"1.0\"/>
               <y:NodeLabel alignment=\"center\" autoSizePolicy=\"content\" fontFamily=\"Dialog\" fontSize=\"12\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"18.701171875\" modelName=\"internal\" modelPosition=\"c\" textColor=\"#000000\" visible=\"true\" width=\"20.681640625\" x=\"4.6591796875\" y=\"5.6494140625\">"+shownode.date_min.to_s+"</y:NodeLabel>
@@ -421,7 +421,7 @@ class GraphmlCodeGen < CodeGen
           <data key=\"d1\"/>
           <data key=\"d2\">
             <y:ShapeNode>
-              <y:Geometry height=\"30.0\" width=\"30.0\" x=\""+((column+1)*100).to_s+"\" y=\""+(row*100).to_s+"\"/>
+              <y:Geometry height=\"30.0\" width=\"30.0\" x=\""+((column+1)*80).to_s+"\" y=\""+(row*60).to_s+"\"/>
               <y:Fill color=\"#FFFF00\" transparent=\"false\"/>
               <y:BorderStyle hasColor=\"false\" type=\"line\" width=\"1.0\"/>
               <y:NodeLabel alignment=\"center\" autoSizePolicy=\"content\" fontFamily=\"Dialog\" fontSize=\"12\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"18.701171875\" modelName=\"internal\" modelPosition=\"c\" textColor=\"#000000\" visible=\"true\" width=\"30.6953125\" x=\"-0.34765625\" y=\"5.6494140625\">"+shownode.date_max.to_s+"</y:NodeLabel>
@@ -434,7 +434,7 @@ class GraphmlCodeGen < CodeGen
           <data key=\"d1\"/>
           <data key=\"d2\">
             <y:ShapeNode>
-              <y:Geometry height=\"30.0\" width=\"30.0\" x=\""+((column+0.5)*100).to_s+"\" y=\""+(row*100).to_s+"\"/>
+              <y:Geometry height=\"30.0\" width=\"30.0\" x=\""+((column+0.5)*80).to_s+"\" y=\""+(row*60).to_s+"\"/>
               <y:Fill color=\"#FFFF00\" transparent=\"false\"/>
               <y:BorderStyle hasColor=\"false\" type=\"line\" width=\"1.0\"/>
               <y:NodeLabel alignment=\"center\" autoSizePolicy=\"content\" fontFamily=\"Dialog\" fontSize=\"12\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"18.701171875\" modelName=\"internal\" modelPosition=\"c\" textColor=\"#000000\" visible=\"true\" width=\"34.029296875\" x=\"-2.0146484375\" y=\"5.6494140625\">"+shownode.default_date.to_s+"</y:NodeLabel>
@@ -449,20 +449,20 @@ class GraphmlCodeGen < CodeGen
         <y:ProxyAutoBoundsNode>
           <y:Realizers active=\"0\">
             <y:GroupNode>
-              <y:Geometry height=\"30.0\" width=\"92.0\" x=\""+(column*100).to_s+"\" y=\""+(row*100).to_s+"\"/>
+              <y:Geometry height=\"30.0\" width=\"92.0\" x=\""+(column*80).to_s+"\" y=\""+(row*60).to_s+"\"/>
               <y:Fill color=\"#CCFFCC\" transparent=\"false\"/>
               <y:BorderStyle color=\"#666699\" type=\"dotted\" width=\"1.0\"/>
-              <y:NodeLabel alignment=\"right\" autoSizePolicy=\"node_width\" fontFamily=\"Dialog\" fontSize=\"15\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"22.37646484375\" modelName=\"internal\" modelPosition=\"t\" textColor=\"#000000\" visible=\"true\" width=\"164.34765625\" x=\"0.0\" y=\"0.0\">"+shownode.name+"</y:NodeLabel>
+              <y:NodeLabel alignment=\"right\" autoSizePolicy=\"node_width\" fontFamily=\"Dialog\" fontSize=\"15\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"22.37646484375\" modelName=\"internal\" modelPosition=\"t\" textColor=\"#000000\" visible=\"true\" width=\"164.34765625\" x=\"0.0\" y=\"0.0\">"+shownode.to_s_scope_kind(self)+"</y:NodeLabel>
               <y:Shape type=\"parallelogram\"/>
               <y:State closed=\"false\" innerGraphDisplayEnabled=\"false\"/>
               <y:Insets bottom=\"15\" left=\"15\" right=\"15\" top=\"15\"/>
               <y:BorderInsets bottom=\"0\" left=\"0\" right=\"0\" top=\"0\"/>
             </y:GroupNode>
             <y:GroupNode>
-              <y:Geometry height=\"30.0\" width=\"92.0\" x=\""+(column*100).to_s+"\" y=\""+(row*100).to_s+"\"/>
+              <y:Geometry height=\"30.0\" width=\"92.0\" x=\""+(column*80).to_s+"\" y=\""+(row*60).to_s+"\"/>
               <y:Fill color=\"#CAECFF84\" transparent=\"false\"/>
               <y:BorderStyle color=\"#666699\" type=\"dotted\" width=\"1.0\"/>
-              <y:NodeLabel alignment=\"right\" autoSizePolicy=\"node_width\" backgroundColor=\"#99CCFF\" fontFamily=\"Dialog\" fontSize=\"15\" fontStyle=\"plain\" hasLineColor=\"false\" height=\"22.37646484375\" modelName=\"internal\" modelPosition=\"t\" textColor=\"#000000\" visible=\"true\" width=\"129.859375\" x=\"-14.9296875\" y=\"0.0\">"+shownode.name+"</y:NodeLabel>
+              <y:NodeLabel alignment=\"right\" autoSizePolicy=\"node_width\" backgroundColor=\"#99CCFF\" fontFamily=\"Dialog\" fontSize=\"15\" fontStyle=\"plain\" hasLineColor=\"false\" height=\"22.37646484375\" modelName=\"internal\" modelPosition=\"t\" textColor=\"#000000\" visible=\"true\" width=\"129.859375\" x=\"-14.9296875\" y=\"0.0\">"+shownode.to_s_scope_kind(self)+"</y:NodeLabel>
               <y:Shape type=\"parallelogram\"/>
               <y:State closed=\"true\" innerGraphDisplayEnabled=\"false\"/>
               <y:Insets bottom=\"15\" left=\"15\" right=\"15\" top=\"15\"/>
