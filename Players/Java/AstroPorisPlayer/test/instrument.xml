@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-      <sub-systems-v4><value>
+      <sub-systems-v4>
+<value-file-path>
+  <default-string>mypreimagingfile.fits</default-string>
+  <id type="integer">628</id>
+  <name>PreImagingFile</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">17</project-id>
+  <type>ValueFilePath</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <destinations type="array"/>
+  <labels type="array"/>
+  <file-extension>fits</file-extension>
+  <file-description>FITS file</file-description>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>370.0</content>
+      <name>rangeMin(&#197;)</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>  
+  </node-attributes>
+</value-file-path>
+<value>
   <id type="integer">537</id>
   <name>R300B</name>
   <node-type-id type="integer">5</node-type-id>
@@ -1750,18 +1771,6 @@
   <labels type="array"/>
   <node-attributes type="array"/>
 </mode>
-<value-string>
-  <default-string>mypreimagingfile.fits</default-string>
-  <id type="integer">628</id>
-  <name>PreImagingFile</name>
-  <node-type-id type="integer">5</node-type-id>
-  <project-id type="integer">17</project-id>
-  <type>ValueString</type>
-  <value-formatter-id type="integer" nil="true"></value-formatter-id>
-  <destinations type="array"/>
-  <labels type="array"/>
-  <node-attributes type="array"/>
-</value-string>
 <mode>
   <default-mode-id type="integer" nil="true"></default-mode-id>
   <default-value-id type="integer">628</default-value-id>
