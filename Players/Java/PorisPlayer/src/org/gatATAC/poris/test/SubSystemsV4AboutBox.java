@@ -42,45 +42,45 @@ public class SubSystemsV4AboutBox extends javax.swing.JDialog {
         detailsText = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(org.gatATAC.poris.test.SubSystemsV4App.class).getContext().getResourceMap(SubSystemsV4AboutBox.class);
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance().getContext().getResourceMap(SubSystemsV4AboutBox.class);
         setTitle(resourceMap.getString("title")); // NOI18N
         setModal(true);
         setName("aboutBox"); // NOI18N
         setResizable(false);
 
-        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(org.gatATAC.poris.test.SubSystemsV4App.class).getContext().getActionMap(SubSystemsV4AboutBox.class, this);
+        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance().getContext().getActionMap(SubSystemsV4AboutBox.class, this);
         closeButton.setAction(actionMap.get("closeAboutBox")); // NOI18N
         closeButton.setName("closeButton"); // NOI18N
 
         appTitleLabel.setFont(appTitleLabel.getFont().deriveFont(appTitleLabel.getFont().getStyle() | java.awt.Font.BOLD, appTitleLabel.getFont().getSize()+4));
-        appTitleLabel.setText(resourceMap.getString("Application.title")); // NOI18N
+        appTitleLabel.setText("gatATAC Poris Systems Player"); // NOI18N
         appTitleLabel.setName("appTitleLabel"); // NOI18N
 
         versionLabel.setFont(versionLabel.getFont().deriveFont(versionLabel.getFont().getStyle() | java.awt.Font.BOLD));
-        versionLabel.setText(resourceMap.getString("versionLabel.text")); // NOI18N
+        versionLabel.setText("Product Version:"); // NOI18N
         versionLabel.setName("versionLabel"); // NOI18N
 
         appVersionLabel.setText(resourceMap.getString("Application.version")); // NOI18N
         appVersionLabel.setName("appVersionLabel"); // NOI18N
 
         vendorLabel.setFont(vendorLabel.getFont().deriveFont(vendorLabel.getFont().getStyle() | java.awt.Font.BOLD));
-        vendorLabel.setText(resourceMap.getString("vendorLabel.text")); // NOI18N
+        vendorLabel.setText("Vendor:");
         vendorLabel.setName("vendorLabel"); // NOI18N
 
-        appVendorLabel.setText(resourceMap.getString("Application.vendor")); // NOI18N
+        appVendorLabel.setText("gatATAC.org"); // NOI18N
         appVendorLabel.setName("appVendorLabel"); // NOI18N
 
         homepageLabel.setFont(homepageLabel.getFont().deriveFont(homepageLabel.getFont().getStyle() | java.awt.Font.BOLD));
-        homepageLabel.setText(resourceMap.getString("homepageLabel.text")); // NOI18N
+        homepageLabel.setText("Homepage:");
         homepageLabel.setName("homepageLabel"); // NOI18N
 
-        appHomepageLabel.setText(resourceMap.getString("Application.homepage")); // NOI18N
+        appHomepageLabel.setText("http://www.elporis.com"); // NOI18N
         appHomepageLabel.setName("appHomepageLabel"); // NOI18N
 
-        appDescLabel.setText(resourceMap.getString("appDescLabel.text")); // NOI18N
+        appDescLabel.setText("<html>A simple java desktop application to show gatATAC Poris Systems and work interactively with them.");
         appDescLabel.setName("appDescLabel"); // NOI18N
 
-        imageLabel.setIcon(resourceMap.getIcon("imageLabel.icon")); // NOI18N
+        imageLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/gatATAC/poris/test/resources/about.png"))); // NOI18N
         imageLabel.setName("imageLabel"); // NOI18N
 
         jScrollPane1.setName("jScrollPane1"); // NOI18N

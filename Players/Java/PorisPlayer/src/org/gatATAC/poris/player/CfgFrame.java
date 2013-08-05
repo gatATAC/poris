@@ -13,8 +13,8 @@ import org.gatATAC.poris.Cfg;
 import org.gatATAC.poris.SNodeLib;
 import org.gatATAC.poris.SNodeXML;
 import org.gatATAC.poris.SubSystem;
+import org.gatATAC.poris.player.app.AboutBox;
 import org.gatATAC.poris.player.app.PorisGUIAppDelegate;
-import org.gatATAC.poris.test.SubSystemsV4AboutBox;
 
 /**
  *
@@ -27,19 +27,22 @@ public class CfgFrame extends javax.swing.JFrame {
     private final PorisGUIAppDelegate delegate;
     private final boolean showXMLButtons;
     private final boolean showInvisible;
+    private final boolean showAbout;
 
     /** Creates new form CfgFrame */
     public CfgFrame() {
         this.showXMLButtons=false;
         this.showInvisible=false;
+        this.showAbout=true;
         initComponents();
         delegate=null;
     }
 
-    public CfgFrame(PorisGUIAppDelegate delegate, boolean showXMLButtons, boolean showInvisible) {
+    public CfgFrame(PorisGUIAppDelegate delegate, boolean showXMLButtons, boolean showInvisible, boolean showAbout) {
         this.showXMLButtons=showXMLButtons;
         this.delegate = delegate;
         this.showInvisible=showInvisible;
+        this.showAbout=showAbout;
         initComponents();
     }
 
@@ -61,7 +64,7 @@ public class CfgFrame extends javax.swing.JFrame {
         changePanel = new javax.swing.JPanel();
         commitButton = new javax.swing.JButton();
         discardButton = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        aboutButton = new javax.swing.JButton();
 
         setTitle("Instrument Configuration");
         setName("Form"); // NOI18N
@@ -82,7 +85,7 @@ public class CfgFrame extends javax.swing.JFrame {
         );
         resultPanelLayout.setVerticalGroup(
             resultPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 309, Short.MAX_VALUE)
+            .add(0, 440, Short.MAX_VALUE)
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -166,13 +169,14 @@ public class CfgFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("About");
-        jButton1.setName("jButton1"); // NOI18N
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        aboutButton.setText("About");
+        aboutButton.setName("aboutButton"); // NOI18N
+        aboutButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                aboutButtonActionPerformed(evt);
             }
         });
+        aboutButton.setVisible(this.showAbout);
 
         org.jdesktop.layout.GroupLayout changePanelLayout = new org.jdesktop.layout.GroupLayout(changePanel);
         changePanel.setLayout(changePanelLayout);
@@ -184,7 +188,7 @@ public class CfgFrame extends javax.swing.JFrame {
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(discardButton)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 233, Short.MAX_VALUE)
-                .add(jButton1)
+                .add(aboutButton)
                 .addContainerGap())
         );
         changePanelLayout.setVerticalGroup(
@@ -194,7 +198,7 @@ public class CfgFrame extends javax.swing.JFrame {
                 .add(changePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(commitButton)
                     .add(discardButton)
-                    .add(jButton1))
+                    .add(aboutButton))
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -226,11 +230,11 @@ public class CfgFrame extends javax.swing.JFrame {
         this.delegate.discardChanges();
     }//GEN-LAST:event_discardButtonActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-            SubSystemsV4AboutBox aboutBox = new SubSystemsV4AboutBox(this);
+    private void aboutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutButtonActionPerformed
+            AboutBox aboutBox = new AboutBox(this);
             aboutBox.setLocationRelativeTo(this);
             aboutBox.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_aboutButtonActionPerformed
 
     public String getApplicationDetails(){
         return this.delegate.getApplicationDetails();
@@ -278,9 +282,10 @@ public class CfgFrame extends javax.swing.JFrame {
         super.hide();
     }
 
-    public CfgFrame(PorisGUIAppDelegate delegate, boolean showXMLButtons, JPanel changePanel, JButton commitButton, JButton discardButton, JPanel filePanel, JPanel mainPanel, JPanel resultPanel, JButton viewCfgXMLButton, JButton viewModelXMLButton, boolean showInvisible) {
+    public CfgFrame(PorisGUIAppDelegate delegate, boolean showXMLButtons, JPanel changePanel, JButton commitButton, JButton discardButton, JPanel filePanel, JPanel mainPanel, JPanel resultPanel, JButton viewCfgXMLButton, JButton viewModelXMLButton, boolean showInvisible, boolean showAbout) {
         this.delegate = delegate;
         this.showInvisible = showInvisible;
+        this.showAbout=showAbout;
         this.showXMLButtons = showXMLButtons;
         this.changePanel = changePanel;
         this.commitButton = commitButton;
@@ -331,11 +336,11 @@ public class CfgFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton aboutButton;
     private javax.swing.JPanel changePanel;
     private javax.swing.JButton commitButton;
     private javax.swing.JButton discardButton;
     private javax.swing.JPanel filePanel;
-    private javax.swing.JButton jButton1;
     public javax.swing.JPanel mainPanel;
     public javax.swing.JPanel resultPanel;
     private javax.swing.JButton viewCfgXMLButton;
