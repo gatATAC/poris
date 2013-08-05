@@ -43,8 +43,8 @@ public class AstroPorisGUIAppDelegate extends PorisGUIAppDelegate {
      * @param showXMLButtons
      * @param showInvisible
      */
-    public AstroPorisGUIAppDelegate(String instrumentFileName, boolean showXMLButtons, boolean showInvisible) {
-        super(instrumentFileName,showXMLButtons, showInvisible);
+    public AstroPorisGUIAppDelegate(String instrumentFileName, boolean showXMLButtons, boolean showInvisible, boolean showAbout) {
+        super(instrumentFileName,showXMLButtons, showInvisible, showAbout);
         this.applicationDetails+="\nAstroPorisPlayer v0.31";
     }
 
@@ -52,7 +52,7 @@ public class AstroPorisGUIAppDelegate extends PorisGUIAppDelegate {
      * 
      */
     public AstroPorisGUIAppDelegate() {
-        this("instrument.xml",true,true);
+        this("instrument.xml",true,true,true);
     }
 
     @Override

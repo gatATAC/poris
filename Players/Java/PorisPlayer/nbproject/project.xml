@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://www.netbeans.org/ns/project/1">
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://www.netbeans.org/ns/project/1">
     <type>org.netbeans.modules.java.j2seproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
@@ -22,8 +21,5 @@
                 <id>jar</id>
             </reference>
         </references>
-        <swingapp xmlns="http://www.netbeans.org/ns/form-swingapp/1">
-            <application-class name="org.gatATAC.poris.test.SubSystemsV4App"/>
-        </swingapp>
     </configuration>
 </project>
