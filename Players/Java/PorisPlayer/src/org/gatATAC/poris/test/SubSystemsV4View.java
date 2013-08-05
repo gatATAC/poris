@@ -112,7 +112,7 @@ public class SubSystemsV4View extends FrameView {
     public void showAboutBox() {
         if (aboutBox == null) {
             JFrame mainFrame = SubSystemsV4App.getApplication().getMainFrame();
-            aboutBox = new SubSystemsV4AboutBox(mainFrame);
+            //aboutBox = new SubSystemsV4AboutBox(mainFrame);
             aboutBox.setLocationRelativeTo(mainFrame);
         }
         SubSystemsV4App.getApplication().show(aboutBox);

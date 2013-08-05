@@ -23,6 +23,7 @@ public class PorisGUIAppDelegate extends PorisAppDelegate {
 
     public PorisGUIAppDelegate(String instrumentFileName, boolean showXMLButtons, boolean showInvisible) {
         super(instrumentFileName);
+        this.applicationDetails+="\nPorisPlayer v0.31";
         this.panelFrame = new CfgFrame(this, showXMLButtons,showInvisible);
         this.initialization();
     }
