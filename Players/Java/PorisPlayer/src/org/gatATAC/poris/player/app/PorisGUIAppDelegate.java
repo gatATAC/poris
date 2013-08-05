@@ -4,6 +4,7 @@
  */
 package org.gatATAC.poris.player.app;
 
+import java.awt.Dimension;
 import org.gatATAC.poris.Cfg;
 import javax.swing.JFrame;
 import org.gatATAC.poris.app.PorisAppDelegate;
@@ -67,6 +68,14 @@ public class PorisGUIAppDelegate extends PorisAppDelegate {
         }
     }
 
+    public void setSize(Dimension dim){
+        this.panelFrame.setSize(dim);
+    }
+    
+    public Dimension getSize(){
+        return this.panelFrame.getSize();
+    }
+    
     protected boolean initialization() {
         panelFrame.loadCfgIntoGUI((Cfg) this.getConfig(), ((Cfg) this.getConfig()).getModel().toString(), panelFrame.mainPanel, panelFrame.resultPanel);
         panelFrame.setTitle(""+this.getConfig()+ " configuration");

@@ -7,7 +7,6 @@ syntax: glob
 example1.graphml
 example2.graphml
 mechatronics2.tiff
-*.jar
 build
 dist
 \.orig\..*$
