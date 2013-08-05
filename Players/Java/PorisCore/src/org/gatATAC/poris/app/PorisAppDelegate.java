@@ -27,7 +27,9 @@ public class PorisAppDelegate {
     private SubSystem system;
     private Cfg config;
     private final String instrumentFileName;
-    private boolean modelLoaded;
+    private boolean modelLoaded;    
+    protected String applicationDetails;
+
     /**
      * 
      */
@@ -60,10 +62,31 @@ public class PorisAppDelegate {
     public PorisAppDelegate(String instrumentFileName) {
         this.instrumentFileName = instrumentFileName;
         this.modelLoaded = false;
+        this.applicationDetails="PorisCore v0.2";
         this.packageInit();
         this.loadModel();
     }
 
+
+    /**
+     * Get the value of applicationDetails
+     *
+     * @return the value of applicationDetails
+     */
+    public String getApplicationDetails() {
+        return applicationDetails;
+    }
+
+    /**
+     * Set the value of applicationDetails
+     *
+     * @param applicationDetails new value of applicationDetails
+     */
+    public void setApplicationDetails(String applicationDetails) {
+        this.applicationDetails = applicationDetails;
+    }
+    
+    
     /**
      * 
      */
