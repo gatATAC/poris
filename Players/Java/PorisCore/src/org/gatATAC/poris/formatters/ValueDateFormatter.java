@@ -8,6 +8,7 @@ import org.gatATAC.poris.ValueDateRange;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 /**
  *
@@ -59,6 +60,7 @@ public class ValueDateFormatter extends ValueFormatter {
         super(name, label, id);
         this.dateFormatString = label;
         this.normalFormat = new SimpleDateFormat(this.dateFormatString);
+        this.normalFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
     }
 
     /**
@@ -70,6 +72,7 @@ public class ValueDateFormatter extends ValueFormatter {
         super(name, defaultDateFormatString, id);
         this.dateFormatString = defaultDateFormatString;
         this.normalFormat = defaultNormalFormat;
+        this.normalFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
     }
 
     /**
@@ -108,6 +111,7 @@ public class ValueDateFormatter extends ValueFormatter {
      * @return
      */
     public Date getValue(String strValue) {
+        this.normalFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
         return this.getValueForFormat(strValue, normalFormat,normalFormat);
     }
 
@@ -117,6 +121,7 @@ public class ValueDateFormatter extends ValueFormatter {
      * @return
      */
     public String getValue(Date value) {
+        normalFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
         return this.getValueForFormat(value, normalFormat);
     }
 

@@ -62,7 +62,7 @@ public class PorisAppDelegate {
     public PorisAppDelegate(String instrumentFileName) {
         this.instrumentFileName = instrumentFileName;
         this.modelLoaded = false;
-        this.applicationDetails="PorisCore v0.2";
+        this.applicationDetails="PorisCore v0.3";
         this.packageInit();
         this.loadModel();
     }
