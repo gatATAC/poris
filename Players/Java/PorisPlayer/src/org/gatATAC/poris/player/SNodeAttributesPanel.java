@@ -32,6 +32,8 @@ public class SNodeAttributesPanel extends javax.swing.JFrame implements Observer
         initRows(node);
     }
 
+    
+    
     public SNodeAttributesPanel() {
         this.showInvisible = false;
         node = new SNode("testNode");
@@ -45,6 +47,7 @@ public class SNodeAttributesPanel extends javax.swing.JFrame implements Observer
     }
 
     public void initRows(SNode node) {
+        int maxLengthColumn1=0, maxLengthColumn2=0;
         int rowCount = node.getAttributes().size();
         int visibleRows = 0;
         if (!this.showInvisible) {
@@ -65,6 +68,12 @@ public class SNodeAttributesPanel extends javax.swing.JFrame implements Observer
             if (thisAttr.isVisible()) {
                 cells[currentCell][0] = thisAttr.getName();
                 cells[currentCell][1] = thisAttr.getContent();
+                if (thisAttr.getName().length()>maxLengthColumn1){
+                    maxLengthColumn1=thisAttr.getName().length();
+                }
+                if (thisAttr.getContent().length()>maxLengthColumn2){
+                    maxLengthColumn2=thisAttr.getContent().length();
+                }
                 currentCell++;
             } else {
                 if (this.showInvisible) {
@@ -89,7 +98,12 @@ public class SNodeAttributesPanel extends javax.swing.JFrame implements Observer
                 return types[columnIndex];
             }
         });
-
+        // TODO: Change values 25 and 3 by more elegant way of do it.
+        this.setSize(
+                (maxLengthColumn1+maxLengthColumn2)*25,
+                (this.table.getRowCount()+3)*(this.table.getRowHeight()+this.table.getRowMargin())
+                );
+        
 
     }
 
@@ -132,6 +146,7 @@ public class SNodeAttributesPanel extends javax.swing.JFrame implements Observer
                 return types [columnIndex];
             }
         });
+        table.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
         table.setEnabled(false);
         table.setMaximumSize(new java.awt.Dimension(200, 200));
         table.setName("table"); // NOI18N
