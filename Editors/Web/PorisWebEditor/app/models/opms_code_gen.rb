@@ -28,8 +28,12 @@ class OpmsCodeGen < CodeGen
           if (v.class==ValueString)
             ret+=",\"#{v.default_string.to_s}\""
           else
-            if (v.class==ValueDateRange)
-              ret+=",#{v.default_date.to_s},#{v.date_min.to_s},#{v.date_max.to_s}"
+            if (v.class==ValueFilePath)
+              ret+=",\"#{v.default_string.to_s}\""
+            else
+              if (v.class==ValueDateRange)
+                ret+=",#{v.default_date.to_s},#{v.date_min.to_s},#{v.date_max.to_s}"
+              end
             end
           end
         end

@@ -12,6 +12,8 @@ class Node < ActiveRecord::Base
     date_min :timestamp
     date_max :timestamp
     default_date :timestamp
+    file_extension :string
+    file_description :string
 
     timestamps
   end
