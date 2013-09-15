@@ -262,7 +262,10 @@ class GraphmlCodeGen < CodeGen
         if (shownode.class==ValueString)
           ret,max_row,column=get_tree_data_xml_vl_string(shownode,row,column)
         else
-          ret="<node id=\"n"+shownode.id.to_s+"\">
+          if (shownode.class==ValueFilePath)
+            ret,max_row,column=get_tree_data_xml_vl_file_path(shownode,row,column)
+          else
+            ret="<node id=\"n"+shownode.id.to_s+"\">
               <data key=\"d0\">http://feudo.ll.iac.es:3000/nodes/"+shownode.id.to_s+"</data>
               <data key=\"d1\"/>
               <data key=\"d2\">
@@ -276,6 +279,7 @@ class GraphmlCodeGen < CodeGen
               </data>
             </node>"
           max_row=row+1
+          end
         end
       end
     end
@@ -298,6 +302,25 @@ class GraphmlCodeGen < CodeGen
     max_row=row+1
     return ret,max_row,column
   end
+
+  def get_tree_data_xml_vl_file_path(shownode,row,column)
+    ret="<node id=\"n"+shownode.id.to_s+"\">
+              <data key=\"d0\">http://feudo.ll.iac.es:3000/nodes/"+shownode.id.to_s+"</data>
+              <data key=\"d1\"/>
+              <data key=\"d2\">
+                <y:ShapeNode>
+                  <y:Geometry height=\"30.0\" width=\"92.0\" x=\""+(column*80).to_s+"\" y=\""+(row*60).to_s+"\"/>
+                  <y:Fill color=\"#CCFFCC\" transparent=\"false\"/>
+                  <y:BorderStyle color=\"#000000\" type=\"line\" width=\"1.0\"/>
+                  <y:NodeLabel alignment=\"center\" autoSizePolicy=\"content\" fontFamily=\"Dialog\" fontSize=\"12\" fontStyle=\"plain\" hasBackgroundColor=\"false\" hasLineColor=\"false\" height=\"18.701171875\" modelName=\"internal\" modelPosition=\"c\" textColor=\"#000000\" visible=\"true\" width=\"34.69140625\" x=\"0.0\" y=\"0.0\">"+shownode.to_s_scope_kind(self)+"</y:NodeLabel>
+                  <y:Shape type=\"parallelogram\"/>
+                </y:ShapeNode>
+              </data>
+            </node>"
+    max_row=row+1
+    return ret,max_row,column
+  end
+
 
   def get_tree_data_xml_vl_range(shownode,row,column)
 
