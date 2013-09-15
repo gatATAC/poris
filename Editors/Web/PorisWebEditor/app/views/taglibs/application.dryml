@@ -256,6 +256,7 @@
   <collection:values param/>
   <%= link_to "New Value in #{@sub_system.name}", :controller => :values, :action => :new, :system => @sub_system %>
   <br/><%= link_to "New ValueString in #{@sub_system.name}", :controller => :value_strings, :action => :new, :system => @sub_system %>
+  <br/><%= link_to "New ValueFilePath in #{@sub_system.name}", :controller => :value_file_paths, :action => :new, :system => @sub_system %>
   <br/><%= link_to "New ValueDoubleRange in #{@sub_system.name}", :controller => :value_double_ranges, :action => :new, :system => @sub_system %>
   <br/><%= link_to "New ValueDateRange in #{@sub_system.name}", :controller => :value_date_ranges, :action => :new, :system => @sub_system %>
 
@@ -492,6 +493,55 @@
     </div>
   </old-form>
 </extend>
+
+<!-- VALUEFILEPATH SECTION -->
+
+<extend tag="show-page" for="ValueFilePath">
+<old-show-page>
+<append-collection-section:>
+  <h3 param="collection-heading">Labels</h3>
+
+  <collection:labels param/>
+
+  <a:labels action="new" if="&can_create?(@this.labels)"  param="new-link">New Label for <%=  @this.name %></a>
+
+  <h3 param="collection-heading">Modes</h3>
+  <collection:modes param/>
+
+</append-collection-section:>
+</old-show-page>
+</extend>
+
+<extend tag="form" for="ValueFilePath">
+  <old-form merge>
+    <field-list fields="name, default_string, file_extension, file_description, modes, node_type, systems, value_formatter">
+      <node-type-view:>
+        <do part="value-file-path-node-types-menu">
+          <if test="&@value_file_path.possible_node_types">
+            <select-one options="&@value_file_path.possible_node_types" />
+          </if>
+          <else>
+            <select disabled><option>First add some node types compatible with class <%= @value_file_path.class.name %></option></select>
+          </else>
+        </do>
+      </node-type-view:>
+      <modes-view:>
+        <do part="value-file-path-modes-menu">
+          <if test="&@value_file_path.possible_modes">
+            <select-many options="&@value_file_path.possible_modes"/>
+          </if>
+          <else>
+            <select disabled><option>First choose some super systems</option></select>
+          </else>
+        </do>
+      </modes-view:>
+    </field-list>
+    <div param="actions">
+      <submit label="Save" param/><or-cancel param="cancel"/>
+    </div>
+  </old-form>
+</extend>
+
 
 <!-- VALUEDOUBLERANGE SECTION -->
 
