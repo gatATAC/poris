@@ -6,9 +6,12 @@
 
 package org.gatATAC.poris.player;
 
+import java.awt.Component;
+import java.awt.event.FocusListener;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
+import javax.swing.JTextField;
 import org.gatATAC.poris.Cfg;
 import org.gatATAC.poris.SNodeLib;
 import org.gatATAC.poris.SNodeXML;
@@ -85,7 +88,7 @@ public class CfgFrame extends javax.swing.JFrame {
         );
         resultPanelLayout.setVerticalGroup(
             resultPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 440, Short.MAX_VALUE)
+            .add(0, 280, Short.MAX_VALUE)
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -128,7 +131,7 @@ public class CfgFrame extends javax.swing.JFrame {
                 .add(viewModelXMLButton)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(viewCfgXMLButton)
-                .addContainerGap(310, Short.MAX_VALUE))
+                .addContainerGap(274, Short.MAX_VALUE))
         );
         filePanelLayout.setVerticalGroup(
             filePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -160,6 +163,11 @@ public class CfgFrame extends javax.swing.JFrame {
                 commitButtonActionPerformed(evt);
             }
         });
+        commitButton.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                commitButtonFocusGained(evt);
+            }
+        });
 
         discardButton.setText("Discard Changes");
         discardButton.setName("discardButton"); // NOI18N
@@ -187,7 +195,7 @@ public class CfgFrame extends javax.swing.JFrame {
                 .add(commitButton)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(discardButton)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 233, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 194, Short.MAX_VALUE)
                 .add(aboutButton)
                 .addContainerGap())
         );
@@ -235,6 +243,21 @@ public class CfgFrame extends javax.swing.JFrame {
             aboutBox.setLocationRelativeTo(this);
             aboutBox.setVisible(true);
     }//GEN-LAST:event_aboutButtonActionPerformed
+
+    private void commitButtonFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_commitButtonFocusGained
+        Component opComp=evt.getOppositeComponent();
+        if (opComp!=null){
+            if (opComp.getClass().equals(JTextField.class)){
+                // We are stealing the control of a JTextField
+                JTextField textField = (JTextField)opComp;
+                int cota=textField.getFocusListeners().length;
+                for (int i = 0; i<cota;i++){
+                    FocusListener listener=textField.getFocusListeners()[i];
+                    listener.focusLost(evt);
+                }
+            }
+        }
+    }//GEN-LAST:event_commitButtonFocusGained
 
     public String getApplicationDetails(){
         return this.delegate.getApplicationDetails();

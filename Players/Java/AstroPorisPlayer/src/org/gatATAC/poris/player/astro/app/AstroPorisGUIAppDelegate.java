@@ -58,6 +58,7 @@ public class AstroPorisGUIAppDelegate extends PorisGUIAppDelegate {
     @Override
     public boolean commitChanges() {
         return super.commitChanges();
+        /* If you override this, be careful to execute the super.commitChanges() before doing anything else */
     }
 
     @Override
