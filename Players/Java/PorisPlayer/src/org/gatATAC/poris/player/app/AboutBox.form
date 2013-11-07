@@ -1,4 +1,4 @@
-<?xml version="1.1" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
@@ -6,6 +6,7 @@
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -40,8 +41,8 @@
                       </Group>
                   </Group>
                   <Component id="appTitleLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="appDescLabel" alignment="0" pref="282" max="32767" attributes="0"/>
-                  <Component id="jScrollPane1" alignment="0" pref="282" max="32767" attributes="0"/>
+                  <Component id="appDescLabel" alignment="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
@@ -110,7 +111,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="appVersionLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" value="0.32" noResource="true"/>
+        <Property name="text" type="java.lang.String" value="0.321" noResource="true"/>
         <Property name="name" type="java.lang.String" value="appVersionLabel" noResource="true"/>
       </Properties>
       <AuxValues>
