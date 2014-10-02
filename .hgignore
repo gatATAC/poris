@@ -19,6 +19,7 @@ Players/Java/AstroSystems/test/configLeft.xml
 Editors/Web/PorisWebEditor/script/server~
 Editors/Web/PorisWebEditor/Gemfile~
 Editors/Web/PorisWebEditor/Gemfile.lock
+Editors/Web/PorisWebEditor/tmp/*
 *~
 Editors/Web/PorisWebEditor2
 Editors/Web/PorisWebEditor/app/views/taglibs/auto/rapid/*
