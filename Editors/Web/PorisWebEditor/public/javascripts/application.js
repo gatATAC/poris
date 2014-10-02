@@ -32,10 +32,10 @@ function setIframeHeight(id, h) {
 }
 
 window.onload = function() { 
-    setIframeHeight('treeifrm', 1.0);
+    setIframeHeight('treeifrm', 800);
 }
 window.onresize = function() { 
-    setIframeHeight('treeifrm', 1.0);
+    setIframeHeight('treeifrm', 800);
 }
 
 var hoboParts = {};var pluralisations = {

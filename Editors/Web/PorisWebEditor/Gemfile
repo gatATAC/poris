@@ -1,12 +1,14 @@
 source 'http://rubygems.org'
 
-gem 'rails', '2.3.14'
+gem 'rails', '2.3.18'
+
+gem 'thin'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'pg'
+# gem 'pg'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -30,4 +32,4 @@ gem 'pg'
 # group :development, :test do
 #   gem 'webrat'
 # end
-gem "hobo", "= 1.0.2"
+gem "hobo", "= 1.0.3"

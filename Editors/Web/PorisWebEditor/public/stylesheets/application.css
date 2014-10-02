@@ -113,3 +113,7 @@ div.progressBar div.background {
   height: 18px;
   width: 0%;
 }
+
+#treeifrm {
+    min-height: 800px;
+}
