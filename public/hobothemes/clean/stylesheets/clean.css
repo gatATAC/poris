@@ -24,6 +24,7 @@ html, body {color: #193440; background: url(../images/300-ACD3E6-fff.png) repeat
 .section-group-inner > * {display: table-cell; vertical-align: top;}
 .aside {width: 210px;} /* works with % too */
 .aside { padding: 20px;}
+
 /* ------ */
 
 
