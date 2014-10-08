@@ -5,6 +5,7 @@ class Project < ActiveRecord::Base
   fields do
     name :string, :unique
     abbrev :string, :unique
+    hostnameport :string
     timestamps
   end
 
@@ -18,10 +19,6 @@ class Project < ActiveRecord::Base
   # PARCHE: Creo que estas relaciones no deberían existir
   has_many :libraries, :dependent => :destroy
   has_many :sub_systems, :dependent => :destroy
-
-  def hostnameport
-    "10.201.52.185:3002"
-  end
 
   # --- Permissions --- #
 

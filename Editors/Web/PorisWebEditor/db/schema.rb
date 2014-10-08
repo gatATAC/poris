@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100624075336) do
+ActiveRecord::Schema.define(:version => 20141008171308) do
 
   create_table "labels", :force => true do |t|
     t.string    "name"
@@ -104,6 +104,7 @@ ActiveRecord::Schema.define(:version => 20100624075336) do
     t.timestamp "updated_at"
     t.integer   "owner_id"
     t.string    "abbrev"
+    t.string    "hostnameport"
   end
 
   add_index "projects", ["owner_id"], :name => "index_projects_on_owner_id"
