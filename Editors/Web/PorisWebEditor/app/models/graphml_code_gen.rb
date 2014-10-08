@@ -143,7 +143,7 @@ class GraphmlCodeGen < CodeGen
     row_size=max_row-row
     column_size=value_column_width+mode_column_width+max_column+1
     ret+="</graph>
-      <data key=\"d0\">http://feudo.ll.iac.es:3000/nodes/"+shownode.id.to_s+"</data>
+      <data key=\"d0\">http://"+shownode.project.hostnameport+"/nodes/"+shownode.id.to_s+"</data>
       <data key=\"d1\">groupNode0</data>
       <data key=\"d2\">
         <y:ProxyAutoBoundsNode>
@@ -177,7 +177,7 @@ class GraphmlCodeGen < CodeGen
 
   def get_tree_data_xml_md(shownode,row,column)
     ret="<node id=\"n"+shownode.id.to_s+"\">
-              <data key=\"d0\">http://feudo.ll.iac.es:3000/nodes/"+shownode.id.to_s+"</data>
+              <data key=\"d0\">http://"+shownode.project.hostnameport+"/nodes/"+shownode.id.to_s+"</data>
               <data key=\"d1\"/>
               <data key=\"d2\">
                 <y:ShapeNode>
@@ -266,7 +266,7 @@ class GraphmlCodeGen < CodeGen
             ret,max_row,column=get_tree_data_xml_vl_file_path(shownode,row,column)
           else
             ret="<node id=\"n"+shownode.id.to_s+"\">
-              <data key=\"d0\">http://feudo.ll.iac.es:3000/nodes/"+shownode.id.to_s+"</data>
+              <data key=\"d0\">http://"+shownode.project.hostnameport+"/nodes/"+shownode.id.to_s+"</data>
               <data key=\"d1\"/>
               <data key=\"d2\">
                 <y:ShapeNode>
@@ -287,7 +287,7 @@ class GraphmlCodeGen < CodeGen
   end
   def get_tree_data_xml_vl_string(shownode,row,column)
     ret="<node id=\"n"+shownode.id.to_s+"\">
-              <data key=\"d0\">http://feudo.ll.iac.es:3000/nodes/"+shownode.id.to_s+"</data>
+              <data key=\"d0\">http://"+shownode.project.hostnameport+"/nodes/"+shownode.id.to_s+"</data>
               <data key=\"d1\"/>
               <data key=\"d2\">
                 <y:ShapeNode>
@@ -305,7 +305,7 @@ class GraphmlCodeGen < CodeGen
 
   def get_tree_data_xml_vl_file_path(shownode,row,column)
     ret="<node id=\"n"+shownode.id.to_s+"\">
-              <data key=\"d0\">http://feudo.ll.iac.es:3000/nodes/"+shownode.id.to_s+"</data>
+              <data key=\"d0\">http://"+shownode.project.hostnameport+"/nodes/"+shownode.id.to_s+"</data>
               <data key=\"d1\"/>
               <data key=\"d2\">
                 <y:ShapeNode>

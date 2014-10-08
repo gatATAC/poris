@@ -19,6 +19,9 @@ class Project < ActiveRecord::Base
   has_many :libraries, :dependent => :destroy
   has_many :sub_systems, :dependent => :destroy
 
+  def hostnameport
+    "10.201.52.185:3002"
+  end
 
   # --- Permissions --- #
 
