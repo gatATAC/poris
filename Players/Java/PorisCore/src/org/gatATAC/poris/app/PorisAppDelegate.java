@@ -62,7 +62,8 @@ public class PorisAppDelegate {
     public PorisAppDelegate(String instrumentFileName) {
         this.instrumentFileName = instrumentFileName;
         this.modelLoaded = false;
-        this.applicationDetails="PorisCore v0.3";
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("org/gatATAC/poris/app/resources/AboutBox"); // NOI18N
+        this.applicationDetails=bundle.getString("Application.name")+" "+bundle.getString("Application.version");
         this.packageInit();
         this.loadModel();
     }
@@ -210,13 +211,25 @@ public class PorisAppDelegate {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        String instrumentFileName= "instrument.xml";
-        String configFileName= "config.xml";
-        PorisAppDelegate myInstrumentPanel = new PorisAppDelegate(instrumentFileName);
-        PorisAppDelegate myConfigPanel = new PorisAppDelegate(configFileName);
-        System.out.println("Cargado del fichero "+instrumentFileName+" el modelo "+myInstrumentPanel.toString());
-        System.out.println("Cargado del fichero "+configFileName+" el modelo "+myConfigPanel.toString());
-        myConfigPanel.toString();
+        String instrumentFileName=null;
+        String configFileName=null;
+        if (args.length>0){
+            instrumentFileName=args[0];
+            if (args.length>1){
+                configFileName= args[1];
+            }
+        } else {
+            instrumentFileName= "instrument.xml";
+            configFileName= "config.xml";
+        }
+        if (instrumentFileName!=null){
+            PorisAppDelegate myInstrumentPanel = new PorisAppDelegate(instrumentFileName);
+            System.out.println("Cargado del fichero "+instrumentFileName+" el modelo "+myInstrumentPanel.toString());
+        }
+        if (configFileName!=null){
+            PorisAppDelegate myConfigPanel = new PorisAppDelegate(configFileName);
+            System.out.println("Cargado del fichero "+configFileName+" el modelo "+myConfigPanel.toString());
+        }
         //System.exit(0);
     }
 }
