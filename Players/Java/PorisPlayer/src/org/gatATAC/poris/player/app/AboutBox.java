@@ -48,28 +48,29 @@ public class AboutBox extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         appTitleLabel.setFont(appTitleLabel.getFont().deriveFont(appTitleLabel.getFont().getStyle() | java.awt.Font.BOLD, appTitleLabel.getFont().getSize()+4));
-        appTitleLabel.setText("gatATAC Poris Systems Player"); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("org/gatATAC/poris/player/app/resources/AboutBox"); // NOI18N
+        appTitleLabel.setText(bundle.getString("Application.title")); // NOI18N
         appTitleLabel.setName("appTitleLabel"); // NOI18N
 
         versionLabel.setFont(versionLabel.getFont().deriveFont(versionLabel.getFont().getStyle() | java.awt.Font.BOLD));
         versionLabel.setText("Product Version:"); // NOI18N
         versionLabel.setName("versionLabel"); // NOI18N
 
-        appVersionLabel.setText("0.321"); // NOI18N
+        appVersionLabel.setText(bundle.getString("Application.version")); // NOI18N
         appVersionLabel.setName("appVersionLabel"); // NOI18N
 
         vendorLabel.setFont(vendorLabel.getFont().deriveFont(vendorLabel.getFont().getStyle() | java.awt.Font.BOLD));
         vendorLabel.setText("Vendor:");
         vendorLabel.setName("vendorLabel"); // NOI18N
 
-        appVendorLabel.setText("gatATAC.org"); // NOI18N
+        appVendorLabel.setText(bundle.getString("Application.vendorId")); // NOI18N
         appVendorLabel.setName("appVendorLabel"); // NOI18N
 
         homepageLabel.setFont(homepageLabel.getFont().deriveFont(homepageLabel.getFont().getStyle() | java.awt.Font.BOLD));
         homepageLabel.setText("Homepage:");
         homepageLabel.setName("homepageLabel"); // NOI18N
 
-        appHomepageLabel.setText("http://www.elporis.com"); // NOI18N
+        appHomepageLabel.setText(bundle.getString("Application.vendorUrl")); // NOI18N
         appHomepageLabel.setName("appHomepageLabel"); // NOI18N
 
         appDescLabel.setText("<html>A simple java desktop application to show gatATAC Poris Systems and work interactively with them.");
@@ -80,8 +81,8 @@ public class AboutBox extends javax.swing.JFrame {
 
         jScrollPane1.setName("jScrollPane1"); // NOI18N
 
-        detailsText.setColumns(20);
         detailsText.setEditable(false);
+        detailsText.setColumns(20);
         detailsText.setRows(5);
         detailsText.setName("detailsText"); // NOI18N
         jScrollPane1.setViewportView(detailsText);

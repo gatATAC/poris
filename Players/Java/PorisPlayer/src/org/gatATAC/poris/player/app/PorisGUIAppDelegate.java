@@ -23,7 +23,8 @@ public class PorisGUIAppDelegate extends PorisAppDelegate {
 
     public PorisGUIAppDelegate(String instrumentFileName, boolean showXMLButtons, boolean showInvisible, boolean showAbout) {
         super(instrumentFileName);
-        this.applicationDetails+="\nPorisPlayer v0.321";
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("org/gatATAC/poris/player/app/resources/AboutBox"); // NOI18N
+        this.applicationDetails+="\n"+bundle.getString("Application.name")+" "+bundle.getString("Application.version");
         this.panelFrame = new CfgFrame(this, showXMLButtons,showInvisible,showAbout);
         this.initialization();
     }
@@ -98,12 +99,30 @@ public class PorisGUIAppDelegate extends PorisAppDelegate {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        PorisGUIAppDelegate myPanel = new PorisGUIAppDelegate("instrument.xml", true,true,true);
-        myPanel.showPanel();
-        myPanel.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        PorisGUIAppDelegate myPanel2 = new PorisGUIAppDelegate("config.xml", true,true,false);
-        myPanel2.showPanel();
-        myPanel2.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        
+        String instrumentFileName=null;
+        String configFileName=null;
+        if (args.length>0){
+            instrumentFileName=args[0];
+            if (args.length>1){
+                configFileName= args[1];
+            }
+        } else {
+            instrumentFileName= "instrument.xml";
+            configFileName= "config.xml";
+        }
+        if (instrumentFileName!=null){
+            PorisGUIAppDelegate myInstrumentPanel = new PorisGUIAppDelegate(instrumentFileName, true,true,true);
+            myInstrumentPanel.showPanel();
+            myInstrumentPanel.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            System.out.println("Cargado del fichero "+instrumentFileName+" el modelo "+myInstrumentPanel.toString());
+        }
+        if (configFileName!=null){
+            PorisGUIAppDelegate myConfigPanel = new PorisGUIAppDelegate(configFileName, true,true,false);
+            myConfigPanel.showPanel();
+            myConfigPanel.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+            System.out.println("Cargado del fichero "+configFileName+" el modelo "+myConfigPanel.toString());
+        }        
         //System.exit(0);
     }
 }

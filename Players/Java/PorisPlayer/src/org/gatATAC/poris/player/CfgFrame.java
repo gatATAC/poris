@@ -59,8 +59,6 @@ public class CfgFrame extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        mainPanel = new javax.swing.JPanel();
-        resultPanel = new javax.swing.JPanel();
         filePanel = new javax.swing.JPanel();
         viewModelXMLButton = new javax.swing.JButton();
         viewCfgXMLButton = new javax.swing.JButton();
@@ -68,40 +66,13 @@ public class CfgFrame extends javax.swing.JFrame {
         commitButton = new javax.swing.JButton();
         discardButton = new javax.swing.JButton();
         aboutButton = new javax.swing.JButton();
+        mainScroll = new javax.swing.JScrollPane();
+        mainPanel = new javax.swing.JPanel();
+        resultPanel = new javax.swing.JPanel();
 
         setTitle("Instrument Configuration");
         setName("Form"); // NOI18N
         getContentPane().setLayout(new java.awt.GridBagLayout());
-
-        mainPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Instrument Configuration"));
-        mainPanel.setName("mainPanel"); // NOI18N
-        mainPanel.setLayout(new java.awt.GridBagLayout());
-
-        resultPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Titulo"));
-        resultPanel.setName("resultPanel"); // NOI18N
-
-        org.jdesktop.layout.GroupLayout resultPanelLayout = new org.jdesktop.layout.GroupLayout(resultPanel);
-        resultPanel.setLayout(resultPanelLayout);
-        resultPanelLayout.setHorizontalGroup(
-            resultPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 512, Short.MAX_VALUE)
-        );
-        resultPanelLayout.setVerticalGroup(
-            resultPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 280, Short.MAX_VALUE)
-        );
-
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.weighty = 1.0;
-        mainPanel.add(resultPanel, gridBagConstraints);
-
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.weighty = 5.0;
-        getContentPane().add(mainPanel, gridBagConstraints);
 
         filePanel.setBorder(javax.swing.BorderFactory.createTitledBorder("File Management"));
         filePanel.setName("filePanel"); // NOI18N
@@ -131,7 +102,7 @@ public class CfgFrame extends javax.swing.JFrame {
                 .add(viewModelXMLButton)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(viewCfgXMLButton)
-                .addContainerGap(274, Short.MAX_VALUE))
+                .addContainerGap(300, Short.MAX_VALUE))
         );
         filePanelLayout.setVerticalGroup(
             filePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -149,7 +120,6 @@ public class CfgFrame extends javax.swing.JFrame {
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.SOUTH;
         gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.weighty = 1.0;
         getContentPane().add(filePanel, gridBagConstraints);
         filePanel.setVisible(this.showXMLButtons);
 
@@ -195,7 +165,7 @@ public class CfgFrame extends javax.swing.JFrame {
                 .add(commitButton)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(discardButton)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 194, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 207, Short.MAX_VALUE)
                 .add(aboutButton)
                 .addContainerGap())
         );
@@ -216,8 +186,46 @@ public class CfgFrame extends javax.swing.JFrame {
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.SOUTH;
         gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.weighty = 1.0;
         getContentPane().add(changePanel, gridBagConstraints);
+
+        mainScroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        mainScroll.setName("mainScroll"); // NOI18N
+
+        mainPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Instrument Configuration"));
+        mainPanel.setName("mainPanel"); // NOI18N
+        mainPanel.setLayout(new java.awt.GridBagLayout());
+
+        resultPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Titulo"));
+        resultPanel.setAutoscrolls(true);
+        resultPanel.setName("resultPanel"); // NOI18N
+
+        org.jdesktop.layout.GroupLayout resultPanelLayout = new org.jdesktop.layout.GroupLayout(resultPanel);
+        resultPanel.setLayout(resultPanelLayout);
+        resultPanelLayout.setHorizontalGroup(
+            resultPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(0, 506, Short.MAX_VALUE)
+        );
+        resultPanelLayout.setVerticalGroup(
+            resultPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(0, 682, Short.MAX_VALUE)
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        mainPanel.add(resultPanel, gridBagConstraints);
+
+        mainScroll.setViewportView(mainPanel);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        gridBagConstraints.weightx = 10.0;
+        gridBagConstraints.weighty = 10.0;
+        getContentPane().add(mainScroll, gridBagConstraints);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -365,6 +373,7 @@ public class CfgFrame extends javax.swing.JFrame {
     private javax.swing.JButton discardButton;
     private javax.swing.JPanel filePanel;
     public javax.swing.JPanel mainPanel;
+    private javax.swing.JScrollPane mainScroll;
     public javax.swing.JPanel resultPanel;
     private javax.swing.JButton viewCfgXMLButton;
     private javax.swing.JButton viewModelXMLButton;

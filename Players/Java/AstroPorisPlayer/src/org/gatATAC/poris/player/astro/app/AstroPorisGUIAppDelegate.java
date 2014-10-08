@@ -45,14 +45,8 @@ public class AstroPorisGUIAppDelegate extends PorisGUIAppDelegate {
      */
     public AstroPorisGUIAppDelegate(String instrumentFileName, boolean showXMLButtons, boolean showInvisible, boolean showAbout) {
         super(instrumentFileName,showXMLButtons, showInvisible, showAbout);
-        this.applicationDetails+="\nAstroPorisPlayer v0.31";
-    }
-
-    /**
-     * 
-     */
-    public AstroPorisGUIAppDelegate() {
-        this("instrument.xml",true,true,true);
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("org/gatATAC/poris/player/astro/app/resources/AboutBox"); // NOI18N
+        this.applicationDetails+="\n"+bundle.getString("Application.name")+" "+bundle.getString("Application.version");
     }
 
     @Override
@@ -71,8 +65,27 @@ public class AstroPorisGUIAppDelegate extends PorisGUIAppDelegate {
      * @param args
      */
     public static void main(String args[]) {
-        AstroPorisGUIAppDelegate loader=new AstroPorisGUIAppDelegate();
-        loader.showPanel();
-        loader.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    }
+        String instrumentFileName=null;
+        String configFileName=null;
+        if (args.length>0){
+            instrumentFileName=args[0];
+            if (args.length>1){
+                configFileName= args[1];
+            }
+        } else {
+            instrumentFileName= "instrument.xml";
+            configFileName= "config.xml";
+        }
+        if (instrumentFileName!=null){
+            AstroPorisGUIAppDelegate myInstrumentPanel = new AstroPorisGUIAppDelegate(instrumentFileName, true,true,true);
+            myInstrumentPanel.showPanel();
+            myInstrumentPanel.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            System.out.println("Cargado del fichero "+instrumentFileName+" el modelo "+myInstrumentPanel.toString());
+        }
+        if (configFileName!=null){
+            AstroPorisGUIAppDelegate myConfigPanel = new AstroPorisGUIAppDelegate(configFileName, true,true,false);
+            myConfigPanel.showPanel();
+            myConfigPanel.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+            System.out.println("Cargado del fichero "+configFileName+" el modelo "+myConfigPanel.toString());
+        }            }
 }
