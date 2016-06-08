@@ -1,1 +1,6 @@
 /nbproject/private/
+/log/*
+/tmp/*
+/app/views/taglibs/auto/*
+config/hobo_routes.rb
+Gemfile.lock

@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
-
+gem 'rake', '< 11'
 gem 'rails', '2.3.18'
 
 gem 'thin'
