@@ -2,6 +2,10 @@ class GraphmlCodeGensController < CodeGensController
   hobo_model_controller
 
   auto_actions :all
+
+  show_action :show_code
+  show_action :show_node
+
   
   def show_code
     if (params[:id])

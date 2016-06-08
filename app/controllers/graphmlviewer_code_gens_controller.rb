@@ -4,6 +4,9 @@ class GraphmlviewerCodeGensController < ApplicationController
 
   auto_actions :all
 
+  show_action :show_code
+  show_action :show_node
+
   def show_code
     if (params[:id])
       @code_gen=GraphmlCodeGen.find(params[:id])

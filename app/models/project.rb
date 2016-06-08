@@ -5,9 +5,10 @@ class Project < ActiveRecord::Base
   fields do
     name :string, :unique
     abbrev :string, :unique
-    hostnameport :string
     timestamps
   end
+
+  attr_accessible :name, :abbrev
 
   has_many :nodes, :dependent => :destroy
   belongs_to :owner, :class_name => "User", :creator => true
@@ -20,6 +21,8 @@ class Project < ActiveRecord::Base
   has_many :libraries, :dependent => :destroy
   has_many :sub_systems, :dependent => :destroy
 
+  children :project_memberships
+  
   # --- Permissions --- #
 
   def create_permitted?
