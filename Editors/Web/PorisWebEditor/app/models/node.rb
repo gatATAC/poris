@@ -12,8 +12,6 @@ class Node < ActiveRecord::Base
     date_min :timestamp
     date_max :timestamp
     default_date :timestamp
-    file_extension :string
-    file_description :string
 
     timestamps
   end
@@ -41,10 +39,12 @@ class Node < ActiveRecord::Base
   has_many :children, :foreign_key => :parent_id, :class_name => 'Node'
   belongs_to :root, :class_name => 'Node'
 
-  has_many :edges_as_source, :class_name => 'NodesEdges', :foreign_key => 'source_id', :dependent => :destroy, :order => :position
-  has_many :edges_as_destination, :class_name => 'NodesEdges', :foreign_key => 'destination_id'
+  has_many :edges_as_source, :class_name => 'NodesEdge', :foreign_key => 'source_id', :dependent => :destroy, :order => :position
+  has_many :edges_as_destination, :class_name => 'NodesEdge', :foreign_key => 'destination_id'
   has_many :sources, :through => :edges_as_destination , :accessible => true
   has_many :destinations, :through => :edges_as_source ,  :order => 'nodes_edges.position',:accessible => true
+
+  children  :edges_as_source, :destinations
 
   attr_accessor :style
 

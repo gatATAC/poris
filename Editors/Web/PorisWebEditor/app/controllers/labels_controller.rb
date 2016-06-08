@@ -12,6 +12,5 @@ class LabelsController < ApplicationController
   auto_actions_for :value_double_range, [:new, :create]
   auto_actions_for :value_date_range, [:new, :create]
   auto_actions_for :value_string, [:new, :create]
-  auto_actions_for :value_file_path, [:new, :create]
 
 end

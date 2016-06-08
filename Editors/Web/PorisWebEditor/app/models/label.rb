@@ -10,7 +10,6 @@ class Label < ActiveRecord::Base
   belongs_to :mode, :foreign_key => :node_id
   belongs_to :value, :foreign_key => :node_id
   belongs_to :value_string, :foreign_key => :node_id
-  belongs_to :value_file_path, :foreign_key => :node_id
   belongs_to :value_double_range, :foreign_key => :node_id
   belongs_to :value_date_range, :foreign_key => :node_id
   belongs_to :group, :foreign_key => :node_id
@@ -19,6 +18,8 @@ class Label < ActiveRecord::Base
   belongs_to :scope_kind
 
   validates_presence_of :node, :scope_kind, :name
+
+  attr_accessible :name, :scope_kind
 
   fields do
     name     :string
