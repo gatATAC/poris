@@ -10,11 +10,7 @@ class ProjectMembership < ActiveRecord::Base
 belongs_to :project, :accessible => true, :creator => true
 belongs_to :user, :accessible => true
 belongs_to :role, :accessible => true
-
-  attr_accessible :contributor, :role, :user
-
-
-  validates_presence_of :user,:role,:project
+validates_presence_of :user,:role,:project
 
 
 def name

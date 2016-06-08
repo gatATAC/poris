@@ -1,4 +1,4 @@
-class Guest < Hobo::Model::Guest
+class Guest < Hobo::Guest
 
   def administrator?
     false

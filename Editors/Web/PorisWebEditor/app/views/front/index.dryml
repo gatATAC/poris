@@ -1,27 +1,18 @@
 <page title="Home">
 
-  <body: class="front-page"/>
+<body: class="front-page"/>
 
-  <content:>
-    <header class="content-header hero-unit">
-      <h1>Welcome to <app-name/></h1>
+<content:>
+<header class="content-header">
+  <h1>Welcome to <app-name/></h1>
   <section class="welcome-message">
     <h3>Welcome to PORIS toolkit's Sketch web editor</h3>
     <ul>
       <li>Feel free to use this web editor to execute your tutorials or to build your own custom PORIS sketches.  If you need to set up a custom web application server, please contact us throught www.elporis.com.</li>
     </ul>
-
-        <% if User.count == 0 -%>
-          <h3 style="margin-top: 20px;">There are no user accounts - please provide the details of the site administrator</h3>
-          <form with="&this || User.new" without-cancel>
-            <field-list: fields="name, email_address, password, password_confirmation"/>
-            <submit: label="Register Administrator"/>
-          </form>
-        <% end -%>
-
-
-      </section>
-    </header>
+  </section>
+  <!-- To open the tree: <a href="front/tree" target="_blank">Tree</a-->
+</header>
 
 <section with="&current_user" class="content-body" if="&logged_in?">
   <h3>Your Projects</h3>
@@ -32,7 +23,6 @@
   <h3>Projects you have joined</h3>
   <collection:joined-projects><card without-creator-link/></collection>
 </section>
-
-  </content:>
+</content:>
 
 </page>
