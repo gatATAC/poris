@@ -1,6 +1,6 @@
 class SubSystem < Node
-  has_many :edges_as_source, :class_name => 'NodesEdge', :foreign_key => 'source_id', :dependent=>:destroy,:order => :position
-  has_many :edges_as_destination, :class_name => 'NodesEdge', :foreign_key => 'destination_id'
+  has_many :edges_as_source, :class_name => 'NodesEdges', :foreign_key => 'source_id', :dependent=>:destroy,:order => :position
+  has_many :edges_as_destination, :class_name => 'NodesEdges', :foreign_key => 'destination_id'
   has_many :sources, :through => :edges_as_destination , :accessible => true
   has_many :destinations, :through => :edges_as_source ,  :order => 'nodes_edges.position', :accessible => true
 
@@ -16,12 +16,8 @@ class SubSystem < Node
   has_many :labels, :foreign_key => :node_id
   has_many :node_attributes, :foreign_key => :node_id
 
-	children :sub_systems, :labels
-
   validates_presence_of my_mandatory_attributes
-
-  attr_accessible :name, :default_mode, :modes, :node_type, :libraries, :sub_systems, :super_systems, :values
-
+  
   def self.my_mandatory_attributes
     ret=super
   end

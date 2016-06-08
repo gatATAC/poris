@@ -9,8 +9,6 @@ class ValueFormatter < ActiveRecord::Base
 
   has_many :values
 
-  children :values
-
   # --- Permissions --- #
 
   def create_permitted?

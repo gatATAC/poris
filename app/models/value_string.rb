@@ -16,6 +16,4 @@ class ValueString < Value
     ret+=[:default_string]
   end
 
-  children :systems
-
 end

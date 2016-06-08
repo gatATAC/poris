@@ -17,6 +17,4 @@ class ValueDoubleRange < Value
     ret+=[:default_float,:rangemin,:rangemax]
   end
 
-  children :systems
-
 end

@@ -17,6 +17,4 @@ class ValueDateRange < Value
     ret+=[:default_date,:date_min,:date_max]
   end
 
-  children :systems
-
 end
