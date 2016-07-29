@@ -5,7 +5,7 @@ class Project < ActiveRecord::Base
   fields do
     name :string, :unique
     abbrev :string, :unique
-    hostnameport :string
+    hostnameport :string, :default => "myhostname:5555"
     timestamps
   end
 
