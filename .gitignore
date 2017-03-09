@@ -4,3 +4,9 @@
 /app/views/taglibs/auto/*
 config/hobo_routes.rb
 Gemfile.lock
+.svn
+
+db/development.sqlite3
+db/production.sqlite3
+passenger.*.pid*
+
