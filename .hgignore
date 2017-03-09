@@ -1,0 +1,25 @@
+# use glob syntax
+syntax: glob
+.DS_Store
+.git
+*.log
+*/auto/rapid/*
+example1.graphml
+example2.graphml
+mechatronics2.tiff
+build
+dist
+\.orig\..*$
+\.orig$
+\.chg\..*$
+\.rej$
+\.conflict\~$
+Players/Java/AstroSystems/test/configRight.xml
+Players/Java/AstroSystems/test/configLeft.xml
+Editors/Web/PorisWebEditor/script/server~
+Editors/Web/PorisWebEditor/Gemfile~
+Editors/Web/PorisWebEditor/Gemfile.lock
+Editors/Web/PorisWebEditor/tmp/*
+*~
+Editors/Web/PorisWebEditor2
+Editors/Web/PorisWebEditor/app/views/taglibs/auto/rapid/*

@@ -1,0 +1,5125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+      <sub-systems-v4><mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">753</id>
+  <name>CAN1_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">718</id>
+  <name>250Kbps</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">717</id>
+  <name>500Kbps</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">719</id>
+  <name>1000Kbps</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">717</default-value-id>
+  <id type="integer">720</id>
+  <name>Baudrate_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">718</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">717</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">719</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">711</id>
+  <name>CAN1_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">720</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">736</id>
+  <name>CLOCK_SOURCE_CRYSTAL</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">736</default-value-id>
+  <id type="integer">742</id>
+  <name>CLOCK_SOURCE_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">736</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">738</id>
+  <name>FREQ_8_MHZ</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>8.0</content>
+      <name>MHz</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">739</id>
+  <name>FREQ_12_MHZ</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>12.0</content>
+      <name>MHz</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">740</id>
+  <name>FREQ_16_MHZ</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>16.0</content>
+      <name>MHz</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">740</default-value-id>
+  <id type="integer">743</id>
+  <name>FREQ_CRISTALL_MHZ_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">738</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">739</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">740</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">745</id>
+  <name>MIPS_20MHZ</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">746</id>
+  <name>MIPS_40MHZ</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">746</default-value-id>
+  <id type="integer">750</id>
+  <name>MIPS_FJ</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">745</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">746</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">751</id>
+  <name>Clock_All_FJ_EV</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">742</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">743</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">750</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">765</id>
+  <name>RBS_LARGE_RAM</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">766</id>
+  <name>RBS_MEDIUM_RAM</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">767</id>
+  <name>RBS_SMALL_RAM</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">768</id>
+  <name>RBS_NO_RAM</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">768</default-value-id>
+  <id type="integer">769</id>
+  <name>RBS_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">765</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">766</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">767</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">768</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">772</id>
+  <name>BSS_LARGE_FLASH_HIGH</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">773</id>
+  <name>BSS_MEDIUM_FLASH_HIGH</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">774</id>
+  <name>BSS_SMALL_FLASH_HIGH</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">775</id>
+  <name>BSS_LARGE_FLASH_STD</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">776</id>
+  <name>BSS_MEDIUM_FLASH_STD</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">777</id>
+  <name>BSS_SMALL_FLASH_STD</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">778</id>
+  <name>BSS_NO_FLASH</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">778</default-value-id>
+  <id type="integer">779</id>
+  <name>BBS_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">772</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">773</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">774</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">775</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">776</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">777</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">778</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">782</id>
+  <name>BWRP_WRPROTECT_OFF</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">781</id>
+  <name>BWRP_WRPROTECT_ON</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">782</default-value-id>
+  <id type="integer">783</id>
+  <name>BWRP_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">782</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">781</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">785</id>
+  <name>RSS_LARGE_RAM</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">786</id>
+  <name>RSS_MEDIUM_RAM</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">787</id>
+  <name>RSS_SMALL_RAM</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">788</id>
+  <name>RSS_NO_RAM</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">788</default-value-id>
+  <id type="integer">789</id>
+  <name>RSS_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">785</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">786</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">787</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">788</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">791</id>
+  <name>SSS_LARGE_FLASH_HIGH</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">792</id>
+  <name>SSS_MEDIUM_FLASH_HIGH</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">793</id>
+  <name>SSS_SMALL_FLASH_HIGH</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">794</id>
+  <name>SSS_LARGE_FLASH_STD</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">795</id>
+  <name>SSS_MEDIUM_FLASH_STD</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">796</id>
+  <name>SSS_SMALL_FLASH_STD</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">797</id>
+  <name>SSS_NO_FLASH</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">797</default-value-id>
+  <id type="integer">798</id>
+  <name>SSS_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">791</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">792</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">793</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">794</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">795</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">796</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">797</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">801</id>
+  <name>SWRP_WRPROTECT_OFF</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">800</id>
+  <name>SWRP_WRPROTECT_ON</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">801</default-value-id>
+  <id type="integer">802</id>
+  <name>SWR_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">801</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">800</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">806</id>
+  <name>GSS_HIGH</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">807</id>
+  <name>GSS_STD</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">808</id>
+  <name>GSS_OFF</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">808</default-value-id>
+  <id type="integer">810</id>
+  <name>GSS_FJ</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">806</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">807</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">808</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">813</id>
+  <name>GCP_ON</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">814</id>
+  <name>GCP_OFF</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">814</default-value-id>
+  <id type="integer">815</id>
+  <name>GCP_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">813</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">814</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">816</id>
+  <name>GSSK_ON</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">817</id>
+  <name>GSSK_OFF</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">817</default-value-id>
+  <id type="integer">818</id>
+  <name>GSSK_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">816</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">817</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">820</id>
+  <name>GWRP_ON</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">821</id>
+  <name>GWRP_OFF</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">821</default-value-id>
+  <id type="integer">822</id>
+  <name>GWRP_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">820</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">821</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">770</id>
+  <name>MEMORY_FJ</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">769</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">779</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">783</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">789</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">798</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">802</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">810</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">815</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">818</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">822</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value-double-range>
+  <default-float type="float">2.0</default-float>
+  <id type="integer">900</id>
+  <name>TIMER_TIME_UNIT_M_SECONDS</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <rangemax type="float">63.0</rangemax>
+  <rangemin type="float">1.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">7</value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">900</default-value-id>
+  <id type="integer">902</id>
+  <name>TIME_UNIT_M_SECONDS</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">900</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value-double-range>
+  <default-float type="float">2.0</default-float>
+  <id type="integer">901</id>
+  <name>TIMER_TIME_UNIT_U_SECONDS</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <rangemax type="float">100.0</rangemax>
+  <rangemin type="float">1.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">7</value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">903</id>
+  <name>TIME_UNIT_U_SECONDS</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">901</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value-double-range>
+  <default-float type="float">1.0</default-float>
+  <id type="integer">906</id>
+  <name>TIMER_TICKS_CICLE_Value</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <rangemax type="float">128.0</rangemax>
+  <rangemin type="float">1.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">7</value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">906</default-value-id>
+  <id type="integer">907</id>
+  <name>TIMER_TICKS_CICLE_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">906</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">910</id>
+  <name>TIMER_TICK_CALLBACK_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<value-string>
+  <default-string>TimerTickCallback</default-string>
+  <id type="integer">909</id>
+  <name>TIMER_TICK_CALLBACK_Value</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>ValueString</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value-string>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">909</default-value-id>
+  <id type="integer">911</id>
+  <name>TIMER_TICK_CALLBACK_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="ValueString">
+      <id type="integer">909</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">904</id>
+  <name>Timer_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">902</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">903</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">907</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">910</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">911</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">880</id>
+  <name>Can1RsiEvent</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">881</id>
+  <name>DmaIntSpi1Tx</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">882</id>
+  <name>DmaIntSpi1Rx</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">885</id>
+  <name>DmaIntUart1Tx</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">886</id>
+  <name>DmaIntUart1Rx</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">895</id>
+  <name>DMA_INTERRUPT_SMALLMICRO</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">880</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">881</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">882</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">885</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">886</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">912</id>
+  <name>DMA0_Enabled_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">895</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">914</id>
+  <name>DMA2_Enabled_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">895</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">915</id>
+  <name>DMA3_Enabled_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">895</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">918</id>
+  <name>DMA1_Enabled_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">895</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">839</id>
+  <name>DMA0_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">856</id>
+  <name>DMA1_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">858</id>
+  <name>DMA2_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">860</id>
+  <name>DMA3_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">913</id>
+  <name>DMA_4Channels_smallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">912</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">914</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">915</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">918</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">839</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">856</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">858</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">860</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">934</id>
+  <name>UART1_ENABLED</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">942</id>
+  <name>SPI1_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">948</id>
+  <name>I2C1_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">755</id>
+  <name>DSPIC33EV256GM106_ECU</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">753</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">711</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">751</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">770</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">904</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">913</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">934</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">942</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">948</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">738</default-value-id>
+  <id type="integer">758</id>
+  <name>FREQ_CRISTALL_ONLY_8_MHZ</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">738</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">757</id>
+  <name>Clock_FJ_EV_Starter_Kit</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">742</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">750</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">758</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">756</id>
+  <name>DSPIC33EV256GM106_Starter_Kit</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">711</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">753</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">757</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">770</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">904</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">913</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">934</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">942</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">948</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">716</id>
+  <name>BaudRate</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">717</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">718</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">719</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">720</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">711</default-mode-id>
+  <id type="integer">704</id>
+  <name>CAN1</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">711</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">716</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">753</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">712</id>
+  <name>CAN2_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">720</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">950</id>
+  <name>CAN2_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">950</default-mode-id>
+  <id type="integer">708</id>
+  <name>CAN2</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">712</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">716</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">950</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">713</id>
+  <name>CAN3_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">720</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">951</id>
+  <name>CAN3_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">951</default-mode-id>
+  <id type="integer">709</id>
+  <name>CAN3</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">713</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">716</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">951</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">714</id>
+  <name>CAN4_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">720</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">952</id>
+  <name>CAN4_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">952</default-mode-id>
+  <id type="integer">710</id>
+  <name>CAN4</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">714</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">716</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">952</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">742</default-mode-id>
+  <id type="integer">735</id>
+  <name>CLOCK_SOURCE</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">736</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">742</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">743</default-mode-id>
+  <id type="integer">737</id>
+  <name>FREQ_CRISTALL_MHZ</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">738</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">739</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">740</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">743</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">758</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<value>
+  <id type="integer">747</id>
+  <name>MIPS_51MHZ</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">748</id>
+  <name>MIPS_60MHZ</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">746</default-value-id>
+  <id type="integer">749</id>
+  <name>MIPS_EP</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">746</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">747</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">748</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">741</id>
+  <name>Clock_All_EP</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">742</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">743</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">749</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">744</id>
+  <name>MIPS_MICRO</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">745</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">746</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">747</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">748</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">749</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">750</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">734</id>
+  <name>Clock</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">735</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">737</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">741</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">744</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">751</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">757</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">902</default-mode-id>
+  <id type="integer">899</id>
+  <name>TIMER_TIME_TICK</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">900</id>
+    </destination>
+    <destination type="ValueDoubleRange">
+      <id type="integer">901</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">902</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">903</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">907</default-mode-id>
+  <id type="integer">905</id>
+  <name>TIMER_TICKS_CICLE</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">906</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">907</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">910</default-mode-id>
+  <id type="integer">908</id>
+  <name>TIMER_TICK_CALLBACK</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="ValueString">
+      <id type="integer">909</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">910</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">911</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">904</default-mode-id>
+  <id type="integer">703</id>
+  <name>Timer</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">899</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">904</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">905</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">908</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">705</id>
+  <name>DIO</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">706</id>
+  <name>PWM</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</sub-system>
+<value>
+  <id type="integer">841</id>
+  <name>ECAN1RX_READY_DMA_IRQ</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">842</id>
+  <name>ECAN1TX_DR_DMA_IRQ</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">843</id>
+  <name>UART2RX_DMA_IRQ</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">844</id>
+  <name>UART2TX_DMA_IRQ</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">845</id>
+  <name>DMA_CHANNEL_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">841</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">842</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">843</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">844</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">892</id>
+  <name>Can2RsiEvent</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">893</id>
+  <name>Can3RsiEvent</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">894</id>
+  <name>Can4RsiEvent</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">883</id>
+  <name>DmaIntSpi2Tx</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">884</id>
+  <name>DmaIntSpi2Rx</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">887</id>
+  <name>DmaIntUart2Tx</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">888</id>
+  <name>DmaIntUart2Rx</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">889</id>
+  <name>DmaIntUart3Tx</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">890</id>
+  <name>DmaIntUart3Rx</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">891</id>
+  <name>DMA_INTERRUPT_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">880</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">892</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">893</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">894</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">881</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">882</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">883</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">884</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">885</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">886</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">887</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">888</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">889</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">890</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value-double-range>
+  <default-float type="float">0.0</default-float>
+  <id type="integer">897</id>
+  <name>DMA_INTERRUPT_PRIORITY_Value</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <rangemax type="float">14.0</rangemax>
+  <rangemin type="float">0.0</rangemin>
+  <type>ValueDoubleRange</type>
+  <value-formatter-id type="integer">7</value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value-double-range>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">898</id>
+  <name>DMA_INTERRUPT_PRIORITY_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">897</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">846</id>
+  <name>DMA0_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">845</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">891</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">898</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">849</id>
+  <name>DMA4_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">850</id>
+  <name>DMA4_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">845</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">891</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">898</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">855</id>
+  <name>DMA1_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">845</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">891</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">898</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">857</id>
+  <name>DMA2_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">845</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">891</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">898</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">859</id>
+  <name>DMA3_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">845</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">891</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">898</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">861</id>
+  <name>DMA5_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">845</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">891</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">898</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">862</id>
+  <name>DMA5_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">863</id>
+  <name>DMA6_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">845</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">891</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">898</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">864</id>
+  <name>DMA6_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">865</id>
+  <name>DMA7_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">845</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">891</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">898</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">866</id>
+  <name>DMA7_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">852</id>
+  <name>DMA_8Channels</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">839</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">846</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">849</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">850</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">855</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">856</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">857</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">858</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">859</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">860</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">861</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">862</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">863</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">864</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">865</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">866</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">916</id>
+  <name>DMA4_Enabled_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">895</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">919</id>
+  <name>DMA5_Enabled_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">895</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">920</id>
+  <name>DMA6_Enabled_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">895</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">921</id>
+  <name>DMA7_Enabled_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">895</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">917</id>
+  <name>DMA_8Channels_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">912</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">914</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">915</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">916</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">918</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">919</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">920</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">921</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">839</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">856</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">858</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">860</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">849</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">862</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">864</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">866</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">759</id>
+  <name>DSPIC33FJ256GP506A_ECU</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">753</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">711</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">751</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">770</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">852</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">904</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">917</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">934</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">942</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">948</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<value>
+  <id type="integer">809</id>
+  <name>GSS_ON</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">808</default-value-id>
+  <id type="integer">811</id>
+  <name>GSS_EP</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">808</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">809</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">812</id>
+  <name>MEMORY_EP</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">769</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">779</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">783</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">789</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">798</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">802</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">811</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">815</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">818</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">822</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">760</id>
+  <name>DSPIC33EP256MU810_ECU</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">753</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">711</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">741</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">812</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">852</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">904</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">934</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">942</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">948</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">853</id>
+  <name>DMA14_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">854</id>
+  <name>DMA14_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">845</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">891</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">898</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">867</id>
+  <name>DMA8_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">845</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">891</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">898</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">868</id>
+  <name>DMA8_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">869</id>
+  <name>DMA9_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">845</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">891</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">898</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">870</id>
+  <name>DMA9_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">871</id>
+  <name>DMA10_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">845</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">891</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">898</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">872</id>
+  <name>DMA11_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">845</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">891</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">898</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">873</id>
+  <name>DMA10_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">874</id>
+  <name>DMA11_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">875</id>
+  <name>DMA12_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">845</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">891</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">898</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">876</id>
+  <name>DMA12_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">877</id>
+  <name>DMA13_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">845</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">891</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">898</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">878</id>
+  <name>DMA13_Disabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">851</id>
+  <name>DMA_15Channels</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">839</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">846</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">849</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">850</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">853</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">854</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">855</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">856</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">857</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">858</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">859</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">860</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">861</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">862</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">863</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">864</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">865</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">866</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">867</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">868</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">869</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">870</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">871</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">872</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">873</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">874</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">875</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">876</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">877</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">878</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">937</id>
+  <name>UART4_ENABLED</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">936</id>
+  <name>UART3_ENABLED</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">935</id>
+  <name>UART2_ENABLED</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">943</id>
+  <name>SPI2_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">944</id>
+  <name>SPI3_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">945</id>
+  <name>SPI4_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">949</id>
+  <name>I2C2_Enabled</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">761</id>
+  <name>DSPIC33EP512MU810_ECU</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array">
+    <node-attribute>
+      <content>http://www.microchip.com/wwwproducts/Devices.aspx?product=dsPIC33EP512MU810</content>
+      <name>Description</name>
+      <visibility type="boolean">true</visibility>
+    </node-attribute>
+  </node-attributes>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">753</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">711</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">741</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">812</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">851</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">904</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">712</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">937</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">936</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">935</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">934</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">942</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">943</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">944</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">945</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">948</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">949</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">950</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">762</id>
+  <name>DSPIC33FJ256GP710_ECU</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">753</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">711</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">751</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">770</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">852</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">904</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">934</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">942</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">948</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">769</default-mode-id>
+  <id type="integer">764</id>
+  <name>BOOT_SEG_DATA_RAM</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">765</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">766</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">767</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">768</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">769</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">779</default-mode-id>
+  <id type="integer">771</id>
+  <name>BOOT_SEG_PROG_MEM</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">772</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">773</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">774</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">775</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">776</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">777</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">778</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">779</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">783</default-mode-id>
+  <id type="integer">780</id>
+  <name>BWRP_WRITE_PROTECT</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">781</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">782</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">783</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">789</default-mode-id>
+  <id type="integer">784</id>
+  <name>SECURE_RAM</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">785</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">786</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">787</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">788</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">789</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">798</default-mode-id>
+  <id type="integer">790</id>
+  <name>SECURE_PROG_MEM</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">791</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">792</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">793</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">794</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">795</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">796</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">797</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">798</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">802</default-mode-id>
+  <id type="integer">799</id>
+  <name>SWRP_WRITE_PROTECT</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">800</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">801</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">802</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">803</id>
+  <name>CODE_PROTECT_1</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">806</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">807</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">808</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">809</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">810</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">811</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">815</default-mode-id>
+  <id type="integer">804</id>
+  <name>CODE_PROTECT_2</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">813</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">814</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">815</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">818</default-mode-id>
+  <id type="integer">805</id>
+  <name>CODE_PROTECT_3</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">816</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">817</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">818</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">822</default-mode-id>
+  <id type="integer">819</id>
+  <name>GWRP_WRITE_PROTECT</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">820</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">821</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">822</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">763</id>
+  <name>MEMORY</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">764</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">770</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">771</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">780</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">784</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">790</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">799</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">803</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">804</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">805</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">812</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">819</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">840</id>
+  <name>DMA_CHANNEL</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">841</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">842</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">843</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">844</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">845</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">879</id>
+  <name>DMA_INTERRUPT</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">880</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">881</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">882</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">883</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">884</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">885</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">886</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">887</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">888</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">889</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">890</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">891</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">892</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">893</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">894</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">895</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">896</id>
+  <name>DMA_INTERRUPT_PRORITY</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="ValueDoubleRange">
+      <id type="integer">897</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">898</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">839</default-mode-id>
+  <id type="integer">824</id>
+  <name>DMA_0</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">839</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">840</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">846</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">879</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">896</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">912</id>
+    </destination>
+  </destinations>
+  <labels type="array">
+    <label>
+      <name>-</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">856</default-mode-id>
+  <id type="integer">825</id>
+  <name>DMA_1</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">840</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">855</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">856</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">879</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">896</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">918</id>
+    </destination>
+  </destinations>
+  <labels type="array">
+    <label>
+      <name>-</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">858</default-mode-id>
+  <id type="integer">826</id>
+  <name>DMA_2</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">840</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">857</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">858</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">879</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">896</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">914</id>
+    </destination>
+  </destinations>
+  <labels type="array">
+    <label>
+      <name>-</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">860</default-mode-id>
+  <id type="integer">827</id>
+  <name>DMA_3</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">840</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">859</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">860</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">879</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">896</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">915</id>
+    </destination>
+  </destinations>
+  <labels type="array">
+    <label>
+      <name>-</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">849</default-mode-id>
+  <id type="integer">828</id>
+  <name>DMA_4</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">840</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">849</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">850</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">879</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">896</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">916</id>
+    </destination>
+  </destinations>
+  <labels type="array">
+    <label>
+      <name>-</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">862</default-mode-id>
+  <id type="integer">829</id>
+  <name>DMA_5</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">840</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">861</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">862</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">879</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">896</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">919</id>
+    </destination>
+  </destinations>
+  <labels type="array">
+    <label>
+      <name>-</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">864</default-mode-id>
+  <id type="integer">830</id>
+  <name>DMA_6</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">840</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">863</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">864</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">879</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">896</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">920</id>
+    </destination>
+  </destinations>
+  <labels type="array">
+    <label>
+      <name>-</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer">866</default-mode-id>
+  <id type="integer">831</id>
+  <name>DMA_7</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">840</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">865</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">866</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">879</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">896</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">921</id>
+    </destination>
+  </destinations>
+  <labels type="array">
+    <label>
+      <name>-</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">923</id>
+  <name>DMA8_Enabled_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">895</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">868</default-mode-id>
+  <id type="integer">832</id>
+  <name>DMA_8</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">840</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">867</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">868</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">879</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">896</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">923</id>
+    </destination>
+  </destinations>
+  <labels type="array">
+    <label>
+      <name>-</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">924</id>
+  <name>DMA9_Enabled_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">895</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">870</default-mode-id>
+  <id type="integer">833</id>
+  <name>DMA_9</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">840</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">869</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">870</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">879</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">896</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">924</id>
+    </destination>
+  </destinations>
+  <labels type="array">
+    <label>
+      <name>-</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">925</id>
+  <name>DMA10_Enabled_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">895</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">873</default-mode-id>
+  <id type="integer">834</id>
+  <name>DMA_10</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">840</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">871</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">873</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">879</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">896</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">925</id>
+    </destination>
+  </destinations>
+  <labels type="array">
+    <label>
+      <name>-</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">926</id>
+  <name>DMA11_Enabled_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">895</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">874</default-mode-id>
+  <id type="integer">835</id>
+  <name>DMA_11</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">840</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">872</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">874</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">879</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">896</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">926</id>
+    </destination>
+  </destinations>
+  <labels type="array">
+    <label>
+      <name>-</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">927</id>
+  <name>DMA12_Enabled_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">895</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">876</default-mode-id>
+  <id type="integer">836</id>
+  <name>DMA_12</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">840</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">875</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">876</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">879</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">896</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">927</id>
+    </destination>
+  </destinations>
+  <labels type="array">
+    <label>
+      <name>-</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">928</id>
+  <name>DMA13_Enabled_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">895</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">878</default-mode-id>
+  <id type="integer">837</id>
+  <name>DMA_13</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">840</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">877</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">878</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">879</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">896</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">928</id>
+    </destination>
+  </destinations>
+  <labels type="array">
+    <label>
+      <name>-</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">929</id>
+  <name>DMA14_Enabled_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">895</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">853</default-mode-id>
+  <id type="integer">838</id>
+  <name>DMA_14</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">840</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">853</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">854</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">879</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">896</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">929</id>
+    </destination>
+  </destinations>
+  <labels type="array">
+    <label>
+      <name>-</name>
+      <scope-kind>
+        <name>OPMS</name>
+      </scope-kind>
+    </label>
+  </labels>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">847</id>
+  <name>DMA_4Channels</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">839</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">846</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">855</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">856</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">857</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">858</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">859</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">860</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">922</id>
+  <name>DMA_15Channels_SmallMicro</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">912</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">918</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">914</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">915</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">916</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">919</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">920</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">921</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">923</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">924</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">925</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">926</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">927</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">928</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">929</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">839</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">856</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">858</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">860</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">849</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">862</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">864</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">866</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">868</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">870</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">873</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">874</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">876</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">878</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">853</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">852</default-mode-id>
+  <id type="integer">823</id>
+  <name>DMA</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">824</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">825</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">826</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">827</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">828</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">829</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">830</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">831</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">832</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">833</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">834</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">835</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">836</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">837</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">838</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">847</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">851</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">852</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">913</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">917</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">922</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">930</id>
+  <name>UART1</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">934</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">931</id>
+  <name>UART2</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">935</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">932</id>
+  <name>UART3</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">936</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">933</id>
+  <name>UART4</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">937</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">938</id>
+  <name>SPI1</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">942</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">939</id>
+  <name>SPI2</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">943</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">940</id>
+  <name>SPI3</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">944</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">941</id>
+  <name>SPI4</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">945</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">946</id>
+  <name>I2C1</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">948</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">947</id>
+  <name>I2C2</name>
+  <node-type-id type="integer">3</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">949</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">754</id>
+  <name>Target</name>
+  <node-type-id type="integer">2</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">755</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">756</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">704</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">708</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">709</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">710</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">734</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">703</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">705</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">706</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">759</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">760</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">761</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">762</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">763</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">823</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">930</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">931</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">932</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">933</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">938</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">939</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">940</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">941</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">946</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">947</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<mode>
+  <default-mode-id type="integer">755</default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">707</id>
+  <name>DSPIC33EV256GM106</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">755</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">756</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer">759</default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">715</id>
+  <name>DSPIC33FJ256GP506A</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">759</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer">760</default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">731</id>
+  <name>DSPIC33EP256MU810</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">760</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer">761</default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">732</id>
+  <name>DSPIC33EP512MU810</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">761</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer">762</default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">733</id>
+  <name>DSPIC33FJ256GP710</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">762</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">702</id>
+  <name>MCU</name>
+  <node-type-id type="integer">2</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">754</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">707</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">715</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">731</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">732</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">733</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<value>
+  <id type="integer">724</id>
+  <name>COMPILER_C30</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">725</id>
+  <name>COMPILER_XC16V11</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">726</id>
+  <name>COMPILER_XC16V11_UPDATED</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<value>
+  <id type="integer">752</id>
+  <name>COMPILER_XC16V12</name>
+  <node-type-id type="integer">5</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Value</type>
+  <value-formatter-id type="integer" nil="true"></value-formatter-id>
+  <node-attributes type="array"/>
+  <destinations type="array"/>
+  <labels type="array"/>
+</value>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">752</default-value-id>
+  <id type="integer">727</id>
+  <name>COMPILER_All</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">724</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">725</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">726</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">752</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer">752</default-value-id>
+  <id type="integer">728</id>
+  <name>COMPILER_XC16</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">725</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">726</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">752</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer">727</default-mode-id>
+  <id type="integer">723</id>
+  <name>Compiler</name>
+  <node-type-id type="integer">4</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Value">
+      <id type="integer">724</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">725</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">726</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">727</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">728</id>
+    </destination>
+    <destination type="Value">
+      <id type="integer">752</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">729</id>
+  <name>DSPIC_EPFJ</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">727</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">715</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">731</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">732</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">733</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<mode>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <default-value-id type="integer" nil="true"></default-value-id>
+  <id type="integer">730</id>
+  <name>DSPIC_EV</name>
+  <node-type-id type="integer">6</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>Mode</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="Mode">
+      <id type="integer">728</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">707</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</mode>
+<sub-system>
+  <default-mode-id type="integer" nil="true"></default-mode-id>
+  <id type="integer">722</id>
+  <name>HALCfg</name>
+  <node-type-id type="integer">2</node-type-id>
+  <project-id type="integer">18</project-id>
+  <type>SubSystem</type>
+  <node-attributes type="array"/>
+  <destinations type="array">
+    <destination type="SubSystem">
+      <id type="integer">702</id>
+    </destination>
+    <destination type="SubSystem">
+      <id type="integer">723</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">729</id>
+    </destination>
+    <destination type="Mode">
+      <id type="integer">730</id>
+    </destination>
+  </destinations>
+  <labels type="array"/>
+</sub-system>
+</sub-systems-v4>
