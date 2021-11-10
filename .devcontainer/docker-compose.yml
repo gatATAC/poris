@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  gcsenv:
+    image: ll-dev1.grantecan.net:5000/gcsenv
+    volumes:
+      # This is where VS Code should expect to find your project's source code and the value of "workspaceFolder" in .devcontainer/devcontainer.json
+      - ..:/workspace:cached
+      # The volumes the gcs needs
+      - /run
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - workgcsop:/work/gcsop
+      - ../scratch:/workspace/scratch
+    ports:
+      - "22:22"
+    #user: "gcsop"
+
+volumes:
+  workgcsop: {}
+

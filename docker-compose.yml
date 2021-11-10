@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  rails:
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+    #command: RAILS_ENV=production script/server
+

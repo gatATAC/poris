@@ -8,9 +8,6 @@ class HoboMigration5 < ActiveRecord::Migration
     
     add_column :stories, :status_id, :integer
     remove_column :stories, :status
-
-    statuses = %w(new accepted discussion implementation user_testing deployed rejected)
-    statuses.each { |status| StoryStatus.create :name => status }
   end
 
   def self.down

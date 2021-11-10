@@ -14,12 +14,6 @@ class HoboMigration13 < ActiveRecord::Migration
     end
     
     add_column :task_assignments, :status_id, :integer
-
-    task_statuses = %w(new accepted rejected not_ready ready executing frozen sleeping)
-    task_statuses.each { |status| TaskStatus.create :name => status }
-    assig_statuses = %w(new accepted rejected)
-    assig_statuses.each { |status| TaskAssignmentStatus.create :name => status }
-
   end
 
   def self.down
