@@ -24,18 +24,19 @@ RUN rbenv rehash
 RUN update_rubygems --version=1.3.6
 RUN rbenv rehash
 RUN echo 'gem: --no-rdoc --no-ri' > /root/.gemrc
-RUN gem install rake -v 0.8.7
+RUN gem install rake -V -v 10.3.2
 RUN rbenv rehash
-#RUN gem install rails -v 2.3.18
-RUN gem install hobo -v 1.0.3
-RUN gem install sqlite3 -v 1.3.11
-RUN gem install passenger
 RUN gem install bundler -v 1.8.7
 RUN rbenv rehash
+RUN gem install sqlite3 -v 1.3.11
+RUN gem install hobo -V -v 1.0.3
+RUN rbenv rehash
+RUN gem install passenger
+
 
 WORKDIR /app
 
 COPY . .
 
-#RUN rake gems:install
+RUN rake gems:install
 ENTRYPOINT ["./docker-entrypoint-poris.sh"]
