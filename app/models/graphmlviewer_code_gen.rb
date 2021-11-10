@@ -1,3 +1,0 @@
-class GraphmlviewerCodeGen < GraphmlCodeGen
-
-end

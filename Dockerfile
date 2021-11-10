@@ -38,5 +38,5 @@ WORKDIR /app
 
 COPY . .
 
-RUN rake gems:install
+#RUN rake gems:install
 ENTRYPOINT ["./docker-entrypoint-poris.sh"]
