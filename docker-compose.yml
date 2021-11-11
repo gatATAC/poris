@@ -6,6 +6,6 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - .:/app
+      - ./Editors/Web/PorisWebEditor:/app
     #command: RAILS_ENV=production script/server
 

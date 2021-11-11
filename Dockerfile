@@ -36,7 +36,7 @@ RUN gem install passenger
 
 WORKDIR /app
 
-COPY . .
+# COPY ./docker-entrypoint-poris.sh ./docker-entrypoint-poris.sh
 
 #RUN rake gems:install
 ENTRYPOINT ["./docker-entrypoint-poris.sh"]
