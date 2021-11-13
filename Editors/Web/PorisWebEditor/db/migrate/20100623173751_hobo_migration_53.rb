@@ -4,8 +4,8 @@ class HoboMigration53 < ActiveRecord::Migration
     drop_table :stories
     drop_table :milestones
     drop_table :tasks
-    drop_table :task_assignment_statuses
-    drop_table :task_statuses
+    #drop_table :task_assignment_statuses
+    #drop_table :task_statuses
     drop_table :bugs
     drop_table :modulos
     drop_table :task_assignments

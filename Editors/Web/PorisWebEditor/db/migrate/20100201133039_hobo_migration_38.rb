@@ -12,7 +12,7 @@ class HoboMigration38 < ActiveRecord::Migration
 
     add_index :scope_kinds, [:type]
 
-    add_index :task_statuses, [:status_id]
+    #add_index :task_statuses, [:status_id]
 
     add_index :projects, [:owner_id]
 
@@ -55,7 +55,7 @@ class HoboMigration38 < ActiveRecord::Migration
 
     remove_index :scope_kinds, :name => :index_scope_kinds_on_type rescue ActiveRecord::StatementInvalid
 
-    remove_index :task_statuses, :name => :index_task_statuses_on_status_id rescue ActiveRecord::StatementInvalid
+    #remove_index :task_statuses, :name => :index_task_statuses_on_status_id rescue ActiveRecord::StatementInvalid
 
     remove_index :projects, :name => :index_projects_on_owner_id rescue ActiveRecord::StatementInvalid
 
