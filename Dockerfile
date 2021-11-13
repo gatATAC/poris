@@ -19,24 +19,18 @@ RUN eval "$(rbenv init -)"
 # Install ruby and rubygems
 RUN rbenv install 1.8.7-p374
 RUN rbenv global 1.8.7-p374
+RUN echo 'gem: --no-rdoc --no-ri' > /root/.gemrc
 RUN gem install rubygems-update -v 1.3.6
 RUN rbenv rehash
 RUN update_rubygems --version=1.3.6
 RUN rbenv rehash
-RUN echo 'gem: --no-rdoc --no-ri' > /root/.gemrc
-RUN gem install rake -V -v 10.3.2
+RUN gem install rake -V -v 0.8.7
 RUN rbenv rehash
 RUN gem install bundler -v 1.8.7
-RUN rbenv rehash
 RUN gem install sqlite3 -v 1.3.11
 RUN gem install hobo -V -v 1.0.3
-RUN rbenv rehash
 RUN gem install passenger
-
+RUN rbenv rehash
 
 WORKDIR /app
-
-# COPY ./docker-entrypoint-poris.sh ./docker-entrypoint-poris.sh
-
-#RUN rake gems:install
 ENTRYPOINT ["./docker-entrypoint-poris.sh"]
