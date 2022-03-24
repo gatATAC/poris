@@ -10,3 +10,4 @@ db/development.sqlite3
 db/production.sqlite3
 passenger.*.pid*
 
+Editors/Web/PorisWebEditor/passenger.3000.log
