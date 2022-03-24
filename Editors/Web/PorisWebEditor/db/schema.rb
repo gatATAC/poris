@@ -13,10 +13,10 @@ ActiveRecord::Schema.define(:version => 20160729080837) do
 
   create_table "labels", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
     t.integer  "node_id"
     t.integer  "scope_kind_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "labels", ["node_id"], :name => "index_labels_on_node_id"
@@ -34,28 +34,28 @@ ActiveRecord::Schema.define(:version => 20160729080837) do
   add_index "node_attributes", ["node_id"], :name => "index_node_attributes_on_node_id"
 
   create_table "node_types", :force => true do |t|
-    t.string   "totype"
     t.string   "name"
-    t.string   "img_link"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "totype"
+    t.string   "img_link"
   end
 
   create_table "nodes", :force => true do |t|
     t.string   "name"
+    t.integer  "node_type_id"
     t.string   "type"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "node_type_id"
-    t.integer  "parent_id"
-    t.integer  "root_id"
-    t.integer  "project_id"
     t.float    "rangemin"
     t.float    "rangemax"
     t.float    "default_float"
     t.string   "default_string"
     t.integer  "default_value_id"
     t.integer  "default_mode_id"
+    t.integer  "project_id"
+    t.integer  "parent_id"
+    t.integer  "root_id"
     t.integer  "value_formatter_id"
     t.datetime "date_min"
     t.datetime "date_max"
@@ -73,12 +73,13 @@ ActiveRecord::Schema.define(:version => 20160729080837) do
   add_index "nodes", ["type"], :name => "index_nodes_on_type"
   add_index "nodes", ["value_formatter_id"], :name => "index_nodes_on_value_formatter_id"
 
-  create_table "nodes_edges", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "nodes_edges", :id => false, :force => true do |t|
     t.integer  "source_id"
     t.integer  "destination_id"
+    t.datetime "updated_at"
+    t.integer  "id"
     t.integer  "position"
+    t.datetime "created_at"
   end
 
   add_index "nodes_edges", ["destination_id"], :name => "index_nodes_edges_on_destination_id"
@@ -118,10 +119,10 @@ ActiveRecord::Schema.define(:version => 20160729080837) do
 
   create_table "scope_kinds", :force => true do |t|
     t.string   "name"
-    t.string   "type"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "description"
+    t.string   "type"
     t.string   "src_format"
   end
 

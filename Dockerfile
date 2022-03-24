@@ -31,6 +31,8 @@ RUN gem install sqlite3 -v 1.3.11
 RUN gem install hobo -V -v 1.0.3
 RUN gem install passenger
 RUN rbenv rehash
+RUN apt-get install -y --force-yes netcat
+RUN apt-get clean
 
 WORKDIR /app
 ENTRYPOINT ["./docker-entrypoint-poris.sh"]
