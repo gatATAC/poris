@@ -21,3 +21,4 @@ passenger.*.pid*
 /Players/Java/AstroPorisPlayer/build/
 /Players/Java/AstroPorisPlayer/dist/
 /Players/Java/AstroPorisPlayer_15/build/
+Editors/Web/PorisWebEditor/passenger.3000.log
