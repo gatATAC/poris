@@ -4,20 +4,6 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="Poris"/>
-        <group>
-            <file>file:/home/txinto/repos/cbots/porisold/Players/Java/PorisCore/src/org/gatATAC/poris/Value.java</file>
-            <file>file:/home/txinto/repos/cbots/porisold/Players/Java/PorisCore/src/org/gatATAC/poris/DataDouble.java</file>
-            <file>file:/home/txinto/repos/cbots/porisold/Players/Java/PorisCore/src/org/gatATAC/poris/app/PorisAppDelegate.java</file>
-            <file>file:/home/txinto/repos/cbots/porisold/Players/Java/PorisCore/src/org/gatATAC/poris/Cfg.java</file>
-            <file>file:/home/txinto/repos/cbots/porisold/Players/Java/PorisCore/src/org/gatATAC/poris/ValueDoubleRange.java</file>
-            <file>file:/home/txinto/repos/cbots/porisold/Players/Java/PorisCore/src/org/gatATAC/poris/SNodeLib.java</file>
-            <file>file:/home/txinto/repos/cbots/porisold/Players/Java/PorisCore/src/org/gatATAC/poris/SNodeAttribute.java</file>
-            <file>file:/home/txinto/repos/cbots/porisold/Players/Java/PorisCore/src/org/gatATAC/poris/DataString.java</file>
-            <file>file:/home/txinto/repos/cbots/porisold/Players/Java/PorisCore/src/org/gatATAC/poris/SNodeXML.java</file>
-            <file>file:/home/txinto/repos/cbots/porisold/Players/Java/PorisCore/src/org/gatATAC/poris/Mode.java</file>
-            <file>file:/home/txinto/repos/cbots/porisold/Players/Java/PorisCore/src/org/gatATAC/poris/MVC/Model.java</file>
-            <file>file:/home/txinto/repos/cbots/porisold/Players/Java/PorisCore/src/org/gatATAC/poris/SubSystem.java</file>
-            <file>file:/home/txinto/repos/cbots/porisold/Players/Java/PorisCore/src/org/gatATAC/poris/SNode.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
