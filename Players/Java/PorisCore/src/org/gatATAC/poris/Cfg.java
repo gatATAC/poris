@@ -65,21 +65,8 @@ public class Cfg extends SNode {
      */
     public Data getData() {
         if (this.data == null) {
-            if (this.value.implementsInterface(ValueDataInterface.class)) {
-                if (this.value.isDescendantOf(ValueDoubleRange.class)) {
-                    this.data = new DataDouble((ValueDoubleFormatter) this.value.getFormatter());
-                } else {
-                    if (this.value.isDescendantOf(ValueDateRange.class)) {
-                        this.data = new DataDate((ValueDateFormatter) this.value.getFormatter());
-                    } else {
-                        this.data = new DataString();
-                    }
-                }
-                this.data.setDataValue(((ValueDataInterface) this.value).getDefaultValue());
-            }
-        } else {
-            if (this.value.implementsInterface(ValueDataInterface.class)) {
-                if (!this.value.isValidFromStr(this.data.toString())) {
+            if (this.value != null){
+                if (this.value.implementsInterface(ValueDataInterface.class)) {
                     if (this.value.isDescendantOf(ValueDoubleRange.class)) {
                         this.data = new DataDouble((ValueDoubleFormatter) this.value.getFormatter());
                     } else {
@@ -91,6 +78,29 @@ public class Cfg extends SNode {
                     }
                     this.data.setDataValue(((ValueDataInterface) this.value).getDefaultValue());
                 }
+            } else {
+                /* Value is not active, probably because the mode is not activating the param */
+                /* null will be returned, nothing to do here */
+            }
+        } else {
+            if (this.value != null){
+                if (this.value.implementsInterface(ValueDataInterface.class)) {
+                    if (!this.value.isValidFromStr(this.data.toString())) {
+                        if (this.value.isDescendantOf(ValueDoubleRange.class)) {
+                            this.data = new DataDouble((ValueDoubleFormatter) this.value.getFormatter());
+                        } else {
+                            if (this.value.isDescendantOf(ValueDateRange.class)) {
+                                this.data = new DataDate((ValueDateFormatter) this.value.getFormatter());
+                            } else {
+                                this.data = new DataString();
+                            }
+                        }
+                        this.data.setDataValue(((ValueDataInterface) this.value).getDefaultValue());
+                    }
+                }
+            } else {
+                /* Value is null, probably because a mode is not activating the param */
+                /* null will be returned, nothing to do here */
             }
         }
         return this.data;
@@ -398,10 +408,12 @@ public class Cfg extends SNode {
      */
     public boolean isValidValue(Value value) {
         if (this.hasValue) {
-            ArrayList<SNode> possibleValues = this.getMode().getValues();
-            for (int i = 0; i < possibleValues.size(); i++) {
-                if (((Value) possibleValues.get(i)).isValid(value)) {
-                    return true;
+            if (this.getMode()!= null){
+                ArrayList<SNode> possibleValues = this.getMode().getValues();
+                for (int i = 0; i < possibleValues.size(); i++) {
+                    if (((Value) possibleValues.get(i)).isValid(value)) {
+                        return true;
+                    }
                 }
             }
         }

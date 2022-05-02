@@ -10,3 +10,14 @@ db/development.sqlite3
 db/production.sqlite3
 passenger.*.pid*
 
+/Players/Java/AstroPorisPlayer/nbproject/private/
+/Players/Java/AstroPorisPlayer_15/nbproject/private/
+/Players/Java/PorisCore/nbproject/private/
+/Players/Java/PorisPlayer/nbproject/private/
+/Players/Java/PorisCore/dist/
+/Players/Java/PorisCore/build/
+/Players/Java/PorisPlayer/build/
+/Players/Java/PorisPlayer/dist/
+/Players/Java/AstroPorisPlayer/build/
+/Players/Java/AstroPorisPlayer/dist/
+/Players/Java/AstroPorisPlayer_15/build/

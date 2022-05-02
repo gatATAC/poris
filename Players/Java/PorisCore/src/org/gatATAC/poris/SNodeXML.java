@@ -45,6 +45,7 @@ public class SNodeXML extends View {
     public SNodeXML(SNodeLib model, Controller controller) {
         super(model, controller);
         this.initComponents();
+        System.err.println("Constructor 1");
         this.update();
     }
     
@@ -55,6 +56,7 @@ public class SNodeXML extends View {
     public SNodeXML(SNodeLib model) {
         super(model);
         this.initComponents();
+        System.err.println("Constructor 2");
         this.update();
    }
     
@@ -115,7 +117,7 @@ public class SNodeXML extends View {
         xmlTreePanel.updateUI();
     }
 
-    //private static int contador=0;
+    private static int contador=0;
 
     /**
      * 
@@ -135,8 +137,8 @@ public class SNodeXML extends View {
         }
         try
         {
-            //contador++;
-            //System.out.println("Entro en SNodeXML.update por vez "+contador);
+            contador++;
+            System.err.println("Entro en SNodeXML.update por vez "+contador+" con el modelo "+this.getModel().getName());
             doc = db.newDocument();
             Node osiXML = null;
             osiXML = ((SNodeLib)this.getModel()).toXML(doc);
@@ -149,19 +151,23 @@ public class SNodeXML extends View {
                 XMLTreeModel treeModel = new XMLTreeModel(osiXML);
                 this.xmlTree.setModel(treeModel);
                 this.xmlTree.updateUI();
-
+                System.err.println("SNodeXML.update: 1");
                 // This transforms the xml to string
                 TransformerFactory tf = TransformerFactory.newInstance();
                 Transformer transformer = tf.newTransformer();
                 transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+                System.err.println("SNodeXML.update: 2");                
                 DOMSource source = new DOMSource(doc);
                 StringWriter sw = new StringWriter();
+                System.err.println("SNodeXML.update: 3");                
                 //StreamResult result = new StreamResult("/home/txinto/result.xml");
                 StreamResult result = new StreamResult(sw);
                 transformer.transform(source, result);
                 String staux = sw.toString();
+                System.err.println("SNodeXML.update: 4");                
 
                 xmlText.setText(staux);
+                System.err.println("SNodeXML.update: 5");                
             }
         }
         catch (Exception exc)
@@ -182,6 +188,7 @@ public class SNodeXML extends View {
     public JTabbedPane getMainPanel() {
         if (mainPanel==null) {
             initComponents();
+            System.err.println("getMainPanel");            
             update();
         }
         display();
@@ -195,6 +202,7 @@ public class SNodeXML extends View {
     public String getXMLString() {
         if (mainPanel==null) {
             initComponents();
+            System.err.println("getXMLString");
             update();
         }
         display();

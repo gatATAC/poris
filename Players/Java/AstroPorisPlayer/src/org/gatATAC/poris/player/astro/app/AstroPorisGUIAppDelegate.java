@@ -42,6 +42,7 @@ public class AstroPorisGUIAppDelegate extends PorisGUIAppDelegate {
      * @param instrumentFileName
      * @param showXMLButtons
      * @param showInvisible
+     * @param showAbout
      */
     public AstroPorisGUIAppDelegate(String instrumentFileName, boolean showXMLButtons, boolean showInvisible, boolean showAbout) {
         super(instrumentFileName,showXMLButtons, showInvisible, showAbout);

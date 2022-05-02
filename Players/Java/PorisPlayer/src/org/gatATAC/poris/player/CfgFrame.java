@@ -368,7 +368,7 @@ public class CfgFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton aboutButton;
-    private javax.swing.JPanel changePanel;
+    public javax.swing.JPanel changePanel;
     private javax.swing.JButton commitButton;
     private javax.swing.JButton discardButton;
     private javax.swing.JPanel filePanel;

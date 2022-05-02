@@ -22,8 +22,8 @@ import org.w3c.dom.Element;
  */
 public class PorisAppDelegate {
 
-    private SNodeLib systemLib = new SNodeLib("System Library");
-    private SNodeLib configLib = new SNodeLib("Config Library");
+    private final SNodeLib systemLib = new SNodeLib("System Library");
+    private final SNodeLib configLib = new SNodeLib("Config Library");
     private SubSystem system;
     private Cfg config;
     private final String instrumentFileName;
