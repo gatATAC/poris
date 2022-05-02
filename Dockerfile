@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 # Install packages for building ruby
 RUN apt-get update
-RUN apt-get install -y --force-yes build-essential curl git sqlite3 libsqlite3-dev nano
+RUN apt-get install -y --force-yes build-essential curl git sqlite3 libsqlite3-dev nano lsof
 RUN apt-get install -y --force-yes zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt-dev mysql-client libmysqlclient-dev
 RUN apt-get clean
 
@@ -31,6 +31,8 @@ RUN gem install sqlite3 -v 1.3.11
 RUN gem install hobo -V -v 1.0.3
 RUN gem install passenger
 RUN rbenv rehash
+RUN apt-get install -y --force-yes netcat
+RUN apt-get clean
 
 WORKDIR /app
 ENTRYPOINT ["./docker-entrypoint-poris.sh"]
