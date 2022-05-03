@@ -1,0 +1,3 @@
+[submodule "Players/Java"]
+	path = Players/Java
+	url = git@github.com:cosmoBots/porisjava.git
